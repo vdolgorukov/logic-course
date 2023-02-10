@@ -6,7 +6,7 @@ toc:
   h_max: 3
 
 
-permalink:        /:categories/:year-:month-:day-:title:output_ext
+permalink:        /:categories/:output_ext
 
 collections:
   pages:
