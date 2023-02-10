@@ -1,5 +1,12 @@
 remote_theme: sighingnow/jekyll-gitbook
 
+rss: false
+email_address: v.dolgorukov@gmail.com
+facebook: false
+github: "https://vdolgorukov.github.io/logic-course"
+twitter: false
+youtube: false
+
 toc:
   enabled: true
   h_min: 1
