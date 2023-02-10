@@ -9,3 +9,8 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
+    
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
