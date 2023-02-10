@@ -6,7 +6,7 @@ toc:
   h_max: 3
 
 
-permalink:        /:categories/:output_ext
+permalink:   /:categories/:output_ext
 
 collections:
   pages:
@@ -17,5 +17,5 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
-
-rmd_subdir: ["chapters"]
+  
+page_width: 800px
