@@ -18,4 +18,4 @@ plugins:
   - jekyll-readme-index
   - jemoji
   
-page_width: 800px
+page_width: 600px
