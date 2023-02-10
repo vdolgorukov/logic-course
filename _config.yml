@@ -5,6 +5,9 @@ toc:
   h_min: 1
   h_max: 3
 
+
+permalink:        /:categories/:year-:month-:day-:title:output_ext
+
 collections:
   pages:
     output: true
