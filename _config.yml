@@ -17,3 +17,5 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+
+rmd_subdir: ["chapters"]
