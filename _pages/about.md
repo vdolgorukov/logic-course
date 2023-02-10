@@ -16,4 +16,4 @@ $\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \v
 
 ### Подраздел
 
-$M, v \models P(t_1, \dots, t_n) \iff \langle |t_1|^v_M, \dots, |t_n|^v_M \rangle \in P_M$
+$M, v \models P(t_1, \dots, t_n) \iff \langle \|t_1\|^v_M, \dots, \|t_n\|^v_M \rangle \in P_M$
