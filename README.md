@@ -11,13 +11,13 @@ permalink: /
 # Разделы 
 
 ## Классическая логика: 
-- [Аксиоматическое построение классической логики высказываний](https://vdolgorukov.github.io/logic-course/pages/0/)
-- [Язык и семантика классической логики предикатов первого порядка](https://vdolgorukov.github.io/logic-course/pages/1/)
-- [Леммы об означивании](https://vdolgorukov.github.io/logic-course/pages/2/)
-- [Аксиоматическое построение КЛП](https://vdolgorukov.github.io/logic-course/pages/3/)
+- [Аксиоматическое построение классической логики высказываний](https://vdolgorukov.github.io/logic-course/pages/0_Axiomatics/)
+- [Язык и семантика классической логики предикатов первого порядка](https://vdolgorukov.github.io/logic-course/pages/1_FOL/)
+- [Леммы об означивании](https://vdolgorukov.github.io/logic-course/pages/2_Valuation_Lemma/)
+- [Аксиоматическое построение КЛП](https://vdolgorukov.github.io/logic-course/pages/3_Axiomatics_FOL/)
 
 ## Неклассичесские логики
-- [Аспекты неклассических логик (упражнения)](https://vdolgorukov.github.io/logic-course/pages/4/)
+- [Аспекты неклассических логик (упражнения)](https://vdolgorukov.github.io/logic-course/pages/4_Modal_Logic/)
 
 
 *Страница подготовлена по результатам проекта «Интерактивное учебное пособие по философской логике и формальной философии» при поддержке фонда «Гуманитарные исследования» ФГН НИУ «Высшая школа экономики» в 2022-2023 году*.
