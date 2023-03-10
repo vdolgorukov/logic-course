@@ -65,6 +65,6 @@ layout: post
 <details><summary> $\Diamond \Box p$ </summary>  $$M, w \models \Diamond \Box p$$ </details>
 
 # Литература и дополнительные материалы:
-- ["Modal Logic (Basics)" / канал "Carneades.org" ](https://www.youtube.com/watch?v=FacUHU_gjPw)
-- ["How to do Modal Logic" / канал "Attic Philosophy"](https://www.youtube.com/watch?v=_kZLnqsIuMo&list=PLwSlKSRwxX0qXTZKnIT7l4_YAIWpJcZJ9)
+- ["Modal Logic (Basics)"/канал "Carneades.org"](https://www.youtube.com/watch?v=FacUHU_gjPw)
+- ["How to do Modal Logic"/канал "Attic Philosophy"](https://www.youtube.com/watch?v=_kZLnqsIuMo&list=PLwSlKSRwxX0qXTZKnIT7l4_YAIWpJcZJ9)
 - [Курс "Неклассические логики" 2022 (Т.Л. Яворская, МИАН)](https://www.mathnet.ru/php/conference.phtml?option_lang=rus&eventID=31&confid=2080)
