@@ -62,7 +62,6 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 - $Q$ – "быть красивым".
 <details><summary> Боря – красивый, но не умный </summary> $$Qb \wedge \neg Pb$$ </details>
 <details><summary> Боря – умный, Сережа – красивый, а Аня и умная, и красивая  </summary> $$Pb \wedge Qc \wedge Pa \wedge Qa$$ </details>
-<details><summary> Боря умный, а Сережа – красивый. </summary>  $$Pb \to Qc$$ </details>
 <details><summary> Если Боря красивый, то Аня - умная. </summary> $$Qb \to Pa$$ </details>
 <details><summary> Если Сережа красивый, то все красивые. </summary> $$Qc \to \forall x Qx$$ </details>
 <details><summary> Никто не красив и умен одновременно. </summary> $$\neg \exists x (Qx \wedge Px)$$ </details>
