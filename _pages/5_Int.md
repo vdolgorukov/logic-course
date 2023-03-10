@@ -15,7 +15,7 @@ layout: post
 * ($D_1$) $A \to (A \vee B)$
 * ($D_2$) $A \to (B \vee A)$
 * ($D_3$) $(A \to C) \to ((B \to C) \to  ((A \vee B) \to C))$
-* ($N_1$) $ (A \to B) \to ((A \to \neg B) \to \neg A) $
-* ($N_1'$) $ A \to ( \neg A  \to B) $
+* ($N_1$) $(A \to B) \to ((A \to \neg B) \to \neg A)$
+* ($N_1'$) $A \to ( \neg A  \to B)$
 
 Правило вывода: modus ponens	
