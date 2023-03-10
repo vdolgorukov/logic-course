@@ -9,6 +9,8 @@ permalink: /
 
 А. Тарский
 
+toc: 1
+
 
 Copyright 2023 Vitaliy Dolgorukov
 
