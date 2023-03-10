@@ -16,7 +16,7 @@ permalink: /
 - [Леммы об означивании](https://vdolgorukov.github.io/logic-course/pages/2_Valuation_Lemma/)
 - [Аксиоматическое построение КЛП](https://vdolgorukov.github.io/logic-course/pages/3_Axiomatics_FOL/)
 
-## Неклассичесские логики (упражнения)
+## Неклассические логики (упражнения)
 - [Аспекты неклассических логик (упражнения)](https://vdolgorukov.github.io/logic-course/pages/4_Modal_Logic/)
 
 
