@@ -10,13 +10,13 @@ permalink: /
 
 # Разделы 
 
-## Классическая логика: 
+## Классическая логика 
 - [Аксиоматическое построение классической логики высказываний](https://vdolgorukov.github.io/logic-course/pages/0_Axiomatics/)
 - [Язык и семантика классической логики предикатов первого порядка](https://vdolgorukov.github.io/logic-course/pages/1_FOL/)
 - [Леммы об означивании](https://vdolgorukov.github.io/logic-course/pages/2_Valuation_Lemma/)
 - [Аксиоматическое построение КЛП](https://vdolgorukov.github.io/logic-course/pages/3_Axiomatics_FOL/)
 
-## Неклассичесские логики
+## Неклассичесские логики (упражнения)
 - [Аспекты неклассических логик (упражнения)](https://vdolgorukov.github.io/logic-course/pages/4_Modal_Logic/)
 
 
