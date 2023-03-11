@@ -189,19 +189,9 @@ $(W, R) \models (p \wedge \Diamond \Box p) \to \Box p
 \end{exr}
 
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p)
-\Leftrightarrow 
-\forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$
-\end{center}
-\end{exr}
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p) \Leftrightarrow  \forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$$
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, $Alt_n := \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что 
-\begin{center}
-$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$.
-\end{center}
-\end{exr}
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что $$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$$ 
 
 %\chapter{Обобщенная формула: $i,j,m,n$-формула (Скотт-Леммон)}
-
