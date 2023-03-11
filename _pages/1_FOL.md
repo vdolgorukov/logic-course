@@ -135,7 +135,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
   
 $M, v \not \models B(a)$, поскольку 
   
-$$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \in \\{\blacksquare, \blacktriangle \\}$$
+$$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \in \\\{\blacksquare, \blacktriangle \\\}$$
   
 А последнее утверждение очевидно ложно. Действительно, белый квадрат (референт $a$) не является черной фигурой ($B$).
 
