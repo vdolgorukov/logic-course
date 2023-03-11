@@ -36,7 +36,7 @@ $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 Тогда мы могли бы доказать некорректное утверждение: <br/>
 1. $Sx \to Sx$  – КЛВ  <br/>
-2. $Sx \to \forall x Sx$ – по <span style="color: red">неправильной</span> версии правила Бернайса   
+2. $Sx \to \forall x Sx$ – по <span style="color: red"> неправильной </span> версии правила Бернайса   
    
 </details>
 
