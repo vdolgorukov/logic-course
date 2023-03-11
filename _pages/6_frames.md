@@ -66,12 +66,11 @@ $$F_1, F_3, F_5 $$
 <details><summary> $\Diamond p \to \Box p$ </summary>
 </details>
 
-<details><summary> $\Diamond p \equiv \Box p$ </summary>
+<details><summary> $\Diamond p \leftrightarrow \Box p$ </summary>
 </details>
 
 <details><summary> $p \leftrightarrow \Box \Box p$ </summary>
 </details>
-
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$		
