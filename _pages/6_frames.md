@@ -44,9 +44,9 @@ layout: post
 
 **Упражнение (с ответами)**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
 
-<details><summary>  $\Box \bot$  </summary> $$F_1p$$ </details>
+<details><summary>  $\Box \bot$  </summary> $$F_1$$ Формула говорит, что мир тупиковый. </details>
 
-<details><summary>  $\Box \bot \vee \Diamond \Box \bot$  </summary> $$F_1, F_3, F_5 $$ </details>
+<details><summary>  $\Box \bot \vee \Diamond \Box \bot$  </summary> $$F_1, F_3, F_5 $$ Формула говорит, что мир тупиковый или в шаге от тупикового. </details>
 
 
 2. $\Box \bot \vee \Diamond \Box \bot$
