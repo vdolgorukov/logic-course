@@ -21,5 +21,26 @@ layout: post
 
 Правило вывода: modus ponens	
 
+**Вопрос**
+<details> *Является ли исчисление $int$ дружественным к дедукции?*
+<summary> Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens.
+</details>
+
 
 # Cемантика Крипке для интуиционистской логики
+
+** Опредление**  
+Моделью Крипке (для интуиционистской логики) будем называть тройку $M = (W, \leq, V)$, где
+
+$W$ – непустое множество возможных миров
+$\leq \; \subseteq W \times W$ – отношение достижимости, удовлетворяющее условиям рефлексивности и транзитивности (предпорядок)
+$V: Var \to \mathcal{P}(W)$ – функция оценки, удовлетворяющая условию монотонности:
+если $x \in V(p)$ и  $x \leq y$, то $y \in V(p)$	
+
+Условия истинности Пусть $M = (W, \leq, V)$ – модель Крипке для интуиционистской логики, $x \in W$. Определим истинность формулы в мире.
+  - $M, x \models p \iff x \in V(p)$
+  - $M, x \models \bot \iff  \text{ никогда }$
+  - $M, x \models \varphi \wedge \psi \iff M, x \models \varphi \text{ и }  M, x \models \psi$
+  - $M, x \models \varphi \vee \psi \iff M, x \models \varphi \text{ или }  M, x \models \psi$
+  - $M, x \models \varphi \to\psi \iff \forall y \; (x \leq y \Rightarrow  (M, y \models \varphi \Rightarrow M, y \models \psi))$
+
