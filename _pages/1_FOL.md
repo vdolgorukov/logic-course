@@ -131,7 +131,14 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 
 **Упражнение (c ответами)**. Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:
 <details><summary>  $M, v \models B(a)$ </summary> 
-$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \in \\{\blacksquare, \blacktriangle \\}$ Последнее утверждение очевидно ложно. Действительно, белый квадрат (референт $a$) не является черной фигурой ($B$).
+ 
+  
+$M, v \not \models B(a)$, поскольку 
+  
+$$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \in \\{\blacksquare, \blacktriangle \\}$$
+  
+А последнее утверждение очевидно ложно. Действительно, белый квадрат (референт $a$) не является черной фигурой ($B$).
+
 </details>
 
 <details><summary>  $M, v \models B(b)$ </summary>  ... </details>
