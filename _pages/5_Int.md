@@ -34,10 +34,12 @@ layout: post
 - $\leq \; \subseteq W \times W$ – отношение достижимости, удовлетворяющее условиям рефлексивности и транзитивности (предпорядок)
 - $V: Var \to \mathcal{P}(W)$ – функция оценки, удовлетворяющая условию монотонности: если $x \in V(p)$ и  $x \leq y$, то $y \in V(p)$	
 
-Условия истинности Пусть $M = (W, \leq, V)$ – модель Крипке для интуиционистской логики, $x \in W$. Определим истинность формулы в мире.
-  - $M, x \models p \iff x \in V(p)$
-  - $M, x \models \bot \iff  \text{ никогда }$
-  - $M, x \models \varphi \wedge \psi \iff M, x \models \varphi \text{ и }  M, x \models \psi$
-  - $M, x \models \varphi \vee \psi \iff M, x \models \varphi \text{ или }  M, x \models \psi$
-  - $M, x \models \varphi \to\psi \iff \forall y \; (x \leq y \Rightarrow  (M, y \models \varphi \Rightarrow M, y \models \psi))$
+**Опредление**. Пусть $M = (W, \leq, V)$ – модель Крипке для интуиционистской логики, $x \in W$. Определим истинность формулы в мире: 
+- $M, x \models p \iff x \in V(p)$
+- $M, x \models \bot \iff  \text{ никогда }$
+- $M, x \models \varphi \wedge \psi \iff M, x \models \varphi \text{ и }  M, x \models \psi$
+- $M, x \models \varphi \vee \psi \iff M, x \models \varphi \text{ или }  M, x \models \psi$
+- $M, x \models \varphi \to\psi \iff \forall y \; (x \leq y \Rightarrow  (M, y \models \varphi \Rightarrow M, y \models \psi))$
 
+ 
+**Упражнение**. Опишите условия истинности для $\neg \varphi$, понимая отрицание как синтаксическое сокращение $\neg \varphi:= \varphi \to \bot$. 
