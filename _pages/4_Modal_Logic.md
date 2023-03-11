@@ -65,7 +65,7 @@ layout: post
 <details><summary> 3. $\Diamond \Box p$ </summary>  $$M, w \models \Diamond \Box p$$ </details>
 
 **Упражнение**. Методом индукции докажите, что 
-$$\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$$
+$\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$
 
 **Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
 1. $\Box \Box p \to \Box p$
