@@ -28,7 +28,7 @@ $$M, v \models \Phi [t/x] \iff M, v' \models \Phi$$
 
 Рассмотрим случаи, в которых $x \in FV(\Phi)$.
 
-Случай 1.  $\Phi = P(t_1, \dots, t_n)$.  
+Случай 1. $\Phi = P(t_1, \dots, t_n)$.
 
 : Обозначим $t'_i:=t_i[t/x]$. Тогда
 
