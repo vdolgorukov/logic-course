@@ -59,7 +59,7 @@ layout: post
 1. $(\Box p \to \Diamond (q \to r)) \to (\Box q \to (\Box p \to \Diamond r))$
 2. $(\Box p \wedge \Diamond (q \to r)) \to (\Box (p \to q ) \to  \Diamond (p \wedge r))$
 
-**Упражнение \* (с ответами)**. Какие формулы истинны в отмеченной модели $M, w$?
+**Упражнение (с ответами)**. Какие формулы истинны в отмеченной модели $M, w$?
 <details><summary> 1. $\Diamond p$ </summary> $$M, w \models \Diamond p$$ </details>
 <details><summary> 2. $\Box p$ </summary>  $$M, w \not \models \Box p$$  </details>
 <details><summary> 3. $\Diamond \Box p$ </summary>  $$M, w \models \Diamond \Box p$$ </details>
