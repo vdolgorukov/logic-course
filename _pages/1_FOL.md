@@ -139,6 +139,8 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 
 ![Model](/assets/gitbook/images/square.png)
 
+<img src="https://github.com/vdolgorukov/logic-course/blob/main/_pages/images/square.png" style="width: 180px">
+
 1. Пусть двухместный предикат $H(1,2)$ означает что объект 1 расположен выше объекта 2, двухместный предикат $L(1,2)$ означает что объект 1 расположен левее объекта 2 а функциональная константа $f$ означает функцию, которая возвращает ближайший объект по часовой стрелке.
 
 * Чему равно $H_M$?
