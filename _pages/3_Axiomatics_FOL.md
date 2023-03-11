@@ -31,15 +31,16 @@ $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 
 **Вопрос**. <details><summary> Что будет, если убрать ограничение $x \not \in FV(\Phi)$?  </summary>   
+
 Тогда мы могли бы доказать *некорректное* утверждение:  <br/>
 1. $Sx \to Sx$  – КЛВ <br/> 
-2. $Sx \to \forall x Sx$ – по *неправильной* версии правила Бернайса
+2. $Sx \to \forall x Sx$ – по *неправильной* версии правила Бернайса   
 </details>
 
 
 **Примеры**
 
-– $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
+1. $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
 
 <details><summary> Доказательство </summary>   
    
@@ -49,7 +50,7 @@ $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$) <br/>
 </details>
    
-– $\vdash \exists x \forall y Rxy \to  \forall y \exists x Rxy$
+2. $\vdash \exists x \forall y Rxy \to  \forall y \exists x Rxy$
 
 <details><summary> Доказательство </summary>   
    
