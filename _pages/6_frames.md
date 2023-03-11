@@ -67,6 +67,13 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 ($\Leftarrow$) 
 
+<details><summary>  Смотреть доказательство  </summary> 
+
+![Model](/logic-course/docs/assets/images/frames.png)
+	
+</details>
+
+
 $\forall x \in W \; (xRx)$ 
 
 \fh \fw{M} \; $M = (W, R, V) & $\rhd \; M \models \Box p \to p$ 
