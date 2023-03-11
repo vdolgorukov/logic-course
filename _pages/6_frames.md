@@ -11,41 +11,29 @@
 – $(W, R, V), x \models \varphi$
 	
 Истинность в модели можно записать так:
-\begin{itemize}
-	\item $M \models \varphi$
-	\item $\forall x \in W$: $M, x \models \varphi$
-	\item $\forall x \in W$: $(F, V), x \models \varphi$
-	\item $\forall x \in W$: $(W, R, V), x \models \varphi$
-\end{itemize}	
+- $M \models \varphi$
+- $\forall x \in W$: $M, x \models \varphi$
+- $\forall x \in W$: $(F, V), x \models \varphi$
+- $\forall x \in W$: $(W, R, V), x \models \varphi$
 
 Общезначимость в шкале можно записать так:
-\begin{itemize}
-\item $F \models \varphi$
-\item $\forall M$ над $F$: $M \models \varphi$
-\item $\forall M$ над $F$ $\forall x \in W$: $M, x \models \varphi$
-\item $\forall V$: $(W, R, V) \models \varphi$
-\item $\forall V$ $\forall x \in W$: $(W, R, V), x \models \varphi$ 	
-\end{itemize}
+- $F \models \varphi$
+- $\forall M$ над $F$: $M \models \varphi$
+- $\forall M$ над $F$ $\forall x \in W$: $M, x \models \varphi$
+- $\forall V$: $(W, R, V) \models \varphi$
+- $\forall V$ $\forall x \in W$: $(W, R, V), x \models \varphi$ 	
 
-\begin{dfn}{} Будем говорить, что формула является общезначимой, если она общезначима в любой модели, то есть, $\forall M: M \models \varphi$. 
-\end{dfn}
+**Определение**. Будем говорить, что формула является *общезначимой*, если она общезначима в любой модели, то есть, $\forall M: M \models \varphi$. 
 
-\begin{exr}{} Докажите, что определение общезначимости можно эквивалентным образом переписать так: формула $\varphi$ общезначима, если для произвольной шкалы $F$ верно, что $F \models \varphi$ 	
-\end{exr}
+**Упражнение**. Докажите, что определение общезначимости можно эквивалентным образом переписать так: формула $\varphi$ общезначима, если для произвольной шкалы $F$ верно, что $F \models \varphi$ 	
 
-
-
-\begin{exr}{} Приведите пример отмеченной модели $M = (F, V)$ и формулы $\varphi$ такой, что
-\begin{enumerate}
-	\item $M, x \models \varphi$, но  $M \not \models \varphi$
-	\item $M \models \varphi$, но $F \not \models \varphi$
-	\item $F \models \varphi$, но $\not \models \varphi$
-\end{enumerate}
-\end{exr}
+**Упражнение**. Приведите пример отмеченной модели $M = (F, V)$ и формулы $\varphi$ такой, что
+- $M, x \models \varphi$, но  $M \not \models \varphi$
+- $M \models \varphi$, но $F \not \models \varphi$
+- $F \models \varphi$, но $\not \models \varphi$
 
 
-\begin{exr}[*]{} Приведите пример модели $M$, в которой ровно 4 мира, такой, что $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$
-\end{exr}
+**Упражнение**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$.
 
 
 
@@ -113,18 +101,12 @@
 \end{exr}
 
 
+**Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
+$$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$		
 
+ *Доказательство*. ($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \{x\}$.
 
-\begin{cor}{} Пусть, $(W,R)$ – шкала Крипке, тогда
-\begin{center}
-$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$		
-\end{center}
-\end{cor}
-
-\begin{prf}{}
-($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \{x\}$.
-
-($\Leftarrow$) \\
+($\Leftarrow$) 
 \begin{fitch}
 \forall x \in W \; (xRx) \\
 \fh \fw{M} \; M = (W, R, V) & $\rhd \; M \models \Box p \to p$ \\
@@ -223,4 +205,3 @@ $(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$.
 
 %\chapter{Обобщенная формула: $i,j,m,n$-формула (Скотт-Леммон)}
 
-\end{document}
