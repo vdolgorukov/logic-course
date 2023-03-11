@@ -30,13 +30,15 @@ $\underline{\Psi \to \Phi}$ <br/>
 $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 
-**Вопрос**. <details> <summary> Что будет, если убрать ограничение $x \not \in FV(\Phi)$?  </summary>   
+**Вопрос**. 
+
+<details> <summary> Что будет, если убрать ограничение $x \not \in FV(\Phi)$?  </summary>   
 
 Тогда мы могли бы доказать некорректное утверждение:
-   
+
 1. $Sx \to Sx$  – КЛВ 
 2. $Sx \to \forall x Sx$ – по *неправильной* версии правила Бернайса   
-
+   
 </details>
 
 
