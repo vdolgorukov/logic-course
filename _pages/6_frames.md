@@ -11,7 +11,10 @@ layout: post
 > this or a similar version after installation.
 {: .block-tip }
 
-
+definition term
+: This definition will just be text because it would normally be a
+  paragraph and the there is no preceding blank line.
+  
 **Определение**. Пусть $M = (W, R, V)$ – модель Крипке, *шкалой Крипке* будем называть  пару $(W, R)$.
 То есть, шкала это модель Крипке без оценки. Если $F = (W, R)$ – шкала, то модель можно записать вот так $M = (F, V)$.
 
