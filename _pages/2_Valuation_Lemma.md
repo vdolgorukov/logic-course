@@ -28,9 +28,7 @@ $$M, v \models \Phi [t/x] \iff M, v' \models \Phi$$
 
 Рассмотрим случаи, в которых $x \in FV(\Phi)$.
 
-Случай 1. $\Phi = P(t_1, \dots, t_n)$.
-
-: Обозначим $t'_i:=t_i[t/x]$. Тогда
+Случай 1. $\Phi = P(t_1, \dots, t_n)$. Обозначим $t'_i:=t_i[t/x]$. Тогда
 
 $M, v \models P(t_1, \dots, t_n)[t/x] \Leftrightarrow$
 $M, v \models P(t'_1, \dots, t'_n) \Leftrightarrow$ 
@@ -40,13 +38,9 @@ $M, v' \models P(t_1, \dots, t_n)$
 
 $(1)$ верно в силу определения подстановки и $t'_i$, $(2)$ по определению условий истинности, $(3)$ по утв., $(4)$ по определению условий истинности.
 
-Случай 2. 
+Случай 2. Случаи для связок доказываются по предположению индукции.
 
-: Случаи для связок доказываются по предположению индукции.
-
-Случай 3. $\Phi = \forall y \Psi$. 
-
-: $M, v \models \forall y \Psi [t/x] \Leftrightarrow$ (по определению условий истинности)
+Случай 3. $\Phi = \forall y \Psi$. $M, v \models \forall y \Psi [t/x] \Leftrightarrow$ (по определению условий истинности)
 
 для любого $d \in D: M, v^y_d \models \Psi [t/x]  \Leftrightarrow$ (по предположению индукции)
 
