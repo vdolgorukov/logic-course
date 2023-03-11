@@ -38,11 +38,14 @@ layout: post
 - $M \models \varphi$, но $F \not \models \varphi$
 - $F \models \varphi$, но $\not \models \varphi$
 
-**Упражнение**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$.
+**Упражнение**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что 
+
+$$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
+
+
+**Упражнение (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
 ![Model](/logic-course/docs/assets/images/frames.png)
-
-**Упражнение (с ответами)**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
 
 <details><summary>  1. $\Box \bot$  </summary>
 $$F_1$$
