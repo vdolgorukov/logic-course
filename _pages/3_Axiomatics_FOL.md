@@ -41,10 +41,13 @@ $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
 
+<details><summary> Доказательство </summary>   
+   
 1. $\forall x (Sx \wedge Px ) \to (Sx \wedge Px)$ – акс. $\forall$ 
 2. $(Sx \wedge Px) \to Sx$ – КЛВ 
 3. $\forall x (Sx \wedge Px ) \to Sx$ из 1, 3 по транзитивности 
-4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$)  
+4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$) 
+</details>
    
 $\vdash \exists x \forall y Rxy \to  \forall y \exists x Rxy$
 
