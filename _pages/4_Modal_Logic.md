@@ -64,6 +64,27 @@ layout: post
 <details><summary> $\Box p$ </summary>  $$M, w \not \models \Box p$$  </details>
 <details><summary> $\Diamond \Box p$ </summary>  $$M, w \models \Diamond \Box p$$ </details>
 
+**Упражнение**. Методом индукции докажите, что 
+$$\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$$
+
+**Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
+– $\Box \Box p \to \Box p$
+– $\Box p \to \Diamond p$
+– $\neg \Box \bot$
+– $\Diamond (p \to \Box p)$
+
+**Упражнение**. Докажите в исчислении $S4$ следующие теоремы:
+– $\Box \Box p \equiv \Box p$
+– $\Diamond \Diamond p \equiv \Diamond p$
+– $\Box^n p \equiv \Box p$\footnote{Здесь степень означает, что оператор повторяется $n$ раз. Например, $\Box^3:= \Box \Box \Box$.}
+– $\Diamond^n p \equiv \Diamond p$
+– $\Box p \to \Box \Diamond \Box p $
+– $\Diamond \Box \Diamond p \to \Diamond p$
+- $\Box \Diamond \Box p \to \Box \Diamond p$
+- $\Box \Diamond \Box p \to \Diamond \Box p$
+– $\Diamond \Box p \to \Diamond \Box \Diamond p$
+
+
 # Литература и дополнительные материалы:
 - [https://plato.stanford.edu/entries/logic-modal/](https://plato.stanford.edu/entries/logic-modal/)
 - ["3 Months of Modal Logics"/ канал "Carneades.org"](https://www.youtube.com/playlist?list=PLz0n_SjOttTfP_liEHPNCzvESZsh5eirP)
