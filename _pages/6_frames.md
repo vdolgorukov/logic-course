@@ -44,19 +44,40 @@ layout: post
 
 **Упражнение (с ответами)**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
 
-<details><summary>  $\Box \bot$  </summary> $$F_1$$ Формула говорит, что мир тупиковый. </details>
+<details><summary>  $\Box \bot$  </summary>
+$$F_1$$
+Формула говорит, что мир тупиковый. 
+</details>
 
-<details><summary>  $\Box \bot \vee \Diamond \Box \bot$  </summary> $$F_1, F_3, F_5 $$ Формула говорит, что мир тупиковый или в шаге от тупикового. </details>
+<details><summary>  $\Box \bot \vee \Diamond \Box \bot$  </summary>
+$$F_1, F_3, F_5 $$ 
+Формула говорит, что мир тупиковый или в шаге от тупикового. 
+</details>
 
+<details><summary> $\Box p \to p$  </summary>
+</details>
 
-2. $\Box \bot \vee \Diamond \Box \bot$
-3. $\Box p \to p$
-4. $\Diamond \Box p \to p$
-5. $\Box p \to \Diamond p $
-6. $\Diamond p \to \Box p$
-7. $\Diamond p \equiv \Box p$	
-8. $p \equiv \Box \Box p$
-9. $\Diamond (\Box p \to p)$
+<details><summary>  $\Diamond \Box p \to p$ </summary>
+</details>
+
+<details><summary> $\Box p \to \Diamond p $ </summary>
+</details>
+
+<details><summary> $\Diamond p \to \Box p$ </summary>
+</details>
+
+<details><summary> $\Diamond p \equiv \Box p$ </summary>
+</details>
+
+<details><summary> $p \leftrightarrow \Box \Box p$ </summary>
+</details>
+
+<details><summary>  </summary>
+</details>
+
+<details><summary>  p \equiv \Box \Box p$ </summary>
+</details>
+
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$		
@@ -65,7 +86,9 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 ($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \\{x\\}$.
 
-($\Leftarrow$) 
+($\Leftarrow$)
+
+[//]: <> (Фитч-стайл доказательство)
 
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
