@@ -44,32 +44,32 @@ layout: post
 
 **Упражнение (с ответами)**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
 
-<details><summary>  $\Box \bot$  </summary>
+<details><summary>  1. $\Box \bot$  </summary>
 $$F_1$$
 Формула говорит, что мир тупиковый. 
 </details>
 
-<details><summary>  $\Box \bot \vee \Diamond \Box \bot$  </summary>
+<details><summary>  2. $\Box \bot \vee \Diamond \Box \bot$  </summary>
 $$F_1, F_3, F_5 $$ 
 Формула говорит, что мир тупиковый или в шаге от тупикового. 
 </details>
 
-<details><summary> $\Box p \to p$  </summary>
+<details><summary> 3. $\Box p \to p$  </summary>
 </details>
 
-<details><summary>  $\Diamond \Box p \to p$ </summary>
+<details><summary> 4. $\Diamond \Box p \to p$ </summary>
 </details>
 
-<details><summary> $\Box p \to \Diamond p$ </summary>
+<details><summary> 5. $\Box p \to \Diamond p$ </summary>
 </details>
 
-<details><summary> $\Diamond p \to \Box p$ </summary>
+<details><summary> 6. $\Diamond p \to \Box p$ </summary>
 </details>
 
-<details><summary> $\Diamond p \leftrightarrow \Box p$ </summary>
+<details><summary> 7. $\Diamond p \leftrightarrow \Box p$ </summary>
 </details>
 
-<details><summary> $p \leftrightarrow \Box \Box p$ </summary>
+<details><summary> 8. $p \leftrightarrow \Box \Box p$ </summary>
 </details>
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
