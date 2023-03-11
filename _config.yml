@@ -44,3 +44,9 @@ plugins:
 page_width: 600px
 
 image: true
+
+share-links-active:
+  twitter: false
+  facebook: false
+  linkedin: false
+  vk: false
