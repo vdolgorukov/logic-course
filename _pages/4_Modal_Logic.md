@@ -68,22 +68,21 @@ layout: post
 $$\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$$
 
 **Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
-– $\Box \Box p \to \Box p$
-– $\Box p \to \Diamond p$
-– $\neg \Box \bot$
-– $\Diamond (p \to \Box p)$
+1. $\Box \Box p \to \Box p$
+2. $\Box p \to \Diamond p$
+3. $\neg \Box \bot$
+4. $\Diamond (p \to \Box p)$
 
 **Упражнение**. Докажите в исчислении $S4$ следующие теоремы:
-– $\Box \Box p \equiv \Box p$
-– $\Diamond \Diamond p \equiv \Diamond p$
-– $\Box^n p \equiv \Box p$\footnote{Здесь степень означает, что оператор повторяется $n$ раз. Например, $\Box^3:= \Box \Box \Box$.}
-– $\Diamond^n p \equiv \Diamond p$
-– $\Box p \to \Box \Diamond \Box p $
-– $\Diamond \Box \Diamond p \to \Diamond p$
-- $\Box \Diamond \Box p \to \Box \Diamond p$
-- $\Box \Diamond \Box p \to \Diamond \Box p$
-– $\Diamond \Box p \to \Diamond \Box \Diamond p$
-
+1. $\Box \Box p \equiv \Box p$
+2. $\Diamond \Diamond p \equiv \Diamond p$
+3. $\Box^n p \equiv \Box p$\footnote{Здесь степень означает, что оператор повторяется $n$ раз. Например, $\Box^3:= \Box \Box \Box$.}
+4. $\Diamond^n p \equiv \Diamond p$
+5. $\Box p \to \Box \Diamond \Box p $
+6. $\Diamond \Box \Diamond p \to \Diamond p$
+7. $\Box \Diamond \Box p \to \Box \Diamond p$
+8. $\Box \Diamond \Box p \to \Diamond \Box p$
+9. $\Diamond \Box p \to \Diamond \Box \Diamond p$
 
 # Литература и дополнительные материалы:
 - [https://plato.stanford.edu/entries/logic-modal/](https://plato.stanford.edu/entries/logic-modal/)
