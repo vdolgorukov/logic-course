@@ -60,7 +60,7 @@ $$F_1, F_3, F_5 $$
 <details><summary>  $\Diamond \Box p \to p$ </summary>
 </details>
 
-<details><summary> $\Box p \to \Diamond p $ </summary>
+<details><summary> $\Box p \to \Diamond p$ </summary>
 </details>
 
 <details><summary> $\Diamond p \to \Box p$ </summary>
@@ -70,12 +70,6 @@ $$F_1, F_3, F_5 $$
 </details>
 
 <details><summary> $p \leftrightarrow \Box \Box p$ </summary>
-</details>
-
-<details><summary>  </summary>
-</details>
-
-<details><summary>  p \equiv \Box \Box p$ </summary>
 </details>
 
 
