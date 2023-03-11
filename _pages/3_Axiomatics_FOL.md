@@ -39,7 +39,7 @@ $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 **Примеры**
 
-$\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
+– $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
 
 <details><summary> Доказательство </summary>   
    
@@ -49,7 +49,7 @@ $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$
 4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$) <br/>
 </details>
    
-$\vdash \exists x \forall y Rxy \to  \forall y \exists x Rxy$
+– $\vdash \exists x \forall y Rxy \to  \forall y \exists x Rxy$
 
 <details><summary> Доказательство </summary>   
    
