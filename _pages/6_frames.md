@@ -144,17 +144,13 @@ $$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall 
 $$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz)) $$
+$$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz))$$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) 
-\Leftrightarrow \forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2)
-\to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$$
+$$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) \Leftrightarrow \forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2) \to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models (p \wedge \Diamond \Box p) \to \Box p 
-\Leftrightarrow 
-\forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)$$
+$$(W, R) \models (p \wedge \Diamond \Box p) \to \Box p \Leftrightarrow  \forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)$$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p) \Leftrightarrow  \forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$$
