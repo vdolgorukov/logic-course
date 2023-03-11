@@ -38,26 +38,20 @@ layout: post
 - $M \models \varphi$, но $F \not \models \varphi$
 - $F \models \varphi$, но $\not \models \varphi$
 
-
 **Упражнение**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$.
 
+**Упражнение**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
+- $\Box \bot$
+- $\Box \bot \vee \Diamond \Box \bot$
+- $\Box p \to p$
+- $\Diamond \Box p \to p$
+- $\Box p \to \Diamond p $
+- $\Diamond p \to \Box p$
+- $\Diamond p \equiv \Box p$	
+- $p \equiv \Box \Box p$
+- $\Diamond (\Box p \to p)$
 
-\begin{exr}{} Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
-
-\begin{multicols}{3}
-\begin{enumerate}
-\item $\Box \bot$
-\item $\Box \bot \vee \Diamond \Box \bot$
-\item $\Box p \to p$
-\item $\Diamond \Box p \to p$
-\item $\Box p \to \Diamond p $
-\item $\Diamond p \to \Box p$
-\item $\Diamond p \equiv \Box p$	
-\item $p \equiv \Box \Box p$
-\item $\Diamond (\Box p \to p)$
-\end{enumerate}
-\end{multicols}
 
 \begin{center}
 \begin{tikzpicture}[modal]
@@ -102,30 +96,37 @@ layout: post
 		\path[reflexive]    (19) edge  (19);
 		\path[reflexive]    (29) edge  (29);
 \end{tikzpicture}
-\end{center}
-
-\end{exr}
 
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$		
 
- *Доказательство*. ($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \{x\}$.
+*Доказательство*. 
+
+($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \{x\}$.
 
 ($\Leftarrow$) 
-\begin{fitch}
-\forall x \in W \; (xRx) \\
-\fh \fw{M} \; M = (W, R, V) & $\rhd \; M \models \Box p \to p$ \\
-\fa \fh \fw{x} \; x \in W & $\rhd \; M, x \models \Box p \to p$ \\
-\fa \fa \fh M, x \models \Box p & $\rhd \; M, x \models p$ \\
-\fa \fa \fa  M, x \models p & из 1 и 4 \\ 
-\fa \fa M, x \models \Box p \to p \\
-\fa \forall x \in W: M, x \models \Box p \to p \\
-\fa M \models \Box p \to p \\
-\forall M  = (W, R, V) : M \models \Box p \to p \\
-(W, R) \models \Box p \to p
-\end{fitch} \\
-\end{prf}
+
+$\forall x \in W \; (xRx)$ 
+
+\fh \fw{M} \; $M = (W, R, V) & $\rhd \; M \models \Box p \to p$ 
+
+\fa \fh \fw{x} \; x \in W & $\rhd \; M, x \models \Box p \to p$ 
+
+\fa \fa \fh M, x \models \Box p & $\rhd \; M, x \models p$ 
+
+\fa \fa \fa  M, x \models p & из 1 и 4 
+
+$\fa \fa M, x \models \Box p \to p $
+
+$\fa \forall x \in W: M, x \models \Box p \to p $
+
+$\fa M \models \Box p \to p $
+
+$\forall M  = (W, R, V) : M \models \Box p \to p $
+
+$(W, R) \models \Box p \to p$
+
 
 
 симметричность
