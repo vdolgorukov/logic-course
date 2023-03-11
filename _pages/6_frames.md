@@ -41,17 +41,15 @@ layout: post
 **Упражнение**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$.
 
 **Упражнение**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
-
-- $\Box \bot$
-- $\Box \bot \vee \Diamond \Box \bot$
-- $\Box p \to p$
-- $\Diamond \Box p \to p$
-- $\Box p \to \Diamond p $
-- $\Diamond p \to \Box p$
-- $\Diamond p \equiv \Box p$	
-- $p \equiv \Box \Box p$
-- $\Diamond (\Box p \to p)$
-
+1. $\Box \bot$
+2. $\Box \bot \vee \Diamond \Box \bot$
+3. $\Box p \to p$
+4. $\Diamond \Box p \to p$
+5. $\Box p \to \Diamond p $
+6. $\Diamond p \to \Box p$
+7. $\Diamond p \equiv \Box p$	
+8. $p \equiv \Box \Box p$
+9. $\Diamond (\Box p \to p)$
 
 \begin{center}
 \begin{tikzpicture}[modal]
