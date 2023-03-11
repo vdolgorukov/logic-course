@@ -63,40 +63,10 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 *Доказательство*. 
 
-($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \{x\}$.
+($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \\{x\\}$.
 
 ($\Leftarrow$) 
 
-<details><summary>  Смотреть доказательство  </summary> 
-
-![Model](/logic-course/docs/assets/images/frames.png)
-	
-</details>
-
-
-$\forall x \in W \; (xRx)$ 
-
-\fh \fw{M} \; $M = (W, R, V) & $\rhd \; M \models \Box p \to p$ 
-
-\fa \fh \fw{x} \; x \in W & $\rhd \; M, x \models \Box p \to p$ 
-
-\fa \fa \fh M, x \models \Box p & $\rhd \; M, x \models p$ 
-
-\fa \fa \fa  M, x \models p & из 1 и 4 
-
-$\fa \fa M, x \models \Box p \to p $
-
-$\fa \forall x \in W: M, x \models \Box p \to p $
-
-$\fa M \models \Box p \to p $
-
-$\forall M  = (W, R, V) : M \models \Box p \to p $
-
-$(W, R) \models \Box p \to p$
-
-
-
-симметричность
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$$		
