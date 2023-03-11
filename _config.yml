@@ -1,11 +1,15 @@
 remote_theme: sighingnow/jekyll-gitbook
 
 title: Логическая семантика
+longtitle: Материалы к курсу "Логическая семантика"
+author: Виталий Долгоруков
+email:  v.dolgorukov@gmail.com    
+version:          1.0
+gitbook_version:  3.2.3
 
 rss: false
-email_address: v.dolgorukov@gmail.com
 facebook: false
-github: "https://vdolgorukov.github.io/logic-course"
+github:  false
 twitter: false
 youtube: false
 
@@ -43,9 +47,11 @@ plugins:
   - jekyll-readme-index
   - jemoji
   
-page_width: 600px
+page_width: 800px
 
-image: /:images
+destination:      ./_site
+incremental:      false
+regenerate:       true
 
 share-links-active:
   twitter: false
