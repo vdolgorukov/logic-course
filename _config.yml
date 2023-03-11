@@ -43,7 +43,7 @@ plugins:
   
 page_width: 600px
 
-image: true
+image: /:images
 
 share-links-active:
   twitter: false
