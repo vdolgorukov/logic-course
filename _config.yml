@@ -16,7 +16,7 @@ youtube: false
 toc:
   enabled: true
   h_min: 1
-  h_max: 3
+  h_max: 6
 
 
 permalink:   /:categories/:output_ext
@@ -58,3 +58,5 @@ share-links-active:
   facebook: false
   linkedin: false
   vk: false
+  
+ page_width: 800px
