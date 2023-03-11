@@ -124,11 +124,8 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 симметричность
 
-\begin{cor}{} Пусть, $(W,R)$ – шкала Крипке, тогда
-\begin{center}
-$(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$		
-\end{center}
-\end{cor}
+**Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
+$$(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$$		
 
 \begin{prf}{} Упражнение. 
 \end{prf}
@@ -137,61 +134,29 @@ $(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \
 евклидовость
 направленность
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$(W, R) \models \Box \Box p \to p
-\Leftrightarrow
-\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
-\end{center}
-\end{exr}
+**Упражнение**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models \Box \Box p \to p \Leftrightarrow \forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$$
 
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$$
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$(W, R) \models p \to \Box(\Diamond p \to p)  
-\Leftrightarrow
-\forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$
-\end{center}
-\end{exr}
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$$
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$(W, R) \models (p \wedge \Box p) \to \Box \Box p 
-\Leftrightarrow  
-\forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$
-\end{center}
-\end{exr}
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz)) $$
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$ (W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q)
-\Leftrightarrow  
-\forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz)) $
-\end{center}
-\end{exr}
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) 
+\Leftrightarrow \forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2)
+\to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$$
 
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) 
-\Leftrightarrow$  \\
-$\forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2)
-\to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz)  )
- )$
-\end{center}
-\end{exr}
-
-\begin{exr}{} Пусть $(W,R)$ – шкала Крипке, докажите, что 
-\begin{center}
-$(W, R) \models (p \wedge \Diamond \Box p) \to \Box p 
+**Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+$$(W, R) \models (p \wedge \Diamond \Box p) \to \Box p 
 \Leftrightarrow 
-\forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)  $
-\end{center}
-\end{exr}
-
+\forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)$$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p) \Leftrightarrow  \forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что $$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$$ 
-
-%\chapter{Обобщенная формула: $i,j,m,n$-формула (Скотт-Леммон)}
