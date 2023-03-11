@@ -42,8 +42,13 @@ layout: post
 
 ![Model](/logic-course/docs/assets/images/frames.png)
 
-**Упражнение**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
-1. $\Box \bot$
+**Упражнение (с ответами)**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
+
+<details><summary>  $\Box \bot$  </summary> $$F_1p$$ </details>
+
+<details><summary>  $\Box \bot \vee \Diamond \Box \bot$  </summary> $$F_1, F_3, F_5 $$ </details>
+
+
 2. $\Box \bot \vee \Diamond \Box \bot$
 3. $\Box p \to p$
 4. $\Diamond \Box p \to p$
