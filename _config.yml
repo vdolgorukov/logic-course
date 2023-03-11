@@ -43,6 +43,4 @@ plugins:
   
 page_width: 600px
 
-output: 
-  pdf_document:
-    extra_dependencies: ["bbm", "threeparttable"]
+image: true
