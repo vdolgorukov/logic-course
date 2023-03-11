@@ -4,9 +4,6 @@ category: Jekyll
 layout: post
 ---
   
-  
-![Model](/logic-course/docs/assets/images/Frames.pdf)
-
 **Определение**. Пусть $M = (W, R, V)$ – модель Крипке, *шкалой Крипке* будем называть  пару $(W, R)$.
 То есть, шкала это модель Крипке без оценки. Если $F = (W, R)$ – шкала, то модель можно записать вот так $M = (F, V)$.
 
@@ -43,7 +40,9 @@ layout: post
 
 **Упражнение**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$.
 
-**Упражнение**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
+![Model](/logic-course/docs/assets/images/frames.png)
+
+**Упражнение**. Укажите в каких шкалах (на рис. выше) общезначимы следующие формулы?
 1. $\Box \bot$
 2. $\Box \bot \vee \Diamond \Box \bot$
 3. $\Box p \to p$
@@ -53,51 +52,6 @@ layout: post
 7. $\Diamond p \equiv \Box p$	
 8. $p \equiv \Box \Box p$
 9. $\Diamond (\Box p \to p)$
-
-\begin{center}
-\begin{tikzpicture}[modal]
-		\node[point] (1) [label=below:{$F_1$}]{};
-		\node[point] (2) [right of=1] [label=below:{$F_2$}]{};
-		\path[reflexive]   (2) edge (2);
-		\node[point] (13) [right of=2][label=below:{$F_3$}]{};
-		\node[point] (23) [above of=13] []{};
-		\path[->]    (13) edge  (23);
-		\node[point] (14) [right of=13] [label=below:{$F_4$}]{};
-		\node[point] (24) [above of=14] []{};
-		\path[->]    (14) edge  (24);
-		\path[reflexive]   (24) edge (24);
-
-		\node[point] (15) [right of=14] [label=below:{$F_5$}]{};
-		\node[point] (25) [above of=15] []{};
-		\path[->]    (15) edge  (25);
-		\path[reflexive]    (15) edge  (15);
-
-		\node[point] (16) [right of=15] [label=below:{$F_6$}]{};
-		\node[point] (26) [above of=16] []{};
-		\path[->]    (16) edge  (26);
-		\path[reflexive]    (16) edge  (16);
-		\path[reflexive]    (26) edge  (26);
-
-		\node[point] (17) [right of=16] [label=below:{$F_7$}]{};
-		\node[point] (27) [above of=17] []{};
-		\path[->]    (17) edge[bend right]    (27);
-		\path[->]    (27) edge[bend right]    (17);
-	
-
-		\node[point] (18) [right of=17][label=below:{$F_8$}]{};
-		\node[point] (28) [above of=18] []{};
-		\path[->]    (18) edge[bend right]    (28);
-		\path[->]    (28) edge[bend right]    (18);
-		\path[reflexive]    (18) edge  (18);
-
-		\node[point] (19) [right of=18][label=below:{$F_9$}]{};
-		\node[point] (29) [above of=19] []{};
-		\path[->]    (19) edge[bend right]    (29);
-		\path[->]    (29) edge[bend right]    (19);
-		\path[reflexive]    (19) edge  (19);
-		\path[reflexive]    (29) edge  (29);
-\end{tikzpicture}
-
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$		
