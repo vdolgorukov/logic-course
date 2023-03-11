@@ -114,7 +114,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $R(x, f(a, y) )$
 * $\exists x P(f(x))$
 
-**Пример**. Рассмотрим модель $M = (D, I_M)$, где 
+**Пример**. Рассмотрим модель (см. рис. ниже) $M = (D, I_M)$, где 
 * $D = \\{\square, \blacksquare, \triangle,\blacktriangle \\}$
 * $B_M = \\{\blacksquare, \blacktriangle \\}$
 * $S_M = \\{\blacksquare, \square \\}$
@@ -123,21 +123,28 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $b_M = \blacktriangle$ 
 и означивание $v: x \mapsto \triangle$.
 
+![Model](/logic-course/docs/assets/images/square.png)
+
 Проверим, что следующие утверждения являются корректными:
 * $M, v \models S(a) \Leftrightarrow  \|a\|^v_M \in S_M \Leftrightarrow  \square \in  \\{\blacksquare, \square \\}$
 * $M, v \models T(x) \Leftrightarrow  \|x\|^v_M \in T_M \Leftrightarrow  v(x) \in T_M \Leftrightarrow  \triangle \in  \\{ \triangle, \blacktriangle \\}$
 
-**Упражнение (c ответами)**.  Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:
-<details><summary>  $M, v \models B(a)$ </summary>  ... </details>
+**Упражнение (c ответами)**. Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:
+<details><summary>  $M, v \models B(a)$ </summary> 
+$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \in \\{\blacksquare, \blacktriangle \\}$ Последнее утверждение очевидно ложно. Действительно, белый квадрат (референт $a$) не является черной фигурой ($B$).
+</details>
+
 <details><summary>  $M, v \models B(b)$ </summary>  ... </details>
+
 <details><summary>  $M, v \models B(x)$  </summary> ...  </details>
+
 <details><summary>  $M, v \models \exists x P(x)$  </summary>  ...  </details>
 
 
 **Упражнение**. 
 Пусть фигуры из универсума $D$ расположены как на рисунке ниже:
 
-![Model](/logic-course/docs/assets/images/square.png)
+
 
 1. Пусть двухместный предикат $H(1,2)$ означает что объект 1 расположен выше объекта 2, двухместный предикат $L(1,2)$ означает что объект 1 расположен левее объекта 2 а функциональная константа $f$ означает функцию, которая возвращает ближайший объект по часовой стрелке.
 
