@@ -30,10 +30,11 @@ $\underline{\Psi \to \Phi}$ <br/>
 $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 
-**Вопрос**. <details><summary> Что будет, если убрать ограничение $x \not \in FV(\Phi)$?  </summary>   
+**Вопрос**. <details> <summary> Что будет, если убрать ограничение $x \not \in FV(\Phi)$?  </summary>   
 
 Тогда мы могли бы доказать некорректное утверждение:
-1. $Sx \to Sx$  – КЛВ <br/> 
+   
+1. $Sx \to Sx$  – КЛВ 
 2. $Sx \to \forall x Sx$ – по *неправильной* версии правила Бернайса   
 
 </details>
@@ -43,12 +44,12 @@ $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 
 1. $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
 
-<details><summary> Доказательство </summary>   
+<details> <summary> Доказательство </summary>   
 
-1. $\forall x (Sx \wedge Px ) \to (Sx \wedge Px)$ – акс. $\forall$ <br/>
-2. $(Sx \wedge Px) \to Sx$ – КЛВ  <br/>
-3. $\forall x (Sx \wedge Px ) \to Sx$ из 1, 3 по транзитивности <br/>
-4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$) <br/>
+1. $\forall x (Sx \wedge Px ) \to (Sx \wedge Px)$ – акс. $\forall$ 
+2. $(Sx \wedge Px) \to Sx$ – КЛВ  
+3. $\forall x (Sx \wedge Px ) \to Sx$ из 1, 3 по транзитивности 
+4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$) 
    
 </details>
    
