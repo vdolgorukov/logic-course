@@ -171,5 +171,3 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $(\forall x \Psi)[t/x] = \forall x \Psi $
 * $(\exists y \Psi)[t/x] = \forall y (\Psi[t/x])$, если $x \not = y$
 * $(\exists x \Psi)[t/x] = \exists  x \Psi $
-
-
