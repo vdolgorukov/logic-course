@@ -122,6 +122,10 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $A_M = \\{$ :cat:, :mouse: $\\}$
 * $D_M$ = $\varnothing$ 
 
+означивание устроено так: $v: x \mapsto $ :cat:
+
+
+
 **Пример**. Ахиллес и Черепаха. Рассмотрим модель $M = (D, I_M)$, где $D = \\{$ :turtle:, :runner: $\\}$, $I_M$ устроена так:
 * $a_M =$ :runner:
 * $T_M = \\{$ :turtle: $\\}$
