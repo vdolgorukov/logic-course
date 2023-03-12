@@ -88,10 +88,11 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 <p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ ⇔ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
 
 
-1. $\mid \underline{\boxed{M} \text{ над } (W, R)}$         &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M \models \Box p \to p$
-2. $\mid \mid \underline{\boxed{x} \in W}$             &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M, x \models \Box p \to p$
-3. $\mid \mid \mid \underline{M, x \models \Box p}$    &nbsp;&nbsp;&nbsp;&nbsp;  $\rhd M, x \models  p$
-4. $\mid \mid \mid xRx$ 
+1. $\forall x \in W (xRx)$
+2. $\mid \underline{\boxed{M} \text{ над } (W, R)}$         &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M \models \Box p \to p$
+3. $\mid \mid \underline{\boxed{x} \in W}$             &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M, x \models \Box p \to p$
+4. $\mid \mid \mid \underline{M, x \models \Box p}$    &nbsp;&nbsp;&nbsp;&nbsp;  $\rhd M, x \models  p$
+5. $\mid \mid \mid xRx$ 
 
 
 [//]: <> (сериальность евклидовость направленность)
