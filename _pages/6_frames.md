@@ -92,6 +92,16 @@ $(W,R) \models \Box p \to \Box \Box p$ ⇔ $\forall x \forall y \forall z ((xRy 
 3. $\mid \mid \mid \underline{M, x \models \Box p}$ $\rhd M, x \models  p$
 4. $\mid \mid \mid xRx$ 
 
+
+
+
+
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1    | Cell 2   | Cell 3   |
+| Row 2    | Cell 5   | Cell 6   |
+| Row 3    | Cell 8   | Cell 9   |
+
 [//]: <> (сериальность евклидовость направленность)
 
 **Упражнение**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
