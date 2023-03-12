@@ -115,8 +115,9 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $\exists x P(f(x))$
 
 **Пример** $D = \\{$ :turtle:, :runner: $\\}$ 
-* $T_M = \\{ :turtle: \\}$
-* $R_M = \\{:runner:, :turtle:\\}$
+
+* $T_M = \\{$ :turtle: $\\}$
+* $R_M = \\{$ :runner: , :turtle: $\\}$
 
 **Пример**. Рассмотрим модель (см. рис. ниже) $M = (D, I_M)$, где 
 * $D = \\{\square, \blacksquare, \triangle,\blacktriangle \\}$
