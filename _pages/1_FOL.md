@@ -115,16 +115,16 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $\exists x P(f(x))$
 
 
-**Пример** Рассмотрим модель $M = (D, I_M)$, где $D = \\{$ :cat: , :mouse: $\\}$, $I_M$ устроена так:
-* $t_M =  :cat: 
-* $j_M =  :mouse: 
+**Пример**. Том и Джерри.  Рассмотрим модель $M = (D, I_M)$, где $D = \\{$ :cat: , :mouse: $\\}$, $I_M$ устроена так:
+* $t_M =$ :cat: 
+* $j_M =$ :mouse: 
 * $C_M = \\{$ :cat:  $\\}$
 * $M_M = \\{$ :mouse: $\\}$
 * $A_M$ = \\{$ :cat:, :mouse: $\\}$
 * $D_M$ = $\emptyset$ 
 
-**Пример** Рассмотрим модель $M = (D, I_M)$, где $D = \\{$ :turtle:, :runner: $\\}$, $I_M$ устроена так:
-* $a_M = :runner:
+**Пример**. Ахиллес и Черепаха. Рассмотрим модель $M = (D, I_M)$, где $D = \\{$ :turtle:, :runner: $\\}$, $I_M$ устроена так:
+* $a_M =$ :runner:
 * $T_M = \\{$ :turtle: $\\}$
 * $R_M = \\{ \langle$ :runner: , :turtle: $\rangle \\}$
 
