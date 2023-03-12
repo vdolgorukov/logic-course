@@ -85,7 +85,8 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 ![Model](/logic-course/docs/assets/images/proof.png)
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
-$(W,R) \models \Box p \to \Box \Box p$ ⇔ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$		
+<p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ ⇔ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
+
 
 1. $\mid \_ \boxed{M}$ над $(W, R)$         &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M \models \Box p \to p$
 2. $\mid \mid \_ \boxed{x} \in W$             &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M, x \models \Box p \to p$
