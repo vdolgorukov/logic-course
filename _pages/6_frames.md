@@ -46,7 +46,17 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 ![Model](/logic-course/docs/assets/images/frames.png)
 
 <details><summary>  1. $\Box \bot$  </summary>
-$$F_1$$
+	
+- [x]$F_1$
+- [] $F_2$
+- [] $F_3$
+- [] $F_4$
+- [] $F_5$
+- [] $F_6$
+- [] $F_7$
+- [] $F_8$
+- [] $F_9$
+
 Формула говорит, что мир тупиковый. 
 </details>
 
