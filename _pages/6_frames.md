@@ -102,8 +102,9 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 [//]: <> (сериальность евклидовость направленность)
 
 **Упражнение**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
-<p style="text-align:center"> </p>
+<p style="text-align:center"> 
 $(W, R) \models \Box \Box p \to p$ $\iff$ $\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
+</p>
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$$
