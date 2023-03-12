@@ -47,28 +47,21 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 
 <details><summary>  1. $\Box \bot$  </summary>
 	
-- [x] $F_1$
-- [ ] $F_2$
-- [ ] $F_3$
-- [ ] $F_4$
-- [ ] $F_5$
-- [ ] $F_6$
-- [ ] $F_7$
-- [ ] $F_8$
-- [ ] $F_9$
+- [x] $F_1$ </br>
+- [ ] $F_2$ </br>
+- [ ] $F_3$ </br>
+- [ ] $F_4$ </br>
+- [ ] $F_5$ </br>
+- [ ] $F_6$ </br>
+- [ ] $F_7$ </br>
+- [ ] $F_8$ </br>
+- [ ] $F_9$ </br>
 
 Формула говорит, что мир тупиковый. 
+
 </details>
 
-- [x] $F_1$
-- [ ] $F_2$
-- [ ] $F_3$
-- [ ] $F_4$
-- [ ] $F_5$
-- [ ] $F_6$
-- [ ] $F_7$
-- [ ] $F_8$
-- [ ] $F_9$
+
 
 <details><summary>  2. $\Box \bot \vee \Diamond \Box \bot$  </summary>
 $$F_1, F_3, F_5 $$ 
