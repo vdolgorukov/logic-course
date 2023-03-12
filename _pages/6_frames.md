@@ -85,7 +85,7 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 ![Model](/logic-course/docs/assets/images/proof.png)
 
 1. $\forall x \in W \; (xRx)$ 
-2. $ \mid \boxed{M}  M \text{ над } (W, R)$   $\rhd \; M \models \Box p \to p$
+2. $\mid \boxed{M}  M$ над $(W, R)$  $\rhd \; M \models \Box p \to p$
 3. $\mid \mid  x \; x \in W$      $\rhd \; M, x \models \Box p \to p$ $
 4. $| | | M, x \models \Box p$   $\rhd \; M, x \models p$
 5. $| | | xRx$    1
