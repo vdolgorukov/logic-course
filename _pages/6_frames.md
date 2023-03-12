@@ -85,7 +85,7 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 ![Model](/logic-course/docs/assets/images/proof.png)
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
-<p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ ⇔ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
+<p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ $\iff$  $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
 
 
 1. $\forall x \in W (xRx)$
@@ -102,7 +102,8 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 [//]: <> (сериальность евклидовость направленность)
 
 **Упражнение**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models \Box \Box p \to p \Leftrightarrow \forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$$
+<p style="text-align:center"> </p>
+$(W, R) \models \Box \Box p \to p$ $\iff$ $\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
 
 **Упражнение**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$$
