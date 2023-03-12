@@ -114,6 +114,8 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $R(x, f(a, y) )$
 * $\exists x P(f(x))$
 
+**Пример** $D = \\{$ :tent:, :tent: $\\}$
+
 **Пример**. Рассмотрим модель (см. рис. ниже) $M = (D, I_M)$, где 
 * $D = \\{\square, \blacksquare, \triangle,\blacktriangle \\}$
 * $B_M = \\{\blacksquare, \blacktriangle \\}$
