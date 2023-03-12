@@ -87,20 +87,11 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $(W,R) \models \Box p \to \Box \Box p$ ⇔ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$		
 
-1. $\mid \underline{\boxed{M} \text{ над } (W, R)}$ $\rhd M \models \Box p \to p$
-2. $\mid \mid \underline{\boxed{x} \in W}$ $\rhd M, x \models \Box p \to p$
-3. $\mid \mid \mid \underline{M, x \models \Box p}$ $\rhd M, x \models  p$
+1. $\mid \underline{\boxed{M} \text{ над } (W, R)}$ &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M \models \Box p \to p$
+2. $\mid \mid \underline{\boxed{x} \in W}$ &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M, x \models \Box p \to p$
+3. $\mid \mid \mid \underline{M, x \models \Box p}$ &nbsp;&nbsp;&nbsp;&nbsp;  $\rhd M, x \models  p$
 4. $\mid \mid \mid xRx$ 
 
-
-
-
-
-| Column 1 | Column 2 | Column 3 |
-|----------|----------|----------|
-| Row 1    | Cell 2   | Cell 3   |
-| Row 2    | Cell 5   | Cell 6   |
-| Row 3    | Cell 8   | Cell 9   |
 
 [//]: <> (сериальность евклидовость направленность)
 
