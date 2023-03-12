@@ -88,8 +88,8 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 $$(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$$		
 
 1. $\mid \boxed{M}$ над $(W, R)}$
-2. $\mid \; \mid \boxed{x}$
-3. $\mid \; \mid \; \mid \; M, x \models \varphi$
+2. $\mid \mid \boxed{x}$
+3. $\mid \mid \mid M, x \models \varphi$
 
 [//]: <> (сериальность евклидовость направленность)
 
