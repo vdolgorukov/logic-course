@@ -78,12 +78,11 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 *Доказательство*. 
 
-($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется такой мир , что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x  \models \Box p$  и $(W,R,V), x  \not \models  p$. Докажем, что подойдет такая оценка $V(p)= W - \\{x\\}$.
+($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется мир $x \in W$ такой, что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x \models \Box p$  и $(W,R,V), x \not \models  p$. Заметим, что подойдет следующая оценка $V(p)= W - \\{x\\}$.
 
 ($\Leftarrow$)
 
-[//]: <> (Фитч-стайл доказательство)
-
+![Model](/logic-course/docs/assets/images/proof.png)
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$$		
