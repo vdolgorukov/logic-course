@@ -97,7 +97,6 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 11.$(W, R) \models \Box p \to p$  10
 
 
-
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 $$(W,R) \models \Box p \to \Box \Box p \iff \forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$$		
 
