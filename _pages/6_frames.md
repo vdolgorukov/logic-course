@@ -93,7 +93,11 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 3. $\mid \mid \underline{\boxed{x} \in W}$             &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M, x \models \Box p \to p$
 4. $\mid \mid \mid \underline{M, x \models \Box p}$    &nbsp;&nbsp;&nbsp;&nbsp;  $\rhd M, x \models  p$
 5. $\mid \mid \mid xRx$ 
-
+6. $\mid \mid \mid M, x \models p$
+7. $\mid \mid M, x \models \Box p \to p$
+8. $\mid M \models \Box p \to p$
+9. для любой $M$ над $(W, R)$: M \models \Box p \to p
+10.$(W, R) \models \Box p \to p
 
 [//]: <> (сериальность евклидовость направленность)
 
