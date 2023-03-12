@@ -84,16 +84,16 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 ![Model](/logic-course/docs/assets/images/proof.png)
 
-1. $\forall x \in W \; (xRx)$ 
-2. $\mid \boxed{M}  M$ над $(W, R)$  $\rhd \; M \models \Box p \to p$
-3. $\mid \mid  x \; x \in W$      $\rhd \; M, x \models \Box p \to p$ $
-4. $| | | M, x \models \Box p$   $\rhd \; M, x \models p$
-5. $| | | xRx$    1
-6. $| | |  M, x \models p$   4, 5 
-7. $| |  M, x \models \Box p \to p$  4--6
-8. $|  \forall x \in W: M, x \models \Box p \to p$  3--7
-9. $| M \models \Box p \to p$ 
-10. $| \forall M  \text{ над } (W, R): M \models \Box p \to p$  2--9 
+1. $\forall x \in W (xRx)$ 
+2. $\mid \boxed{M}  M$ над $(W, R)$  $\rhd  M \models \Box p \to p$
+3. $\mid \mid  \boxed{x} x \in W$    $\rhd  M, x \models \Box p \to p$
+4. $\mid \mid \mid M, x \models \Box p$   $\rhd M, x \models p$
+5. $\mid \mid \mid xRx$    1
+6. $\mid \mid \mid  M, x \models p$   4, 5 
+7. $\mid \mid   M, x \models \Box p \to p$  4--6
+8. $\mid  \forall x \in W: M, x \models \Box p \to p$  3--7
+9. $\mid M \models \Box p \to p$ 
+10. $\mid \forall M  \text{ над } (W, R): M \models \Box p \to p$  2--9 
 11. $(W, R) \models \Box p \to p$  10
 
 
