@@ -85,18 +85,8 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 ![Model](/logic-course/docs/assets/images/proof.png)
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
-<p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ $\iff$  $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
+<p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ $\iff$ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
 
-[//]: <>( 1. $\forall x \in W (xRx)$
-2. $\mid \underline{\boxed{M} \text{ над } (W, R)}$    &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M \models \Box p \to p$
-3. $\mid \mid \underline{\boxed{x} \in W}$             &nbsp;&nbsp;&nbsp;&nbsp; $\rhd M, x \models \Box p \to p$
-4. $\mid \mid \mid \underline{M, x \models \Box p}$    &nbsp;&nbsp;&nbsp;&nbsp;  $\rhd M, x \models  p$
-5. $\mid \mid \mid xRx$                                &nbsp;&nbsp;&nbsp;&nbsp; из 1
-6. $\mid \mid \mid M, x \models p$                     &nbsp;&nbsp;&nbsp;&nbsp; из 4, 5
-7. $\mid \mid M, x \models \Box p \to p$               &nbsp;&nbsp;&nbsp;&nbsp; 4-6
-8. $\mid M \models \Box p \to p$                       &nbsp;&nbsp;&nbsp;&nbsp; 3-7
-9. $\forall M$ над $(W, R): M \models \Box p \to p$    &nbsp;&nbsp;&nbsp;&nbsp; 2-8
-10. $(W, R) \models \Box p \to p$                      &nbsp;&nbsp;&nbsp;&nbsp; из 9 по определению общезначимости в шкале)
 
 [//]: <> (сериальность евклидовость направленность)
 
