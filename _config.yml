@@ -58,3 +58,6 @@ share-links-active:
   facebook: false
   linkedin: false
   vk: false
+
+plugins:
+  - jekyll-latex
