@@ -7,6 +7,10 @@ layout: post
 # Исчисление int
 **Исчисление $int$** 
 
+<p><a name="lemma"1></a></p>
+$$\forall x Sx \tag{1}$$ 
+
+
 Аксиомные схемы:
 * ($I_1$) $A \to (B \to A)$
 * ($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$	
@@ -26,10 +30,7 @@ layout: post
 Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens.
 </details>
 
-
-$$\forall x Sx \tag{1}$$ 
-
-Формула $\ref{1}$
+По <p><a href="#top">лемме 1</a></p>
 
 # Cемантика Крипке для интуиционистской логики
 
