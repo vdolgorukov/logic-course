@@ -4,11 +4,9 @@ category: Jekyll
 layout: post
 ---
 
-# Исчисление int
+<a name="int"></a>
+# Исчисление int 
 **Исчисление $int$** 
-
-<p><a name="lemma"1></a></p>
-$$\forall x Sx \tag{1}$$ 
 
 
 Аксиомные схемы:
@@ -30,7 +28,7 @@ $$\forall x Sx \tag{1}$$
 Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens.
 </details>
 
-По <p><a href="#top">лемме 1</a></p>
+В исчислении [int](#int)
 
 # Cемантика Крипке для интуиционистской логики
 
