@@ -27,7 +27,7 @@ layout: post
 </details>
 
 
-$$ \forall x Sx $$ \tag{1}
+$$\forall x Sx \tag{1}$$ 
 
 \ref{1}
 
