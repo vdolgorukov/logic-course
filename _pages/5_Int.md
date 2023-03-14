@@ -4,8 +4,7 @@ category: Jekyll
 layout: post
 ---
 
-<a name="int"></a>
-# Исчисление int 
+# Исчисление int {#int}
 **Исчисление $int$** 
 
 
