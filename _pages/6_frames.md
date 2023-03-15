@@ -3,6 +3,13 @@ title: Шкалы Крипке
 category: Jekyll
 layout: post
 ---
+
+<details><summary> Доказательство </summary>
+	
+![Model](/logic-course/docs/assets/images/frames.png)
+
+</details>
+
     
 **Определение**. Пусть $M = (W, R, V)$ – модель Крипке, *шкалой Крипке* будем называть  пару $(W, R)$.
 То есть, шкала это модель Крипке без оценки. Если $F = (W, R)$ – шкала, то модель можно записать вот так $M = (F, V)$.
@@ -44,6 +51,9 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 **Упражнение (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
 ![Model](/logic-course/docs/assets/images/frames.png)
+
+
+
 
 <details><summary>  1. $\Box \bot$  </summary>
 	
