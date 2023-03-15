@@ -60,11 +60,11 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 - $c$ – "Сережа"
 - $P$ – "быть умным" 
 - $Q$ – "быть красивым".
-<details><summary> :radio_button: Боря – красивый, но не умный </summary> $$Qb \wedge \neg Pb$$ </details>
-<details><summary> :radio_button: Боря – умный, Сережа – красивый, а Аня и умная, и красивая  </summary> $$Pb \wedge Qc \wedge Pa \wedge Qa$$ </details>
-<details><summary> :radio_button: Если Боря красивый, то Аня - умная. </summary> $$Qb \to Pa$$ </details>
-<details><summary> :radio_button: Eсли Сережа красивый, то все красивые. </summary> $$Qc \to \forall x Qx$$ </details>
-<details><summary> :radio_button: Никто не красив и умен одновременно. </summary> $$\neg \exists x (Qx \wedge Px)$$ </details>
+<details><summary> 1. Боря – красивый, но не умный </summary> $$Qb \wedge \neg Pb$$ </details>
+<details><summary> 2. Боря – умный, Сережа – красивый, а Аня и умная, и красивая  </summary> $$Pb \wedge Qc \wedge Pa \wedge Qa$$ </details>
+<details><summary> 3. Если Боря красивый, то Аня - умная. </summary> $$Qb \to Pa$$ </details>
+<details><summary> 4. Eсли Сережа красивый, то все красивые. </summary> $$Qc \to \forall x Qx$$ </details>
+<details><summary> 5. Никто не красив и умен одновременно. </summary> $$\neg \exists x (Qx \wedge Px)$$ </details>
 
 # Семантика
 
