@@ -33,17 +33,17 @@ layout: post
 
 **Определение 4**. Будем говорить, что формула является *общезначимой*, если она общезначима в любой модели, то есть, $\forall M: M \models \varphi$. 
 
-**Упражнение 1**. Докажите, что определение общезначимости можно эквивалентным образом переписать так: формула $\varphi$ общезначима, если для произвольной шкалы $F$ верно, что $F \models \varphi$ 	
+:blue_book: **Упражнение 1**. Докажите, что определение общезначимости можно эквивалентным образом переписать так: формула $\varphi$ общезначима, если для произвольной шкалы $F$ верно, что $F \models \varphi$ 	
 
-**Упражнение 2**. Приведите пример отмеченной модели $M = (F, V)$ и формулы $\varphi$ такой, что
+:blue_book: **Упражнение 2**. Приведите пример отмеченной модели $M = (F, V)$ и формулы $\varphi$ такой, что
 - $M, x \models \varphi$, но  $M \not \models \varphi$
 - $M \models \varphi$, но $F \not \models \varphi$
 - $F \models \varphi$, но $\not \models \varphi$
 
-**Упражнение 3**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что 
+:blue_book: **Упражнение 3**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что 
 $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 
-**Упражнение 4 (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
+:blue_book: **Упражнение 4 (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
 ![Model](/logic-course/docs/assets/images/Frames1-1.png)
 
@@ -112,30 +112,30 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 [//]: <> (сериальность евклидовость направленность)
 
-**Упражнение 5**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 5**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
 <p style="text-align:center"> 
 $(W, R) \models \Box \Box p \to p$ $\iff$ $\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
 </p>
 
-**Упражнение 6**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 6**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$$
 
-**Упражнение 7**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 7**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$$
 
-**Упражнение 8**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 8**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz))$$
 
-**Упражнение 9**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 9**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) \Leftrightarrow \forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2) \to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$$
 
-**Упражнение 10**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 10**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $(W, R) \models (p \wedge \Diamond \Box p) \to \Box p \Leftrightarrow$  $\forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)$
 
-**Упражнение 11**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+:blue_book: **Упражнение 11**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p)$ ⇔ $\forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$$
 
-**Упражнение 12**. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что 
+:blue_book: **Упражнение 12**. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что 
 $$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$$ 
 
 
