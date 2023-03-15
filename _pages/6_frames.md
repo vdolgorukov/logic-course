@@ -45,22 +45,21 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 
 **Упражнение (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
-![Model](/logic-course/docs/assets/images/frames.png)
-
+![Model](/logic-course/docs/assets/images/Frames1-1.png)
 
 
 
 <details><summary>  1. $\Box \bot$  </summary>
 	
-- [x] $F_1$ </br>
-- [ ] $F_2$ </br>
-- [ ] $F_3$ </br>
-- [ ] $F_4$ </br>
-- [ ] $F_5$ </br>
-- [ ] $F_6$ </br>
-- [ ] $F_7$ </br>
-- [ ] $F_8$ </br>
-- [ ] $F_9$ </br>
+* [x] $F_1$ 
+* [ ] $F_2$ 
+* [ ] $F_3$ 
+* [ ] $F_4$ 
+* [ ] $F_5$ 
+* [ ] $F_6$ 
+* [ ] $F_7$ 
+* [ ] $F_8$ 
+* [ ] $F_9$  
 
 Формула говорит, что мир тупиковый. 
 
