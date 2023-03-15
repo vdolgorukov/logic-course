@@ -5,8 +5,8 @@ layout: post
 ---
 
 <details><summary> Доказательство </summary>
-	
-![Model](/logic-course/docs/assets/images/frames.png)
+
+<img src="/logic-course/docs/assets/images/frames.png" alt="Proof">
 
 </details>
 
