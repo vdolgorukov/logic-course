@@ -24,7 +24,7 @@ layout: post
 Правило вывода: modus ponens	
 
 :grey_question: **Вопрос**. *Является ли исчисление $int$ дружественным к дедукции?*
-<details> <summary> Ответ </summary>
+<details> <summary> :pushpin: Ответ </summary>
 Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens.
 </details>
 
