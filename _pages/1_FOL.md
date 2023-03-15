@@ -84,7 +84,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 
 Часто мы будем писать $\|t\|^v$ вместо $\|t\|^v_M$, если из контекста понятно, о какой модели идет речь. Также будем писать $\|t\|^{x \mapsto a}$, указывая на ту часть означивания, которая важна для оценки терма.
 
-**Упражнение**. Пусть модель $M = (\mathbb{N}, I_M)$, где $I_M$ –  функция такая, что $I_M(f)$ – операция сложения в обычном арифметическом смысле,  $I_M(g)$ – операция умножения в обычном арифметическом смысле; $a_M = 0$, $b_M=1$ пусть $v$ – означивание такое, что $v: x \mapsto 2, y \mapsto 3$. Вычислите значение для следующих термов:
+:blue_book: **Упражнение**. Пусть модель $M = (\mathbb{N}, I_M)$, где $I_M$ –  функция такая, что $I_M(f)$ – операция сложения в обычном арифметическом смысле,  $I_M(g)$ – операция умножения в обычном арифметическом смысле; $a_M = 0$, $b_M=1$ пусть $v$ – означивание такое, что $v: x \mapsto 2, y \mapsto 3$. Вычислите значение для следующих термов:
 * $\|f(a,b)\|^v_M$
 * $\|g(a,x)\|^v_M$
 * $\|f(x,x)\|^v_M$
@@ -110,7 +110,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 ⇔ для любого $d \in D: d \in P_M $
 * $M, v \models \forall x \exists y R(x, y)$ ⇔ для любого $d \in D$ найдется $d' \in D: \langle d, d' \rangle \in R_M$
 
-**Упражнение**. Опишите условия истинности для следующих выражений:
+:blue_book: **Упражнение**. Опишите условия истинности для следующих выражений:
 * $R(x, f(a, y) )$
 * $\exists x P(f(x))$
 
@@ -153,7 +153,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $M, v \models S(a) \Leftrightarrow  \|a\|^v_M \in S_M \Leftrightarrow  \square \in  \\{\blacksquare, \square \\}$
 * $M, v \models T(x) \Leftrightarrow  \|x\|^v_M \in T_M \Leftrightarrow  v(x) \in T_M \Leftrightarrow  \triangle \in  \\{ \triangle, \blacktriangle \\}$
 
-**Упражнение (c ответами)**. Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:
+:green_book: **Упражнение (c ответами)**. Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:
 <details><summary>  $M, v \models B(a)$ </summary> 
  
   
@@ -173,7 +173,7 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 <details><summary>  $M, v \models \exists x P(x)$  </summary>  ...  </details>
 
 
-**Упражнение**. 
+:blue_book: **Упражнение**. 
 Пусть фигуры из универсума $D$ расположены как на рисунке ниже:
 
 
