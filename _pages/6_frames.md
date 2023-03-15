@@ -4,11 +4,6 @@ category: Jekyll
 layout: post
 ---
 
-<details><summary> Доказательство </summary>
-
-<img src="/logic-course/docs/assets/images/frames.png" alt="Proof">
-
-</details>
 
     
 **Определение**. Пусть $M = (W, R, V)$ – модель Крипке, *шкалой Крипке* будем называть  пару $(W, R)$.
@@ -105,7 +100,12 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 ($\Leftarrow$)
 
-![Model](/logic-course/docs/assets/images/proof.png)
+<details><summary> Доказательство Fitch-style </summary>
+
+<img src="/logic-course/docs/assets/images/proof.png" alt="Proof">
+
+</details>
+
 
 **Утверждение**. Пусть, $(W,R)$ – шкала Крипке, тогда
 <p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ $\iff$ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
