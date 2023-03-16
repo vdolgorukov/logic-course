@@ -50,20 +50,18 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 
 
 <details><summary>  1. $\Box \bot$  </summary>
+
+	$$F_1$$
 	
-
-| $F_1$  | $F_2$  | $F_3$  | $F_4$  | $F_5$  | $F_6$  | $F_7$  | $F_8$  | $F_9$  |
-|---|---|---|---|---|---|---|---|---|
-|  $\checkmark$ |   |   |   |   |   |   |   |   |
-
 Формула говорит, что мир тупиковый. 
-
 </details>
 
 
 
 <details><summary>  2. $\Box \bot \vee \Diamond \Box \bot$  </summary>
+	
 $$F_1, F_3, F_5 $$ 
+
 Формула говорит, что мир тупиковый или в шаге от тупикового. 
 </details>
 
