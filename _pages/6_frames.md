@@ -60,7 +60,7 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 
 <details><summary>  2. $\Box \bot \vee \Diamond \Box \bot$  </summary>
 	
-$$F_1, F_3, F_5 $$ 
+$$F_1, F_3, F_5$$ 
 
 Формула говорит, что мир тупиковый или в шаге от тупикового. 
 </details>
