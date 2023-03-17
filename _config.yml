@@ -26,7 +26,7 @@ markdown:         kramdown
 kramdown:
   auto_ids:               true
   input:                  GFM
-  math_engine:            mathjax
+  math_engine:            katex
   smart_quotes:           lsquo,rsquo,ldquo,rdquo
   toc_levels:             1..6
   syntax_highlighter:     rouge
@@ -59,4 +59,3 @@ share-links-active:
   facebook: false
   linkedin: false
   vk: false
-
