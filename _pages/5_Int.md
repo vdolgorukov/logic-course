@@ -21,8 +21,7 @@ layout: post
 
 Правило вывода: modus ponens	
 
-:question:
-<details> <summary> Является ли исчисление $int$ дружественным к дедукции? </summary>
+<details> <summary> :question: Является ли исчисление $int$ дружественным к дедукции? </summary>
 Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens. </details>
 
 # Cемантика Крипке для интуиционистской логики
