@@ -5,21 +5,22 @@ layout: post
 ---
 
 # Исчисление int {#int}
-**Исчисление $int$** <a name="int"></a>
+> **Исчисление $int$** <a name="int"></a>
+> Аксиомные схемы:
+> * ($I_1$) $A \to (B \to A)$
+> * ($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$	
+> * ($C_1$) $(A \wedge B) \to A$
+> * ($C_2$) $(A \wedge B) \to B$
+> * ($C_3$) $A \to (B \to (A \wedge B))$
+> * ($D_1$) $A \to (A \vee B)$
+> * ($D_2$) $A \to (B \vee A)$
+> * ($D_3$) $(A \to C) \to ((B \to C) \to  ((A \vee B) \to C))$
+> * ($N_1$) $(A \to B) \to ((A \to \neg B) \to \neg A)$
+> * ($N_1'$) $A \to ( \neg A  \to B)$
+>
+> Правило вывода: modus ponens	
+{: #bq-id}
 
-Аксиомные схемы:
-* ($I_1$) $A \to (B \to A)$
-* ($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$	
-* ($C_1$) $(A \wedge B) \to A$
-* ($C_2$) $(A \wedge B) \to B$
-* ($C_3$) $A \to (B \to (A \wedge B))$
-* ($D_1$) $A \to (A \vee B)$
-* ($D_2$) $A \to (B \vee A)$
-* ($D_3$) $(A \to C) \to ((B \to C) \to  ((A \vee B) \to C))$
-* ($N_1$) $(A \to B) \to ((A \to \neg B) \to \neg A)$
-* ($N_1'$) $A \to ( \neg A  \to B)$
-
-Правило вывода: modus ponens	
 
 > <details> <summary> :question: Является ли исчисление $int$ дружественным к дедукции? </summary>
 > Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens. </details>
