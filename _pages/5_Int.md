@@ -22,8 +22,7 @@ layout: post
 > Правило вывода:
 >  
 >  modus ponens	
-{: #bq-id}
-
+{: .bq-with-class style="color:red"}
 
 <details> <summary> :question: Является ли исчисление $int$ дружественным к дедукции? </summary>
 Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens. </details>
