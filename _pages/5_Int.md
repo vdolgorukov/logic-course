@@ -6,6 +6,7 @@ layout: post
 
 # Исчисление int {#int}
 > **Исчисление $int$** <a name="int"></a>
+> 
 > Аксиомные схемы:
 > * ($I_1$) $A \to (B \to A)$
 > * ($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$	
@@ -18,13 +19,14 @@ layout: post
 > * ($N_1$) $(A \to B) \to ((A \to \neg B) \to \neg A)$
 > * ($N_1'$) $A \to ( \neg A  \to B)$
 >
-> Правило вывода: modus ponens	
+> Правило вывода:
+>  
+>  modus ponens	
 {: #bq-id}
 
 
-> <details> <summary> :question: Является ли исчисление $int$ дружественным к дедукции? </summary>
-> Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens. </details>
-{: #bq-id}
+<details> <summary> :question: Является ли исчисление $int$ дружественным к дедукции? </summary>
+Да, поскольку $int$ содержит аксиомные схемы ($I_1$), ($I_2$) и правило вывода modus ponens. </details>
 
 
 # Cемантика Крипке для интуиционистской логики
