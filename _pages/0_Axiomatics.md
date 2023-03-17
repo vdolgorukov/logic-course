@@ -4,6 +4,12 @@ category: Jekyll
 layout: post
 ---
 
+> ##### Вопрос
+>
+> This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
+> this or a similar version after installation.
+{: .block-tip }
+
 Мы рассмотрим несколько вариантов гильбертовских (аксиоматических) исчислений для классической логики высказываний:
 - $cl$ -- исчисление для языка с традиционным набором связок[^1]
 - $cl_{\to\neg}$ -- исчисление для ипликативно-негативного фрагмента 
