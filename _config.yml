@@ -16,7 +16,7 @@ youtube: false
 toc:
   enabled: true
   h_min: 1
-  h_max: 3
+  h_max: 5
 
 
 permalink:   /:categories/:output_ext
@@ -26,7 +26,7 @@ markdown:         kramdown
 kramdown:
   auto_ids:               true
   input:                  GFM
-  math_engine:            katex
+  math_engine:            mathjax
   smart_quotes:           lsquo,rsquo,ldquo,rdquo
   toc_levels:             1..6
   syntax_highlighter:     rouge
@@ -46,6 +46,7 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+  - jekyll-latex
   
 page_width: 800px
 
