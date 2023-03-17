@@ -7,8 +7,9 @@ layout: post
 > ##### Вопрос
 >
 > This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> this or a similar version after installation.
+> <details><summary> 1. Боря – красивый, но не умный </summary> $$Qb \wedge \neg Pb$$ </details>
 {: .block-tip }
+
 
 Мы рассмотрим несколько вариантов гильбертовских (аксиоматических) исчислений для классической логики высказываний:
 - $cl$ -- исчисление для языка с традиционным набором связок[^1]
