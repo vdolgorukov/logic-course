@@ -29,6 +29,8 @@ layout: post
 
 Как будет читаться двойственный оператор $\Diamond p: = \neg \Box \neg p$ в каждом из этих случаев?
 
+![Model](/logic-course/docs/assets/images/Kripke%20model.png)
+
 **Упражнение 2** (\*). Какие из следующих принципов следует принять или отвергнуть (с точки зрения интуиции):
 - $\Box (\Box p \to p)$
 - $\Box (\Box p \to p) \to \Box p$
