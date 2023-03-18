@@ -16,8 +16,8 @@ permalink: https://vdolgorukov.github.io/logic-course
 
 ## Неклассические логики (упражнения)
 - [Модальные исчисления упражнения](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/5_Axiomatics/)
-– [Семантика Крипке](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/)
-– [Шкалы Крипке](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/7_frames/)
+- [Семантика Крипке](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/)
+- [Шкалы Крипке](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/7_frames/)
 
 *Страница подготовлена по результатам проекта «Интерактивное учебное пособие по философской логике и формальной философии» при поддержке фонда «Гуманитарные исследования» ФГН НИУ «Высшая школа экономики» в 2022-2023 году*.
 
