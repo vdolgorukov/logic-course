@@ -1,10 +1,12 @@
 ---
+title: Семантика Крипке 
 category: Jekyll
 layout: post
 ---
 
-# Семантика Крипке 
-# Упражнения
+## Семантика Крипке
+
+## Упражнения
 
 <img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
 
