@@ -31,7 +31,7 @@ layout: post
 
 ![Model](/logic-course/docs/assets/images/Kripke%20model.png)
 
-<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="200" height="">
+<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height="">
 
 :blue_book: **Упражнение 2** (\*). Какие из следующих принципов следует принять или отвергнуть (с точки зрения интуиции):
 - $\Box (\Box p \to p)$
