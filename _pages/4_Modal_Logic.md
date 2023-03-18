@@ -29,11 +29,24 @@ layout: post
 
 Как будет читаться двойственный оператор $\Diamond p: = \neg \Box \neg p$ в каждом из этих случаев?
 
-![Model](/logic-course/docs/assets/images/Kripke%20model.png)
+<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
 
-<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height="">
+:green_book: **Упражнение**. Какие формулы истинны в отмеченной модели $M, w_1$?
+<details><summary> 1. $p$ </summary> $$M, w_1 \models p$$ </details>
+<details><summary> 2. $q$ </summary>  $$M, w_1 \not \models q$$  </details>
+<details><summary> 3. $p \to q$ </summary>  $$M, w_1 \not \models p \to q$$  </details>
+<details><summary> 4. $q \to p$ </summary>  $$M, w_1 \models q \to p$$  </details>
+<details><summary> 5. $q \to p$ </summary>  $$M, w_1 \models q \to p$$  </details>
+<details><summary> 6. $\Diamond p$ </summary> $$M, w_1 \models \Diamond p$$  </details>
+<details><summary> 7. $\Diamond q$ </summary> $$M, w_1 \models \Diamond q$$  </details>
+<details><summary> 8. $\Box p$ </summary> $$M, w_1 \not \models \Box p$$  </details>
+<details><summary> 9. $\Box q$ </summary> $$M, w_1 \models \Box q$$  </details>
+<details><summary> 10. $\Box q$ </summary> $$M, w_1 \models \Box q$$  </details>
+<details><summary> 11. $\Box (p \to q)$ </summary> $$M, w_1 \models  \Box (p \to q)$$  </details>
+<details><summary> 12. $\Box (q \to p)$ </summary> $$M, w_1 \not \models  \Box (q \to p)$$  </details>
 
-:blue_book: **Упражнение 2** (\*). Какие из следующих принципов следует принять или отвергнуть (с точки зрения интуиции):
+
+:blue_book: **Упражнение** (\*). Какие из следующих принципов следует принять или отвергнуть (с точки зрения интуиции):
 - $\Box (\Box p \to p)$
 - $\Box (\Box p \to p) \to \Box p$
 - $\Box p \to \Box \Diamond \Box p$
@@ -46,7 +59,7 @@ layout: post
  3. $\Box ((p \wedge q) \to \Box q) \to (\Box (p \wedge q) \to \Box q)$ – (K) 
  4. $\Box (p \wedge q) \to \Box q$ – MP 1, 2
 
-:blue_book: **Упражнение 3**. Докажите в исчислении $K$ следующие теоремы:
+:blue_book: **Упражнение**. Докажите в исчислении $K$ следующие теоремы:
 1. $\Box p \to \Box (p \vee q)$
 2. $\Box (p \wedge q) \to (\Box p \wedge \Box q)$
 3. $(\Box p \wedge \Box q) \to \Box (p \wedge q)$
@@ -59,14 +72,10 @@ layout: post
 10. $\Box (p \vee q) \to (\Diamond p \vee \Box q)$ 
 11. $(\Diamond p \wedge \Box q) \to \Diamond(p \wedge q) $
 
-:blue_book: **Упражнение 4**. Докажите в исчислении $K$ следующие теоремы:
+:blue_book: **Упражнение**. Докажите в исчислении $K$ следующие теоремы:
 1. $(\Box p \to \Diamond (q \to r)) \to (\Box q \to (\Box p \to \Diamond r))$
 2. $(\Box p \wedge \Diamond (q \to r)) \to (\Box (p \to q ) \to  \Diamond (p \wedge r))$
 
-:green_book: **Упражнение (с ответами)**. Какие формулы истинны в отмеченной модели $M, w$?
-<details><summary> 1. $\Diamond p$ </summary> $$M, w \models \Diamond p$$ </details>
-<details><summary> 2. $\Box p$ </summary>  $$M, w \not \models \Box p$$  </details>
-<details><summary> 3. $\Diamond \Box p$ </summary>  $$M, w \models \Diamond \Box p$$ </details>
 
 :blue_book: **Упражнение**. Методом индукции докажите, что 
 $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$
