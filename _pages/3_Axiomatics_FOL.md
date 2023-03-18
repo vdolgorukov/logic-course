@@ -33,9 +33,8 @@ layout: post
 > $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
 {: .bq-with-class style="color:black"}
 
-**Вопрос**. Что будет, если убрать ограничение $x \not \in FV(\Phi)$?
 
-<details> <summary> Ответ </summary>   
+<details> <summary> :question: Что будет, если убрать ограничение $x \not \in FV(\Phi)$? </summary>   
 
 Тогда мы могли бы доказать некорректное утверждение: <br/>
 1. $Sx \to Sx$  – КЛВ  <br/>
