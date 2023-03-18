@@ -46,29 +46,16 @@ layout: post
 
 **Пример**. $\vdash \forall x (Sx \wedge Px ) \to \forall x Sx$ 
 
-<details> <summary> Смотреть доказательство </summary>   
-
-<br/>  
-   
 1. $\forall x (Sx \wedge Px ) \to (Sx \wedge Px)$ – акс. $\forall$ 
 2. $(Sx \wedge Px) \to Sx$ – КЛВ  
 3. $\forall x (Sx \wedge Px ) \to Sx$ из 1, 3 по транзитивности 
 4. $\forall x (Sx \wedge Px ) \to \forall x Sx$  из 3 по ($R_\forall$) 
 
-</details>
-
-
    
 **Пример**.  $\vdash \exists x \forall y Rxy \to  \forall y \exists x Rxy$
 
-<details> <summary> Смотреть доказательство </summary>   
-
-<br/>  
-   
 1. $\forall y Rxy \to Rxy$ – акс. $\forall$ 
 2. $Rxy \to \exists x Rxy$ – акс. $\exists$ 
 3. $\forall y Rxy \to  \exists x Rxy$ – из 1, 3 по транзитивности 
 4. $\exists x \forall y Rxy \to  \exists x Rxy$ – из 3. по ($R_\exists$) 
 5. $\exists x \forall y Rxy  \to  \forall y \exists x Rxy$ – из 4. по ($R_\forall$) 
-   
-</details>
