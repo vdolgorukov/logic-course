@@ -4,8 +4,6 @@ category: Jekyll
 layout: post
 ---
 
-# Семантика Крипке
-
 # Упражнения
 
 <img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
