@@ -23,11 +23,12 @@ layout: post
 <figure class="sign">
    
 <img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="300" height=""> 
-<a name="M"></a>  
+ 
 <figcaption> Модель $M, w_1$ </figcaption>
 
 </figure>
 
+<a name="M"></a> 
 
 # Литература и дополнительные материалы:
 - [https://plato.stanford.edu/entries/logic-modal/](https://plato.stanford.edu/entries/logic-modal/)
