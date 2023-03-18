@@ -6,7 +6,8 @@ layout: post
 
 # Модальные исчисления
 
-# Исчисление K {#K}
+## Исчисление K {#K}
+
 > **Исчисление $K$** <a name="K"></a>
 > 
 > Аксиомные схемы:
@@ -18,8 +19,6 @@ layout: post
 >  modus ponens	
 >  G
 {: .bq-with-class style="color:black"}
-
-# Упражнения 
 
 
 :blue_book: **Упражнение 1**. Какие из следующих принципов следует принять или отвергнуть (с точки зрения интуиции):
@@ -76,6 +75,10 @@ layout: post
 
 :blue_book: **Упражнение**. Методом индукции докажите, что 
 $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$
+
+
+## Другие модальные исчисления
+
 
 :blue_book: **Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
 1. $\Box \Box p \to \Box p$
