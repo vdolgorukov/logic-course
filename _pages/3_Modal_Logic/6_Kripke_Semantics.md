@@ -22,7 +22,7 @@ layout: post
 
 <figure class="sign">
    
-<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
+<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="300" height=""> 
 <a name="M"></a>  
 <figcaption> Модель $M, w_1$ </figcaption>
 
