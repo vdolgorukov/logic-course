@@ -35,7 +35,7 @@ layout: post
 - $\Box p \to \Box \Diamond \Box p$
 - $\Diamond \Box \Diamond p \to \Diamond p$
 
-## Исчисление K
+## Минимальная модальная логика
 
 > **Исчисление $K$** <a name="K"></a>
 > 
@@ -80,7 +80,17 @@ $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_
 
 **Определение** Вывод из гипотез
 
-## Другие модальные исчисления
+## 15 традиционных модальных логик
+
+
+| Название  | Аксиомная схема                  |
+|-----------|----------------------------------|
+| $(T)$     | $\Box p to p$                    |
+| $(D)$     | $\Box p to \Diamond p$           |
+| $(B)$     | $p \to \Box \Diamond p$          |
+| $(4)$     | $p \to \Box \Box p$              |
+| $(5)$     | $\Diamond p \to \Box \Diamond p$ |
+
 
 
 :blue_book: **Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
