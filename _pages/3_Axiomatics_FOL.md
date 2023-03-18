@@ -7,28 +7,30 @@ layout: post
 
 ## Исчисление КЛП
 
-Аксиомные схемы:
-*  (КЛВ) Все подстановочные примеры тавтологий КЛВ
-*  ($\forall$) $\forall x \Phi x \to \Phi [t/x]$
-*  ($\exists$) $\Phi[t/x] \to \exists x \Phi x$
-
-Правила вывода:
-
-MP 
-
-$\underline{\Phi, \Phi \to \Psi}$ <br/>
-$\Psi$
-
-$R_\forall$
-
-$\underline{\Phi \to \Psi}$ <br/>
-$\Phi \to \forall x \Psi$, где $x \not \in FV(\Phi)$ 
-
-$R_\exists$
-
-$\underline{\Psi \to \Phi}$ <br/>
-$\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
-
+> **Исчисление $FOL$** <a name="FOL"></a>
+> Аксиомные схемы:
+> 
+> * (КЛВ) Все подстановочные примеры тавтологий КЛВ
+> * ($\forall$) $\forall x \Phi x \to \Phi [t/x]$
+> * ($\exists$) $\Phi[t/x] \to \exists x \Phi x$
+> 
+> Правила вывода:
+>
+> MP 
+>
+> $\underline{\Phi, \Phi \to \Psi}$ <br/>
+> $\Psi$
+> 
+> $R_\forall$
+> 
+> $\underline{\Phi \to \Psi}$ <br/>
+> $\Phi \to \forall x \Psi$, где $x \not \in FV(\Phi)$ 
+> 
+> $R_\exists$
+> 
+> $\underline{\Psi \to \Phi}$ <br/>
+> $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
+{: .bq-with-class style="color:black"}
 
 **Вопрос**. Что будет, если убрать ограничение $x \not \in FV(\Phi)$?
 
