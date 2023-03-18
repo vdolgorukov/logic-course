@@ -8,21 +8,25 @@ layout: post
 
 ## Упражнения
 
-<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
-
-:green_book: **Упражнение**. Какие формулы истинны в отмеченной модели $M, w_1$ (см. рис. выше)?
+:green_book: **Упражнение**. Какие формулы истинны в отмеченной модели $M, w_1$ (см. рис. ниже)?
 <details><summary> 1. $p$ </summary> $$M, w_1 \models p$$ </details>
 <details><summary> 2. $q$ </summary>  $$M, w_1 \not \models q$$  </details>
 <details><summary> 3. $p \to q$ </summary>  $$M, w_1 \not \models p \to q$$  </details>
 <details><summary> 4. $q \to p$ </summary>  $$M, w_1 \models q \to p$$  </details>
-<details><summary> 5. $q \to p$ </summary>  $$M, w_1 \models q \to p$$  </details>
-<details><summary> 6. $\Diamond p$ </summary> $$M, w_1 \models \Diamond p$$  </details>
-<details><summary> 7. $\Diamond q$ </summary> $$M, w_1 \models \Diamond q$$  </details>
-<details><summary> 8. $\Box p$ </summary> $$M, w_1 \not \models \Box p$$  </details>
-<details><summary> 9. $\Box q$ </summary> $$M, w_1 \models \Box q$$  </details>
-<details><summary> 10. $\Box q$ </summary> $$M, w_1 \models \Box q$$  </details>
-<details><summary> 11. $\Box (p \to q)$ </summary> $$M, w_1 \models  \Box (p \to q)$$  </details>
-<details><summary> 12. $\Box (q \to p)$ </summary> $$M, w_1 \not \models  \Box (q \to p)$$  </details>
+<details><summary> 5. $\Diamond p$ </summary> $$M, w_1 \models \Diamond p$$  </details>
+<details><summary> 6. $\Diamond q$ </summary> $$M, w_1 \models \Diamond q$$  </details>
+<details><summary> 7. $\Box p$ </summary> $$M, w_1 \not \models \Box p$$  </details>
+<details><summary> 8. $\Box q$ </summary> $$M, w_1 \models \Box q$$  </details>
+<details><summary> 9. $\Box (p \to q)$ </summary> $$M, w_1 \models  \Box (p \to q)$$  </details>
+<details><summary> 10. $\Box (q \to p)$ </summary> $$M, w_1 \not \models  \Box (q \to p)$$  </details>
+
+<figure class="sign">
+   
+<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
+  
+<figcaption> Модель $M, w_1$ </figcaption>
+
+</figure>
 
 
 # Литература и дополнительные материалы:
