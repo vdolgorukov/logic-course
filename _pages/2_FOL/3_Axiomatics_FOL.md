@@ -31,7 +31,7 @@ layout: post
 > 
 > $\underline{\Psi \to \Phi}$ <br/>
 > $\exists x \Psi \to \Phi$, где $x \not \in FV(\Phi)$
-{: .bq-with-class style="color:black"}
+{: .bq-with-class}
 
 
 <details> <summary> :question: Что будет, если убрать ограничение $x \not \in FV(\Phi)$? </summary>   
