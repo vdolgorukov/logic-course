@@ -85,8 +85,8 @@ $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_
 
 | Название  | Аксиомная схема                  |
 |-----------|----------------------------------|
-| $(T)$     | $\Box p to p$                    |
-| $(D)$     | $\Box p to \Diamond p$           |
+| $(T)$     | $\Box p \to p$                    |
+| $(D)$     | $\Box p \to \Diamond p$           |
 | $(B)$     | $p \to \Box \Diamond p$          |
 | $(4)$     | $p \to \Box \Box p$              |
 | $(5)$     | $\Diamond p \to \Box \Diamond p$ |
