@@ -8,7 +8,7 @@ layout: post
 
 ## Упражнения
 
-:green_book: **Упражнение**. Какие формулы истинны в отмеченной модели $M, w_1$ (см. рис. ниже)?
+:green_book: **Упражнение**. Какие формулы истинны в отмеченной модели $M, w_1$ на <a href="#M">рис ниже</a>?
 <details><summary> 1. $p$ </summary> $$M, w_1 \models p$$ </details>
 <details><summary> 2. $q$ </summary>  $$M, w_1 \not \models q$$  </details>
 <details><summary> 3. $p \to q$ </summary>  $$M, w_1 \not \models p \to q$$  </details>
@@ -23,7 +23,7 @@ layout: post
 <figure class="sign">
    
 <img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="400" height=""> 
-  
+<a name="M"></a>  
 <figcaption> Модель $M, w_1$ </figcaption>
 
 </figure>
