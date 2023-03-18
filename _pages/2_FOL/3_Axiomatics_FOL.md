@@ -48,6 +48,8 @@ layout: post
 
 <details> <summary> Смотреть доказательство </summary>   
 
+<br/>  
+   
 1. $\forall x (Sx \wedge Px ) \to (Sx \wedge Px)$ – акс. $\forall$ 
 2. $(Sx \wedge Px) \to Sx$ – КЛВ  
 3. $\forall x (Sx \wedge Px ) \to Sx$ из 1, 3 по транзитивности 
@@ -61,6 +63,8 @@ layout: post
 
 <details> <summary> Смотреть доказательство </summary>   
 
+<br/>  
+   
 1. $\forall y Rxy \to Rxy$ – акс. $\forall$ 
 2. $Rxy \to \exists x Rxy$ – акс. $\exists$ 
 3. $\forall y Rxy \to  \exists x Rxy$ – из 1, 3 по транзитивности 
