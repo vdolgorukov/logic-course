@@ -78,7 +78,7 @@ layout: post
 $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$
 
 
-**Определение** Вывод из гипотез
+**Определение**  *Вывод из гипотез*
 
 ## 15 традиционных модальных логик
 
@@ -92,6 +92,7 @@ $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_
 | $(5)$     | $\Diamond p \to \Box \Diamond p$ |
 
 
+![Modal Cube](/logic-course/docs/assets/images/cube.png)
 
 :blue_book: **Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
 1. $\Box \Box p \to \Box p$
