@@ -6,21 +6,6 @@ layout: post
 
 # Модальные исчисления
 
-## Исчисление K
-
-> **Исчисление $K$** <a name="K"></a>
-> 
-> Аксиомные схемы:
-> * ($Taut$) Все подстановочные примеры тавтологий КЛВ
-> * ($K$) $\Box (\varphi \to \psi) \to (\Box \varphi \to \Box \psi)$
->
-> Правило вывода:
->  
->  modus ponens	
->  G
-{: .bq-with-class style="color:black"}
-
-
 :blue_book: **Упражнение 1**. Какие из следующих принципов следует принять или отвергнуть (с точки зрения интуиции):
 1. $\Box (p \wedge q) \leftrightarrow (\Box p \wedge \Box q)$
 2. $\Box (p \to q) \to (\Box p \to \Box q)$
@@ -50,6 +35,22 @@ layout: post
 - $\Box p \to \Box \Diamond \Box p$
 - $\Diamond \Box \Diamond p \to \Diamond p$
 
+## Исчисление K
+
+> **Исчисление $K$** <a name="K"></a>
+> 
+> Аксиомные схемы:
+> * ($Taut$) Все подстановочные примеры тавтологий КЛВ
+> * ($K$) $\Box (\varphi \to \psi) \to (\Box \varphi \to \Box \psi)$
+>
+> Правило вывода:
+>  
+>  modus ponens	
+>  G
+{: .bq-with-class style="color:black"}
+
+**Определение** Вывод 
+
 **Пример**  $\vdash \Box (p \wedge q) \to \Box q$   
  1. $(p \wedge q) \to q$ – КЛВ  
  2. $\Box ((p \wedge q) \to \Box q)$ – G 1 
@@ -76,6 +77,8 @@ layout: post
 :blue_book: **Упражнение**. Методом индукции докажите, что 
 $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_1 \wedge \dots \wedge \Box \varphi_n)$ для любого $n \geq 2$
 
+
+**Определение** Вывод из гипотез
 
 ## Другие модальные исчисления
 
