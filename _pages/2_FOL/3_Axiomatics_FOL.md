@@ -59,3 +59,10 @@ layout: post
 3. $\forall y Rxy \to  \exists x Rxy$ – из 1, 3 по транзитивности 
 4. $\exists x \forall y Rxy \to  \exists x Rxy$ – из 3. по ($R_\exists$) 
 5. $\exists x \forall y Rxy  \to  \forall y \exists x Rxy$ – из 4. по ($R_\forall$) 
+
+
+**Упражнение**. Докажите следующие теоремы:
+
+1. $(Sa \wedge \forall x (Sx \to Px))\to Pa$
+2. $(\forall x Sx \wedge \forall x Px) \to \forall x (Sx \wedge Px) $
+
