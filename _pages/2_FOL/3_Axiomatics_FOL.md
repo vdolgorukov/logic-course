@@ -12,8 +12,8 @@ layout: post
 > Аксиомные схемы:
 > 
 > * (КЛВ) Все подстановочные примеры тавтологий КЛВ
-> * ($\forall$) $\forall x \Phi x \to \Phi [t/x]$
-> * ($\exists$) $\Phi[t/x] \to \exists x \Phi x$
+> * ($\forall$) $\forall x \Phi  \to \Phi [t/x]$
+> * ($\exists$) $\Phi[t/x] \to \exists x \Phi $
 > 
 > Правила вывода:
 >
