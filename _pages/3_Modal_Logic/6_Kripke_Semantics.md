@@ -24,8 +24,6 @@ layout: post
 :blue_book: **Упражнение**. Докажите, что можно взять в качестве базовых только условия 1, 2, 3, 6, определив остальные связки как синтаксические сокращения. 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FacUHU_gjPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 
 ## Упражнения
 
@@ -52,7 +50,15 @@ layout: post
 <a name="M"></a> 
 
 # Литература и дополнительные материалы:
+
+Литература
 - [https://plato.stanford.edu/entries/logic-modal/](https://plato.stanford.edu/entries/logic-modal/)
+
+Видео
 - ["3 Months of Modal Logics"/ канал "Carneades.org"](https://www.youtube.com/playlist?list=PLz0n_SjOttTfP_liEHPNCzvESZsh5eirP)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLz0n_SjOttTfP_liEHPNCzvESZsh5eirP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 - ["Modal Logic"/ канал "Attic Philosophy"](https://www.youtube.com/watch?v=_kZLnqsIuMo&list=PLwSlKSRwxX0qXTZKnIT7l4_YAIWpJcZJ9)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_kZLnqsIuMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Курсы
 - [Курс "Неклассические логики" 2022 (Т.Л. Яворская, МИАН)](https://www.mathnet.ru/php/conference.phtml?option_lang=rus&eventID=31&confid=2080)
