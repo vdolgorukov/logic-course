@@ -24,6 +24,9 @@ layout: post
 :blue_book: **Упражнение**. Докажите, что можно взять в качестве базовых только условия 1, 2, 3, 6, определив остальные связки как синтаксические сокращения. 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FacUHU_gjPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ## Упражнения
 
 :green_book: **Упражнение**. Какие формулы истинны в отмеченной модели $M, w_1$ на <a href="#M">рис ниже</a>?
