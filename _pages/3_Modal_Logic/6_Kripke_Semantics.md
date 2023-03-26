@@ -13,8 +13,8 @@ layout: post
 
 **Определение**. Условия истинности формулы в модели Крипке. Пусть $\varphi$ -  модальная формула, $M, w$ – отмеченная модель Крипке. Определим истинность формулы в отмеченной модели (обозначение: $M, w \models \varphi$):
 
-– $M, w \models p$ $\iff$ $w \in V(p)$
-– $M, w \models \varphi \wedge \psi$ $\iff$ $M, w \models \varphi$ и $M, w \models \psi$
+-  $M, w \models p \iff w \in V(p)$
+-  $M, w \models \varphi \wedge \psi \iff M, w \models \varphi \text{ и } M, w \models \psi$
 
 
 ## Упражнения
