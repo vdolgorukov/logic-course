@@ -90,9 +90,11 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 ($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется мир $x \in W$ такой, что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x \models \Box p$  и $(W,R,V), x \not \models  p$. Заметим, что подойдет следующая оценка $V(p)= W - \\{x\\}$.
 
-($\Leftarrow$)
+($\Leftarrow$) Дана шкала $(W,R)$ такая, что $R$ - рефлексивно. Возьмем произвольную модель $M$ над шкалой $(W, R)$ и произвольный мир $x \in W$. Допустим, что $M, x \models \Box p$. Докажем, что $M, x \models p$. Поскольку шкала $(W,R)$ - рефлексивна, то $xRx$. Значит, используя допущение, получаем, что $M, x \models p$, что и требовалось доказать. 
 
-<details><summary> Доказательство Fitch-style </summary>
+То же самое рассуждение удобно более подробно записать в виде натурального вывода в стиле Фитча:
+
+<details><summary> Смотреть Fitch-style доказательство </summary>
 
 <img src="/logic-course/docs/assets/images/proof.png" alt="Proof">
 
