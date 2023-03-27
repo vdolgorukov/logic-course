@@ -14,6 +14,15 @@ layout: post
 - $\vdash_{K_t} PGp \to HFp$
 
 
+
+<figure class="sign">
+   
+<img src="/logic-course/docs/assets/images/Nest.png" alt="" width="300" height=""> 
+ 
+<figcaption> Модальности логики $Q.t$ </figcaption>
+
+</figure>
+
 \begin{exercise} Постройте временные модели, которые различаются следующей формулой (в логике $K_t$): 
 \begin{multicols}{3}
 \begin{enumerate}
