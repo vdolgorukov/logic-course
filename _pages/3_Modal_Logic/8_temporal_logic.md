@@ -28,6 +28,22 @@ $M=(T, <, V)$
 
 ## $K_t$ и ее расширения 
 
+### Исчисление $K_t$
+
+Аксиомные схемы: 
+- Аксиомы КЛВ + MP 
+- $H(\varphi \to \psi) \to (H  \varphi \to H \psi )$ 
+- $G(\varphi \to \psi) \to (G  \varphi \to G \psi )$ 
+- $\varphi \to H F \varphi$ (принцип У.Оккама)
+- $\varphi \to G P \varphi$ (принцип У.Оккама)
+
+Правила вывода:
+$\underline{\vdash \varphi}$ 
+$\vdash H \varphi$
+
+$\underline{\vdash \varphi}$ 
+$\vdash G \varphi$
+
 **Упражнение**. Найдите доказательства для следующих теорем:
 - $\vdash_{K_t} H (p \wedge q) \to Hp$
 - $\vdash_{K_t} G (p \wedge q) \to (G p \wedge Gq)$
