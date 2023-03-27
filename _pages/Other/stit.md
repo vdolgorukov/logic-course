@@ -1,3 +1,4 @@
+---
 title: stit-логика
 category: Jekyll
 layout: post
