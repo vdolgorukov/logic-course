@@ -13,9 +13,11 @@ layout: post
 - $\vdash_{K_t} FHp \to GPp$
 - $\vdash_{K_t} PGp \to HFp$
 
+
+
 <figure class="sign">
    
-<img src="/logic-course/docs/assets/images/Nest.png" alt="" width="300" height=""> 
+<img src="/logic-course/docs/assets/images/Nest.png" alt="" width="500" height=""> 
  
 <figcaption> Модальности логики Q.t </figcaption>
 
