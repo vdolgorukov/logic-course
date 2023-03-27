@@ -51,7 +51,7 @@ layout: post
 
 **Определение** Вывод 
 
-**Пример**  $\vdash \Box (p \wedge q) \to \Box q$   
+**Пример 1**  $\vdash_{K} \Box (p \wedge q) \to \Box q$   
  1. $(p \wedge q) \to q$ – КЛВ  
  2. $\Box ((p \wedge q) \to \Box q)$ – G 1 
  3. $\Box ((p \wedge q) \to \Box q) \to (\Box (p \wedge q) \to \Box q)$ – (K) 
