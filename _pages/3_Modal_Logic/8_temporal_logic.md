@@ -38,6 +38,7 @@ $M=(T, <, V)$
 - $\varphi \to G P \varphi$ (принцип У.Оккама)
 
 Правила вывода:
+
 $\underline{\vdash \varphi}$ 
 $\vdash H \varphi$
 
