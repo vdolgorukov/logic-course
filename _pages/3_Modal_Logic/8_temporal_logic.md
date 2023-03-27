@@ -17,6 +17,6 @@ layout: post
    
 <img src="/logic-course/docs/assets/images/Nest.png" alt="" width="300" height=""> 
  
-<figcaption> Модальности логики $Q.t$ </figcaption>
+<figcaption> Модальности логики Q.t </figcaption>
 
 </figure>
