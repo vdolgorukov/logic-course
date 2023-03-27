@@ -1,1 +1,253 @@
+---
+title: Темпоральные логики 
+category: Jekyll
+layout: post
+---
 
+# Временная логика
+# $K_t$ и ее расширения 
+
+*Упражнение*. Найдите доказательства для следующих теорем:
+- $\vdash_{K_t} H (p \wedge q) \to Hp$
+- $\vdash_{K_t} G (p \wedge q) \to (G p \wedge Gq)$
+- $\vdash_{K_t} FHp \to GPp$
+- $\vdash_{K_t} PGp \to HFp$
+
+
+\begin{exercise} Постройте временные модели, которые различаются следующей формулой (в логике $K_t$): 
+\begin{multicols}{3}
+\begin{enumerate}
+\item $Fp \wedge \neg Gp$
+\item $Pp \wedge \neg HPp$
+\item $Hp \wedge \neg H (p \wedge q)$
+\item $PFp \wedge \neg Fp$
+\item $PFp \wedge \neg Pp$
+\item $PFp \wedge \neg Pp \wedge \neg Fp$
+\item $Gp \wedge Hp \wedge \neg p$	
+\item $p \wedge H \neg p \wedge GPp$
+\item $HGp$
+\item $Gp$
+\item $FGp$
+\item $GFp$
+\item $GHp$
+\item $Hp$
+\item $PHp$
+\item $HPp$
+\item $Fp \wedge \neg GFp$
+\item $GFp \wedge \neg FGp$
+\item $FGp \wedge \neg Gp$
+\item $Gp \wedge \neg HGp$
+\item $HPp \wedge \neg PHp$
+\item $PH p \wedge \neg Hp$
+\item $Hp \wedge \neg GHp$
+\item $G \bot \vee FG\bot $
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+
+
+\begin{exercise}[*]Постройте временные модели, которые различаются следующей формулой (в логике $K_t$):
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $Pp \wedge \neg PPp$
+    \item $Fp \wedge \neg FFp$
+    \item $(p \wedge Gp) \to PGp$
+    \item $(p \wedge Hp) \to FHp$
+	\item $H \neg p \wedge \neg p \wedge FGp \wedge F \neg p  \wedge GP \neg p$
+	\item $G\neg p \wedge \neg p \wedge PHp  \wedge P \neg p \wedge HF \neg p$
+\end{enumerate}
+\end{multicols}	
+\end{exercise}
+
+
+\begin{exercise}[*] Найдите доказательства для следующих теорем логики $K_t$:
+\begin{multicols}{3}
+\begin{enumerate}
+	\item $GPGp \to GGPp$
+	\item $GPG p \equiv Gp$
+	\item $HFHp \to HHPp$
+	\item $HFHp \equiv Hp$
+\end{enumerate}
+\end{multicols}
+
+\end{exercise}
+
+\begin{exercise}[*] Найдите доказательства для следующих теорем логики $Q_t$:
+\begin{multicols}{3}
+\begin{enumerate}
+	\item $Gp \to GPp$
+	\item $Hp \to HFp$
+\end{enumerate}
+\end{multicols}
+
+\end{exercise}
+
+
+\begin{exercise}[**] Рассмотрим логику:
+\begin{center}
+$K_t + FGp \to  GFp + PHp \to  HPp$	
+\end{center}
+Докажите, что  $GHp \equiv  HGp$ – теорема этой логики.
+\end{exercise}
+
+\begin{exercise}[***] Докажите, что 
+\begin{center}
+$K_t + G p \to GGp  = K_t + Hp \to HH p$	
+\end{center}
+\end{exercise}
+
+\begin{exercise}[***] Рассмотрим следующую логику: 
+\begin{center}
+$Q_t = K_t + (4) +  (Lin_F) + (Lin_P) + (Dens) + (NoEnd) + (NoBeg)$,	
+\end{center}
+где:
+\begin{center}
+\begin{tabular}{ll}
+$(4)$ &  $Gp \to GGp$ или $Hp \to HHp$\\
+$(Lin_F)$ & $(Fp \wedge Fq) \to (F(p \wedge q) \wedge F(p \wedge  Fq) \wedge F(Fp \wedge q)) $ \\
+$(Lin_P)$ & $(Pp \wedge Pq) \to (P(p \wedge q) \wedge P(p \wedge  Pq) \wedge P(Pp \wedge q)) $ \\
+$(Dens)$ & $GGp \to Gp$ или $HHp \to Hp$ \\
+$(NoEnd)$  & $Gp \to Fp$ \\
+$(NoBeg)$  & $Hp \to Pp$
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item 
+Рассмотрим Таблицу \ref{Tab:1}, которая описывает редукцию <<трехэтажных>> модальностей в логике $Q_t$. В таблице строки соответствуют первому оператору, столбцы —второму и третьему, ячейка – результату редукции. Например, первая ячейка описывает следующую редукцию: $PGH \equiv GH$. 
+
+Заметим, что таблица описывает некоторые закономерности. Например, $\circ \, GH \equiv GH$, где $\circ \in \{G, H, P, F \}$, то есть, если цепочка модальных операторов заканчивается сочетанием $GH$, то любой оператор, стоящий перед этим сочетанием, может быть удален.
+
+ Глядя на эту таблицу, сформулируйте полное правило редукции модальных операторов в логике $Q_t$.\footnote{Подсказка-1: попробуйте использовать альтернативную нотацию: $\Box:= G$, $\Box^{-}:= H$, $\Diamond:= F$, $\Diamond^{-}:= P$; подсказка-2: докажите, что $GH \equiv HG$ и $FP \equiv PF$.}
+\item  Найдите доказательства для всех теорем, соответствующих описываемым таблицей редукциям: $\vdash_{Q_t} PGHp \equiv GHp$, $\vdash_{Q_t} PFHp \equiv PHp$ и т.д.
+\end{enumerate}
+
+
+
+\begin{table}[hbt]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+    & $GH$ & $FH$ & $PH$ & $HP$ & $GP$ & $FP$ & $HF$ & $GF$ & $FG$ & $PG$ \\ \hline
+$P$ & $GH$ & $PH$ & $PH$ & $HP$ & $P$  & $FP$ & $FP$ & $GF$ & $FG$ & $PG$ \\ \hline
+$H$ & $GH$ & $H$  & $PH$ & $HP$ & $HP$ & $FP$ & $HF$ & $GF$ & $FG$ & $HG$ \\ \hline
+$F$ & $GH$ & $FH$ & $PH$ & $HP$ & $FP$ & $FP$ & $F$  & $GF$ & $FG$ & $FG$ \\ \hline
+$G$ & $GH$ & $GH$ & $PH$ & $HP$ & $GP$ & $FP$ & $GF$ & $GF$ & $FG$ & $G$  \\ \hline
+\end{tabular}
+\end{center} 
+\caption{Редукция <<трехаэтажных>> модальностей в логике $Q_t$.} \label{Tab:1}
+\end{table}
+
+\end{exercise}
+
+
+\begin{exercise}[**]
+Найдите доказательства для импликативных теорем в логике $Q_t$, см.: Рис.~\ref{fig:6}. Для <<отсутствующих>> импликаций постройте контрмодели. 
+
+\begin{figure}[hbt]
+\begin{center}
+\begin{tikzpicture}[scale=.6,>=stealth',shorten >=1pt, auto,  main node/.style={font=\sffamily\footnotesize}]
+\node[main node] (1) at (2,0) {$.$}; 
+\node[main node] (2) at (-1,4.5)  {$H$};
+\node[main node] (3) at (1,4.5) {$PH$};
+\node[main node] (4) at (3,4.5) {$HP$};
+\node[main node] (5) at (5,4.5)  {$P$};
+\node[main node] (6) at (-1,-4.5) {$G$};
+\node[main node] (7) at (1,-4.5)  {$FG$};
+\node[main node] (8) at (3,-4.5)  {$GF$};
+\node[main node] (9) at (5,-4.5)   {$F$};
+\node[main node] (10) at (-4,3.5)  {$FH$};
+\node[main node] (11) at (-6,0) {$GH \equiv HG$};
+\node[main node] (12) at (-4,-3.5)  {$PG$};
+\node[main node] (13) at (8,3.5)  {$GP$};
+\node[main node] (14) at (10,0)    {$FP \equiv PF$};
+\node[main node] (15) at (8,-3.5)  {$HF$};
+
+%от GH к FP верхом
+\path[->] (11) edge (10); 
+\path[->] (10) edge (2); 
+\path[->] (2) edge (3); 
+\path[->] (3) edge (4); 
+\path[->] (4) edge (5); 
+\path[->] (5) edge (13); 
+\path[->] (13) edge (14);
+
+%от GH к FP низом
+\path[->] (11) edge (12); 
+\path[->] (12) edge (6); 
+\path[->] (6) edge (7);
+\path[->] (7) edge (8);
+\path[->] (8) edge (9);
+\path[->] (9) edge (15);
+\path[->] (15) edge (14);
+
+%центральный крест
+\path[->] (10) edge (1); 
+\path[->] (1) edge (13); 
+\path[->] (12) edge (1); 
+\path[->] (1) edge (15); 
+
+\path[->] (6) edge (13); 
+\path[->] (2) edge (15); 
+\path[->] (12) edge (5); 
+\path[->] (10) edge (9);  
+\end{tikzpicture}
+\end{center} 
+\caption{15 модальностей логики $Q_t$.} \label{fig:6} 	
+\end{figure}
+\end{exercise}
+
+\begin{exercise}[*] Выразите монадические темпоральные операторы $G\varphi$, $H\varphi$, $F\varphi$, $P\varphi$ через диадические $U\varphi \psi$ и $S \varphi \psi$.\footnote{
+Подсказка от У.Х. Одена: 
+\begin{quote}
+\textit{I'll love you, dear, I'll love you. \\  Till China and Africa meet, \\  And the river jumps over the mountain. \\ And the salmon sing in the street.}
+\end{quote}
+}
+\end{exercise}
+
+
+\subsection{Логика ветвящегося времени (оккамистская)}
+
+\begin{exercise} Постройте модели (в логике ветвящегося времени) для следующих формул:
+\begin{multicols}{2}
+\begin{enumerate}
+\item $Fp \wedge \neg \Box Fp$
+\item $\Diamond F p \land G \neg p $
+\item $ P \Diamond p \land \neg \Diamond p $
+\item $ P \Diamond p \land  G \neg p $
+\item $ P \Diamond p \land \Box G \neg p $
+\item $P \Diamond F p \wedge \neg p \wedge \Box G \neg p $	
+\item $H \Diamond G p \wedge \neg p \wedge \Box G \neg p $	
+\item $\neg (\Diamond p \to (Pp \vee p \vee Fp))$
+\end{enumerate}
+\end{multicols}	
+\end{exercise}
+
+\begin{exercise}[*] Докажите (семантически), что формула
+\begin{center}
+    $ P \varphi \to \Box P \Diamond \varphi$ 
+\end{center}
+общезначима.
+\end{exercise}
+
+\begin{exercise}[*] Какие из формул общезначимы в логике ветящегося времени. Докажите.
+\begin{multicols}{3}
+\begin{enumerate}
+    \item $ P \Diamond \varphi \to \Diamond P \varphi$
+    \item $ \Diamond P \varphi \to P \Diamond \varphi$
+    \item $G \Box \varphi \to \Box G \varphi$
+    \item $\Box G \varphi \to G \Box \varphi$
+    \item  $\Diamond P \varphi \to \Box P \Diamond \varphi$ 
+    \item $\varphi \to \Box P \Diamond F \varphi$
+    \item $\Diamond \varphi \to \Box P \Diamond F \varphi$
+     \item $\Box \varphi \to \Box P \Diamond F \varphi$
+     \item $\Box P \Diamond \varphi \to \Diamond  P \varphi$
+\end{enumerate}
+\end{multicols}
+
+\end{exercise}
+
+\begin{exercise}[**] Выведите следующую формулу из аксиом логики K.t, аксиом S5 для $\Box$ и аксиомы неветвления в прошлое $P \varphi \to \Box P \Diamond \varphi$
+$$G \Box \varphi \to \Box G \varphi$$
+
+\end{exercise}
