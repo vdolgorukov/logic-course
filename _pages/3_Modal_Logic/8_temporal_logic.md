@@ -13,6 +13,10 @@ $$\varphi  ::= p \mid \neg \varphi \mid (\varphi \wedge \varphi ) \mid G \varphi
 
 где $p \in Prop$.
 
+Остальные связки определяются стандатрным образом. Вводятся два синтаксических сокращенияЖ
+- $P \varphi:= \neg H \neg \varphi$
+- $F \varphi:= \neg G \neg \varphi$
+
 # Семантика временных операторов 
 $M=(T, <, V)$ 
 
