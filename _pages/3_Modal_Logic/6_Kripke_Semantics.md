@@ -53,6 +53,7 @@ layout: post
 
 **Литература**
 - [https://plato.stanford.edu/entries/logic-modal/](https://plato.stanford.edu/entries/logic-modal/)
+- [https://plato.stanford.edu/entries/logic-modal-origins/](https://plato.stanford.edu/entries/logic-modal-origins/)
 
 
 **Видео**
