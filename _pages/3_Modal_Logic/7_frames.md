@@ -104,12 +104,9 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 **Утверждение 2**. Пусть, $(W,R)$ – шкала Крипке, тогда
 <p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ $\iff$ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ </p>
 
-
-[//]: <> (сериальность евклидовость направленность)
-
 :blue_book: **Упражнение 5**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
 <p style="text-align:center"> 
-$(W, R) \models \Box \Box p \to p$ $\iff$ $\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
+$(W, R) \models \Box \Box p \to \Box p$ $\iff$ $\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
 </p>
 
 :blue_book: **Упражнение 6**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
