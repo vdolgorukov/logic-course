@@ -121,12 +121,13 @@ $(W, R) \models \Box \Box p \to \Box p$ $\iff$ $\forall x \forall y ( xRy \to \e
 
 :blue_book: **Упражнение 8**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
 <p style="text-align:center"> 
-$(W, R) \models \Diamon \Box p \to \Box \Diamond p$ $\iff$ $\forall x \forall y ((xRy \wedge xRz) \to \exists w (yRw \wedge zRw))$
+$(W, R) \models \Diamond \Box p \to \Box \Diamond p$ $\iff$ $\forall x \forall y \forall z ((xRy \wedge xRz) \to \exists w (yRw \wedge zRw))$
 </p>
 
 :blue_book: **Упражнение 9**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$$
-
+<p style="text-align:center"> 
+$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$
+</p>
 :blue_book: **Упражнение 10**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$$
 
