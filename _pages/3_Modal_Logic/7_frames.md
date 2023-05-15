@@ -106,12 +106,12 @@ $$(W,R) \models \Box p \to p \iff \forall x \in W (xRx)$$
 
 :blue_book: **Упражнение 5**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
 <p style="text-align:center"> 
-$(W, R) \models p \to \Box \Diamond p$ $\iff$ $\forall x \forall y ( xRy \to yRx)$
+$(W, R) \models p \to \Box \Diamond p$ $\iff$ $\forall x \forall y (xRy \to yRx)$
 </p>
 
 :blue_book: **Упражнение 6**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
 <p style="text-align:center"> 
-$(W, R) \models \Box p \to \Diamond p$ $\iff$ $\forall x \exists y xRy$
+$(W, R) \models \Box p \to \Diamond p$ $\iff$ $\forall x \exists y \; xRy$
 </p>
 
 :blue_book: **Упражнение 7**.  Пусть $(W,R)$ – шкала Крипке, докажите, что 
