@@ -128,8 +128,11 @@ $(W, R) \models \Diamond \Box p \to \Box \Diamond p$ $\iff$ $\forall x \forall y
 <p style="text-align:center"> 
 $(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$
 </p>
+
 :blue_book: **Упражнение 10**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$$
+<p style="text-align:center"> 
+$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$
+</p>
 
 :blue_book: **Упражнение 11**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
 $$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz))$$
