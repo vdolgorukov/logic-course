@@ -40,7 +40,7 @@ layout: post
 - $M, x \models \bot \iff  \text{ никогда }$
 - $M, x \models \varphi \wedge \psi \iff M, x \models \varphi \text{ и }  M, x \models \psi$
 - $M, x \models \varphi \vee \psi \iff M, x \models \varphi \text{ или }  M, x \models \psi$
-- $M, x \models \varphi \to \psi \iff \forall y \; ((x \leq y \text{ и } M, y \models \varphi) \Rightarrow M, y \models \psi)$
+- $M, x \models \varphi \to \psi \iff \forall y ((x \leq y \text{ и } M, y \models \varphi) \Rightarrow M, y \models \psi)$
 
  
 **Упражнение**. Опишите условия истинности для $\neg \varphi$, понимая отрицание как синтаксическое сокращение $\neg \varphi:= \varphi \to \bot$. 
