@@ -66,21 +66,39 @@ $$F_1, F_3, F_5$$
 </details>
 
 <details><summary> 3. $\Box p \to p$  </summary>
+
+$$F_2, F_6, F_9$$
+ 
 </details>
 
 <details><summary> 4. $\Diamond \Box p \to p$ </summary>
+
+$$F_1, F_2, F_7, F_8, F_9$$
+ 
 </details>
 
 <details><summary> 5. $\Box p \to \Diamond p$ </summary>
+
+$$F_2, F_4, F_6, F_7, F_8, F_9$$
+ 
 </details>
 
 <details><summary> 6. $\Diamond p \to \Box p$ </summary>
+
+$$F_1, F_2, F_3, F_4, F_7$$
+ 
 </details>
 
 <details><summary> 7. $\Diamond p \leftrightarrow \Box p$ </summary>
+
+$$F_2, F_4, F_7$$
+ 
 </details>
 
 <details><summary> 8. $p \leftrightarrow \Box \Box p$ </summary>
+
+$$F_7$$
+ 
 </details>
 
 **Утверждение 1**. Пусть, $(W,R)$ – шкала Крипке, тогда
