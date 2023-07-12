@@ -68,37 +68,43 @@ $$F_1, F_3, F_5$$
 <details><summary> 3. $\Box p \to p$  </summary>
 
 $$F_2, F_6, F_9$$
- 
+
+Формула гвоорит, что все стрелки рефлексивные.
 </details>
 
 <details><summary> 4. $\Diamond \Box p \to p$ </summary>
 
 $$F_1, F_2, F_7, F_8, F_9$$
- 
+
+Формула говорит, что все стрелки симметричные. 
 </details>
 
 <details><summary> 5. $\Box p \to \Diamond p$ </summary>
 
 $$F_2, F_4, F_6, F_7, F_8, F_9$$
- 
+
+Формула говорит, что из каждого миру исходит стрелка (не бывает тупиковых миров).
 </details>
 
 <details><summary> 6. $\Diamond p \to \Box p$ </summary>
 
 $$F_1, F_2, F_3, F_4, F_7$$
- 
+
+Формула говорит, что если стрелка есть, то ровно одна 
 </details>
 
 <details><summary> 7. $\Diamond p \leftrightarrow \Box p$ </summary>
 
 $$F_2, F_4, F_7$$
- 
+
+ Формула говорит, что из каждого мира исходит ровно одна стрелка.
 </details>
 
 <details><summary> 8. $p \leftrightarrow \Box \Box p$ </summary>
 
-$$F_7$$
- 
+$$F_2, F_7$$
+
+Формула говорит, что любые два шага приводят в исходный мир.
 </details>
 
 **Утверждение 1**. Пусть, $(W,R)$ – шкала Крипке, тогда
