@@ -210,3 +210,6 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 * $(\forall x \Psi)[t/x] = \forall x \Psi $
 * $(\exists y \Psi)[t/x] = \forall y (\Psi[t/x])$, если $x \not = y$
 * $(\exists x \Psi)[t/x] = \exists  x \Psi $
+
+
+$f^M([[t_1]]^{M, v})$
