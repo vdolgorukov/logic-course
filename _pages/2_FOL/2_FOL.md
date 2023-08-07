@@ -212,4 +212,5 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 * $(\exists x \Psi)[t/x] = \exists  x \Psi $
 
 
+Пример: 
 $f^M([[t_1]]^{M, v})$
