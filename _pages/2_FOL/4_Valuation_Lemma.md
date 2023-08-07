@@ -58,4 +58,4 @@ $M, v' \models \forall y \Psi$
 
 
 
-$||t||^v_M$
+$|\!|t|\!|^v_M$
