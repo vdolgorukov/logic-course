@@ -213,4 +213,5 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 
 
 Пример: 
-$f^M([[t_1]]^{M, v})$
+$f^M([\![t_1]\!]^{M, v})$
+$\llbracket x \rrbracket$ 
