@@ -21,8 +21,8 @@ layout: post
 
 *Доказательство* 
 
-**Утверждение**. Пусть $v':= v^x_{|t|^v}$, тогда
-$$M, v \models \Phi [t/x] \iff M, v' \models \Phi$$
+**Утверждение**.
+$$M, v \models \Phi [t/x] \iff M, v[x \mapsto |t|^v_M ] \models \Phi$$
 
 *Доказательство*. Если $x \not \in FV(\Phi)$, тогда $\Phi[t/x] = \Phi$ и оценка  $v$ никак не влияет на истинность $\Phi$ (по утв).
 
