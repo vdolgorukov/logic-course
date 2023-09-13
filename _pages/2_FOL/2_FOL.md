@@ -59,7 +59,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 - $b$ – "Боря"
 - $c$ – "Сережа"
 - $P(x)$ – "x - умный" 
-- $Q(x)$ – "x – красивый".
+- $Q(x)$ – "x – красивый"
 <details><summary> 1. Боря – красивый, но не умный </summary> $$Qb \wedge \neg Pb$$ </details>
 <details><summary> 2. Боря – умный, Сережа – красивый, а Аня и умная, и красивая  </summary> $$Pb \wedge Qc \wedge Pa \wedge Qa$$ </details>
 <details><summary> 3. Если Боря красивый, то Аня - умная. </summary> $$Qb \to Pa$$ </details>
