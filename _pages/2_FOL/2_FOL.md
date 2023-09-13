@@ -213,4 +213,12 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 * $(\exists y \Psi)[t/x] = \forall y (\Psi[t/x])$, если $x \not = y$
 * $(\exists x \Psi)[t/x] = \exists  x \Psi $
 
-**Определение**. Терм свооден для подстановки. 
+**Определение**. Будем говорить, что терм $t$ свободен для подстановки вместо переменно $x$ в формуле $\Phi$, если после подстановки ни одна переменная из терма не окажется связанной, т.е. $Var(t) \subseteq FV(\Phi[t/x])$
+
+**Пример** Терм $f(y)$ не является свободным для подстановки вместо переменной $x$ в формулу $\exists y R(x, y)$.
+
+**Контрольный вопрос** Какие термы являются свободными для подстановки вместо переменной $y$ в формуле $\forall x R(f(x),y)$:
+<details><summary>  $f(g(x,a))$  </summary>  нет </details>
+<details><summary>  $f(a))$  </summary> да  </details>
+<details><summary> $g(a,z)$ </summary>  да  </details>
+<details><summary> $f(x, z)$ </summary> нет  </details>
