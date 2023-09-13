@@ -95,7 +95,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 **Обозначение**. Пусть $v$ – означивание, обозначим  $v[x \mapsto d]$ новое означивание, которое  переменной $x$ сопоставляет объект $d \in D$, а в остальном совпадает с $v$.
 
 **Определение**. Пусть $M = (D, I)$ - модель классической логики предикатов первого порядка, $v$ – означивание. Дадим индуктивное определение истинности формулы в модели при означивании.
-* $M, v \models P(t_1, \dots, t_n)$ е.т.е. $\langle ||t_1||^{M, v}, \dots, ||t_n||^{M, v} \rangle \in P_M$
+* $M, v \models P(t_1, \dots, t_n)$ е.т.е. $\langle |t_1|_M^v, \dots, |t_n|_M^v \rangle \in P_M$, где $arity(P) = n$
 * $M, v \models \neg \Phi$ е.т.е. $M, v \not \models \Phi$
 * $M, v \models \Phi \wedge \Psi$ е.т.е. $M, v \models \Phi$ и $M, v \models  \Psi$
 * $M, v \models \Phi \vee \Psi$ е.т.е. $M, v \models \Phi$ или $M, v \models  \Psi$
