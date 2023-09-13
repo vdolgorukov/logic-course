@@ -122,7 +122,7 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 * $C_M = \\{$ :cat:  $\\}$
 * $M_M = \\{$ :mouse: $\\}$
 * $A_M = \\{$ :cat:, :mouse: $\\}$
-* $D_M$ = $\varnothing$ 
+* $H_M$ = $\varnothing$ 
 
 означивание устроено так: $v: x \mapsto$ :cat:
 
