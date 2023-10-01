@@ -304,17 +304,13 @@ $f^{2}: \{0,1\} \times \{0,1\} \mapsto \{0,1\}$
 
 **Упражнение 4(\*).** Докажите, что правило дизъюнктивный силлогизм можно заменить на разбор случаев.
 
-
 **Упражнение 5(\*).** Добавим в натуральное исчисление для классической логики высказываний следующие правила вывода для $\leftrightarrow$:
 
-<font size = 7> $\leftrightarrow_{\text{и}} \frac{A \leftrightarrow B}{A \to B}$ 
+<font size = 5> $\leftrightarrow_{\text{и}} \frac{A \leftrightarrow B}{A \to B}$ 
 	
-<font size = 6> $\leftrightarrow_{\text{и}} \frac{A \leftrightarrow B}{B \to A}$
+<font size = 5> $\leftrightarrow_{\text{и}} \frac{A \leftrightarrow B}{B \to A}$
 
 <font size = 5> $\leftrightarrow_{\text{в}} \frac{A \to B, B \to A}{A \leftrightarrow B}$ 
-
-
-
 
 
 Найдите доказательства для следующих теорем:
@@ -328,7 +324,6 @@ $f^{2}: \{0,1\} \times \{0,1\} \mapsto \{0,1\}$
 * $\vdash (q \to r) \to ((p \to q) \to (p \to r))$
 * $\vdash (p \to (q \to r)) \to (q \to (p \to r))$	
 * $\vdash  (p \to q) \to ((q \to r) \to (p \to r))$
-
 
 
 **Упражнение 7(\*).**  Методом аналитических таблиц докажите общезначимость следующих формул:
