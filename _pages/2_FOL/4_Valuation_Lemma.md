@@ -1,8 +1,3 @@
----
-title: Леммы об означивании
-category: Jekyll
-layout: post
----
 
 **Утверждение**. Если $x \not = y$, то $(v^x_a)^y_b = (v^y_b)^x_a$. 
 
