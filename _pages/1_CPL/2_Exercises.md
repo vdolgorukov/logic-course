@@ -1,5 +1,5 @@
 ---
-title: Классическая логика: упражнения
+title: Упражнения
 category: Jekyll
 layout: post
 ---
