@@ -226,12 +226,7 @@ $A$, $A \to B$  $\Rightarrow$ $B$
 1. $S$ содержит аксиомные схемы $I_1$ и $I_2$
 2. единственное правило вывода в исчислении $S$ – modus ponens.
 
-**Утверждение.** Пусть $S$ – «дружественное к дедукции» исчисление, тогда
-
-$\Gamma \vdash_S \varphi \to \psi}$ 
-$\Gamma \vdash_S \varphi \to (\psi \to \chi)$
-$\Gamma \vdash_S \varphi \to \chi}$
-
+**Утверждение.** Пусть $S$ – «дружественное к дедукции» исчисление. Если $\Gamma \vdash_S \varphi \to \psi}$, $\Gamma \vdash_S \varphi \to (\psi \to \chi)$, то $\Gamma \vdash_S \varphi \to \chi}$.
 
 **Доказательство.** Упражнение.
 
@@ -295,7 +290,6 @@ $$\Gamma, \varphi \vdash_S \psi \iff \Gamma \vdash_S \varphi \to \psi$$
 2. $(p \to q) \to (p \to q)$
 3. $(p \to q) \to q$ 
 
-\begin{tabular}{l|l}
 $\Gamma, \varphi \vdash \psi$ & $\Gamma \vdash \varphi \to \psi$ \\ 
 $p, p \to q \vdash q$ & $p \vdash ( p \to q) \to q$ \\ \hline
 & 1. $p$ -- гип. \\
@@ -310,7 +304,6 @@ $p, p \to q \vdash q$ & $p \vdash ( p \to q) \to q$ \\ \hline
 & 9. $((p \to q) \to (p \to q)) \to ( (p \to q) \to p ) \to ((p \to q) \to q))$ – $I_2$ \\
 & 10. $( (p \to q) \to p ) \to ((p \to q) \to q)$ – $MP$~4,5 \\
 3. q -- MP 1,2 & 11. $(p \to q) \to q)$ – $MP$ 2,6 
-\end{tabular}
 
 Заметим, что здесь шаги 4-8 являются доказательством теоремы $(p \to q) \to (p \to q)$. Доказательство получается из доказательства $p \to p$ (см. пример доказательства $\vdash_{cl_{\to\neg}}p \to p$) путем замены $p$ на $p \to q$.
 
@@ -338,7 +331,7 @@ $Pn:=$ «вывод формулы $\psi$ из $\Gamma \cup \{ \varphi \}$ *дл
 
 $$\Gamma, \varphi_1, \dots, \varphi_{n-1}, \varphi_{n} \vdash_S \psi \iff \Gamma \vdash_S \varphi_1 \to ( \dots (\varphi_{n-1} \to (\varphi_{n} \to \psi)) \dots )$$
 
-**Упражнение.** Докажите[^можнопользоваться] следующие теоремы исчисления $cl_{\neg\to}$:
+**Упражнение.** Докажите следующие теоремы исчисления $cl_{\neg\to}$:
 
 1. $((p \to q) \to r) \to  (q \to r)$
 2. $(q \to r) \to ((p \to q) \to (p \to r))$
@@ -347,12 +340,12 @@ $$\Gamma, \varphi_1, \dots, \varphi_{n-1}, \varphi_{n} \vdash_S \psi \iff \Gamma
 5. $p \to ((p \to q) \to q)$
 6. $(p \to (p \to q)) \to (p \to q)$	
 
-[^можнопользоваться]: Если прямо не оговорено обратное, то разрешается пользоваться метатеоремой о дедукции.
+Если прямо не оговорено обратное, то разрешается пользоваться метатеоремой о дедукции.
 
 **Упражнение\*.** Докажите теоремы из предыдущего упражнения без использования метатеоремы о дедукции.
 
+<!---
 **Определение.** Правило вывода
-
 \begin{prooftree}
 \hypo{A_1, \dots, A_n}
 \infer1{B}
@@ -361,7 +354,7 @@ $$\Gamma, \varphi_1, \dots, \varphi_{n-1}, \varphi_{n} \vdash_S \psi \iff \Gamma
 
 является производным в исчислении $S$, если $A_1, \dots, A_n \vdash_S B$
 
-<!---
+
 **Упражнение.** Докажите, что в исчислении $cl_{\neg\to}$ следующие правила вывода являются производными:
 
 \begin{multicols}{2}
