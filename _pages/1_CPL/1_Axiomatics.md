@@ -569,14 +569,8 @@ $\vdash q \leftrightarrow q$ (см.: пример с доказательств�
 
 Сл.2. $\varphi= \varphi_1 \wedge \varphi_2$. 
 
-<--
-\begin{prooftree}
-\infer0[IH]{\vdash \varphi_1[\psi/p] \leftrightarrow \varphi_1[\psi'/p]} 
-\infer0[IH]{\vdash \varphi_2[\psi/p] \leftrightarrow \varphi_2[\psi'/p]}
-\infer2[утв.\ref{equiv}]{\vdash (\varphi_1[\psi/p] \wedge \varphi_2 [\psi/p]) \leftrightarrow (\varphi_1[\psi'/p] \wedge \varphi_2 [\psi'/p])}
-\infer1[опр.\ref{dfn:subst}]{\vdash (\varphi_1 \wedge \varphi_2)[\psi/p] \leftrightarrow (\varphi_1 \wedge \varphi_2)[\psi'/p]}
-\end{prooftree}
--->	
+![деревосдоказательством](дерево.png)
+
 Сл.3. $\varphi= \varphi_1 \vee \varphi_2$. Аналогично сл.2. Упражнение. 
 
 Сл. 4. $\varphi= \varphi_1 \to \varphi_2$. Аналогично сл.2. Упражнение.
