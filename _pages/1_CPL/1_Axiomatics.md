@@ -346,14 +346,9 @@ $$\Gamma, \varphi_1, \dots, \varphi_{n-1}, \varphi_{n} \vdash_S \psi \iff \Gamma
 
 **Упражнение\*.** Докажите теоремы из предыдущего упражнения без использования метатеоремы о дедукции.
 
-<!---
-**Определение.** Правило вывода
-\begin{prooftree}
-\hypo{A_1, \dots, A_n}
-\infer1{B}
-\end{prooftree}
-\end{center}
 
+**Определение.** Правило вывода
+$\frac{A_1, \dots, A_n}{B}$
 является производным в исчислении $S$, если $A_1, \dots, A_n \vdash_S B$
 
 
