@@ -227,7 +227,7 @@ $A$, $A \to B$  $\Rightarrow$ $B$
 1. $S$ содержит аксиомные схемы $I_1$ и $I_2$
 2. единственное правило вывода в исчислении $S$ – modus ponens.
 
-**Утверждение.** Пусть $S$ – «дружественное к дедукции» исчисление. Если $\Gamma \vdash_S \varphi \to \psi}$, $\Gamma \vdash_S \varphi \to (\psi \to \chi)$, то $\Gamma \vdash_S \varphi \to \chi}$.
+**Утверждение.** Пусть $S$ – «дружественное к дедукции» исчисление. Если $\Gamma \vdash_S \varphi \to \psi$, $\Gamma \vdash_S \varphi \to (\psi \to \chi)$, то $\Gamma \vdash_S \varphi \to \chi$.
 
 **Доказательство.** Упражнение.
 
