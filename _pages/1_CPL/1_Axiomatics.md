@@ -575,10 +575,8 @@ $$\Gamma, A_1, \dots, A_n \vdash B \iff \Gamma, A_1 \wedge \dots \wedge A_n \vda
 
 Пусть $\varphi, \psi, \psi' \in Fm$, $p \in Var$, тогда
 
-\begin{prooftree}
-\hypo{\vdash \psi \leftrightarrow \psi'}
-\infer1{\vdash \varphi[\psi/p] \leftrightarrow \varphi[\psi'/p] }	
-\end{prooftree}
+$$\frac{\vdash \psi \leftrightarrow \psi'}{\vdash \varphi[\psi/p] \leftrightarrow \varphi[\psi'/p]}$$	
+
 
 **Доказательство.** Допустим $\vdash \psi \leftrightarrow \psi'$. Докажем индукцией по построению $\varphi$, что $\vdash \varphi[\psi/p] \leftrightarrow \varphi[\psi'/p]$.
 
