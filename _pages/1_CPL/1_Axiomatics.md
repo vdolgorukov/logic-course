@@ -509,34 +509,20 @@ $$\Gamma, A_1, \dots, A_n \vdash B \iff \Gamma, A_1 \wedge \dots \wedge A_n \vda
 
 **Упражнение.** Докажите, что верны следующие утверждения:
 
-\begin{multicols}{2}
-\begin{itemize}
-\item 
-\begin{prooftree}
-\hypo{\Gamma \vdash A } \hypo{\Gamma \vdash B} 	
-\infer2{\Gamma \vdash A \wedge B}
-\end{prooftree}
+- \frac{\Gamma \vdash A \; \Gamma \vdash B}{\Gamma \vdash A \wedge B}
 
-\item 
-\begin{prooftree}
-\hypo{\Gamma, A \vdash B} 	\hypo{\Gamma, A \vdash \neg B} 	
-\infer2{\Gamma \vdash \neg A}
-\end{prooftree}
 
-\item 
-\begin{prooftree}
-\hypo{\Gamma, A \vdash C } 	\hypo{\Gamma, B \vdash C} 	
-\infer2{\Gamma, A \vee B \vdash C}
-\end{prooftree}
 
-\item 
-\begin{prooftree}
-\hypo{\Gamma, A \vdash B} 	\hypo{\Gamma, \neg A \vdash B} 	
-\infer2{\Gamma \vdash B}
-\end{prooftree}
+- \frac{\Gamma, A \vdash B \; \Gamma, A \vdash \neg B}{\Gamma \vdash \neg A}
 
-\end{itemize}
-\end{multicols}
+
+
+- \frac{\Gamma, A \vdash C \; \Gamma, B \vdash C}{\Gamma, A \vee B \vdash C}
+
+
+
+- \frac{\Gamma, A \vdash B \; \Gamma, \neg A \vdash B}{\Gamma \vdash B}
+
 
 ### Теорема об эквивалентной замене
 
