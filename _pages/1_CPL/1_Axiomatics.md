@@ -584,7 +584,7 @@ $\vdash q \leftrightarrow q$ (см.: пример с доказательств�
 
 **Утверждение.** Следующее правило вывода является производным в исчислении $cl$:
 
-$$\frac{\Gamma \vdash \varphi[\psi/p]}{\vdash \psi \leftrightarrow \psi'}{\Gamma \vdash \varphi[\psi'/p]} \hspace{1ex} RE$$
+$$\frac{\Gamma \vdash \varphi[\psi/p] \hspace{3ex} \vdash \psi \leftrightarrow \psi'}{\Gamma \vdash \varphi[\psi'/p]} \hspace{1ex} RE$$
 
 **Доказательство.** Упражнение.
 
