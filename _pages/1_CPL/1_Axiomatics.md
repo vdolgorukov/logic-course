@@ -509,19 +509,19 @@ $$\Gamma, A_1, \dots, A_n \vdash B \iff \Gamma, A_1 \wedge \dots \wedge A_n \vda
 
 **Упражнение.** Докажите, что верны следующие утверждения:
 
-* <font size = 5> $\frac{\Gamma \vdash A \_ \Gamma \vdash B}{\Gamma \vdash A \wedge B}$
+* <font size = 5> $\frac{\Gamma \vdash A \hspace{1ex} \Gamma \vdash B}{\Gamma \vdash A \wedge B}$
 
 
 
--  <font size = 5> $\frac{\Gamma, A \vdash B \_ \Gamma, A \vdash \neg B}{\Gamma \vdash \neg A}$
+-  <font size = 5> $\frac{\Gamma, A \vdash B  \Gamma, A \vdash \neg B}{\Gamma \vdash \neg A}$
 
 
 
-* <font size = 5> $\frac{\Gamma, A \vdash C \_ \Gamma, B \vdash C}{\Gamma, A \vee B \vdash C}$
+* <font size = 5> $\frac{\Gamma, A \vdash C  \Gamma, B \vdash C}{\Gamma, A \vee B \vdash C}$
 
 
 
-- $\frac{\Gamma, A \vdash B \_ \Gamma, \neg A \vdash B}{\Gamma \vdash B}$
+- $\frac{\Gamma, A \vdash B  \Gamma, \neg A \vdash B}{\Gamma \vdash B}$
 
 
 ### Теорема об эквивалентной замене
