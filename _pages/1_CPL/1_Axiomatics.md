@@ -301,9 +301,9 @@ $$\Gamma, \varphi \vdash_S \psi \iff \Gamma \vdash_S \varphi \to \psi$$
 |  | 5. $((p \to q) \to ((q \to (p \to q)) \to (p \to q))) \to$ |
 |  | $(((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – акс. $I_2$  |
 |  | 6. $((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – $MP$ 4,5 | 
-|  | 7. $(p \to q) \to (q \to (p \to q))$ – акс.~$I_1$ |
-| 2. $p \to q$ - гип. | 8. $(p \to q) \to (p \to q)$ – $MP$~6,7 |
-|  | 9. $((p \to q) \to (p \to q)) \to ( (p \to q) \to p ) \to ((p \to q) \to q))$ – $I_2$ |
+|  | 7. $(p \to q) \to (q \to (p \to q))$ – акс. $I_1$ |
+| 2. $p \to q$ - гип. | 8. $(p \to q) \to (p \to q)$ – $MP$ 6,7 |
+|  | 9. $((p \to q) \to (p \to q)) \to ( (p \to q) \to p ) \to ((p \to q) \to q))$ – акс. $I_2$ |
 |  | 10. $( (p \to q) \to p ) \to ((p \to q) \to q)$ – $MP$ 4,5 |
 | 3. q - MP 1,2 | 11. $(p \to q) \to q)$ – $MP$ 2,6 
 
