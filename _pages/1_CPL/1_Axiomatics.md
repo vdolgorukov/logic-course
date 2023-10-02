@@ -354,49 +354,23 @@ $\frac{A_1, \dots, A_n}{B}$
 
 **Упражнение.** Докажите, что в исчислении $cl_{\neg\to}$ следующие правила вывода являются производными:
 
-\begin{multicols}{2}
-
-\begin{itemize}
-\item
-\begin{prooftree}
-\hypo{A}
-\infer1{B \to A}
-\end{prooftree}
-
-\item
-\begin{prooftree}
-\hypo{A \to (B \to C)}
-\infer1{(A \to B)  \to (A \to  C)}
-\end{prooftree}
+* $\frac{A}{B \to A}$
 
 
-\item
-\begin{prooftree}
-\hypo{(A \to B) \to C)}
-\infer1{B \to C}	
-\end{prooftree}
+* $\frac{A \to (B \to C)}{(A \to B)  \to (A \to  C)}$
 
-\item
-\begin{prooftree}
-\hypo{A \to (B \to C)}
-\infer1{B \to (A \to C)}	
-\end{prooftree}
 
-\item
-\begin{prooftree}
-\hypo{A \to B }
-\infer1{(C \to A) \to  (C \to B)}	
-\end{prooftree}
+* $\frac{(A \to B) \to C)}{B \to C}$
 
-\item
-\begin{prooftree}
-\hypo{A \to B} \hypo{B \to C}
-\infer2{A \to C}	
-\end{prooftree}
 
-\end{itemize}
-\end{multicols}
--->
+* $\frac{A \to (B \to C)}{B \to (A \to C)}$	
+
+
+* $\frac{A \to B }{(C \to A) \to  (C \to B)}$
+
+
+* $\frac{A \to B} \hypo{B \to C}{A \to C}$	
+
 
 **Упражнение.** Докажите следующие теоремы исчисления $cl_{\neg\to}$:
 
