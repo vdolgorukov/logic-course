@@ -291,20 +291,21 @@ $$\Gamma, \varphi \vdash_S \psi \iff \Gamma \vdash_S \varphi \to \psi$$
 2. $(p \to q) \to (p \to q)$
 3. $(p \to q) \to q$ 
 
-$\Gamma, \varphi \vdash \psi$ & $\Gamma \vdash \varphi \to \psi$ \\ 
-$p, p \to q \vdash q$ & $p \vdash ( p \to q) \to q$ \\ \hline
-& 1. $p$ -- гип. \\
-& 2. $p \to ((p \to q) \to p)$ – акс.~$I_1$ \\
-1. $p$ -- гип. & 3. $(p \to q) \to p$ – $MP$ 1,2 \\
-& 4. $(p \to q) \to ((q \to (p \to q)) \to (p \to q))$ – акс.~$I_1$ \\ 
-& 5. $((p \to q) \to ((q \to (p \to q)) \to (p \to q))) \to$ \\ 
-& $(((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – акс.~$I_2$  \\
-& 6. $((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – $MP$~4,5\\ 
-& 7. $(p \to q) \to (q \to (p \to q))$ – акс.~$I_1$ \\ 
-2. $p \to q$ -- гип. & 8. $(p \to q) \to (p \to q)$ – $MP$~6,7 \\
-& 9. $((p \to q) \to (p \to q)) \to ( (p \to q) \to p ) \to ((p \to q) \to q))$ – $I_2$ \\
-& 10. $( (p \to q) \to p ) \to ((p \to q) \to q)$ – $MP$~4,5 \\
-3. q -- MP 1,2 & 11. $(p \to q) \to q)$ – $MP$ 2,6 
+| $\Gamma, \varphi \vdash \psi$ | $\Gamma \vdash \varphi \to \psi$ \ |
+|----------|----------|
+| $p, p \to q \vdash q$ | $p \vdash ( p \to q) \to q$ |
+|  | 1. $p$ -- гип. |
+|  | 2. $p \to ((p \to q) \to p)$ – акс.~$I_1$ |
+| 1. $p$ -- гип. | 3. $(p \to q) \to p$ – $MP$ 1,2 |
+|  | 4. $(p \to q) \to ((q \to (p \to q)) \to (p \to q))$ – акс.~$I_1$ |
+|  | 5. $((p \to q) \to ((q \to (p \to q)) \to (p \to q))) \to$ |
+|  | $(((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – акс.~$I_2$  |
+|  | 6. $((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – $MP$~4,5 | 
+|  | 7. $(p \to q) \to (q \to (p \to q))$ – акс.~$I_1$ |
+| 2. $p \to q$ -- гип. | 8. $(p \to q) \to (p \to q)$ – $MP$~6,7 |
+|  | 9. $((p \to q) \to (p \to q)) \to ( (p \to q) \to p ) \to ((p \to q) \to q))$ – $I_2$ |
+|  | 10. $( (p \to q) \to p ) \to ((p \to q) \to q)$ – $MP$~4,5 |
+| 3. q -- MP 1,2 | 11. $(p \to q) \to q)$ – $MP$ 2,6 
 
 Заметим, что здесь шаги 4-8 являются доказательством теоремы $(p \to q) \to (p \to q)$. Доказательство получается из доказательства $p \to p$ (см. пример доказательства $\vdash_{cl_{\to\neg}}p \to p$) путем замены $p$ на $p \to q$.
 
