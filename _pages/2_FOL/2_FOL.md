@@ -219,3 +219,10 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 <details><summary>  $f(a))$  </summary> да  </details>
 <details><summary> $g(a,z)$ </summary>  да  </details>
 <details><summary> $f(x, z)$ </summary> нет  </details>
+
+
+
+$\begin{smallmatrix}
+   p, p \to q \\
+   q
+\end{smallmatrix}$
