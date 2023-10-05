@@ -223,6 +223,8 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 
 $\dfrac{\varphi}{\Box \varphi}$
 
+${\varphi \above{2pt} \Box \varphi}$
+
 $\begin{smallmatrix}
    p, & p \to q \\
    q & 
