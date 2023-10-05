@@ -226,3 +226,6 @@ $\begin{smallmatrix}
    p, & p \to q \\
    q & 
 \end{smallmatrix}$
+
+
+$\xLeftrightarrow{abc}$
