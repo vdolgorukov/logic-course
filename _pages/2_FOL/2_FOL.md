@@ -82,7 +82,8 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 **Определение**. *Значение терма (денотат)* (обозначение: $\|t\|^M_v$). Пусть $M = (D, I)$ - модель классической логики предикатов первого порядка, $v$ – означивание. Определим по индукции значение терма в модели $M$ при означивании $v$: 
 $\|c\|_M^v = c_M \in D$ для $c \in Const$
 $\|x\|_M^v = v(x) \in D$ для $x \in Var$
-$\llbracket f(t_1, \dots, t_n)\llbracket_M^v = f_M(\llbracket t_1\llbracket_M^v, \dots, \llbrackett_n\|_M^v) \in D$ для  $f \in Fn$, такая, что  $arity(f)=n$, $t_1, \dots, t_n \in Trm$.
+$\llbracket f(t_1, \dots, t_n) \llbracket_{M}^{v} = f_M(\llbracket t_1\llbracket_M^v, \dots, \llbrackett_n\|_M^v) \in D$ для  $f \in Fn$, такая, что  $arity(f)=n$, $t_1, \dots, t_n \in Trm$.
+$\llbracket$
 
 Часто мы будем писать $|t|^v$ вместо $|t|^v_M$, если из контекста понятно, о какой модели идет речь. Также будем писать $|t|^{x \mapsto a}$, указывая только ту часть означивания, которая важна для оценки терма.
 
