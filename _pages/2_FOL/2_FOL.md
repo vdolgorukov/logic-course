@@ -221,6 +221,7 @@ $$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \
 <details><summary> $f(x, z)$ </summary> нет  </details>
 
 
+$\dfrac{\varphi}{\Box \varphi}$
 
 $\begin{smallmatrix}
    p, & p \to q \\
