@@ -354,22 +354,12 @@ $\frac{A_1, \dots, A_n}{B}$
 
 **Упражнение.** Докажите, что в исчислении $cl_{\neg\to}$ следующие правила вывода являются производными:
 
-* $\frac{A}{B \to A}$
-
-
-* $\frac{A \to (B \to C)}{(A \to B)  \to (A \to  C)}$
-
-
-* $\frac{(A \to B) \to C)}{B \to C}$
-
-
-* $\frac{A \to (B \to C)}{B \to (A \to C)}$	
-
-
-* $\frac{A \to B }{(C \to A) \to  (C \to B)}$
-
-
-* $\frac{A \to B}{B \to C}{A \to C}$	
+- $\dfrac{A}{B \to A}$
+- $\dfrac{A \to (B \to C)}{(A \to B)  \to (A \to  C)}$
+- $\dfrac{(A \to B) \to C)}{B \to C}$
+- $\dfrac{A \to (B \to C)}{B \to (A \to C)}$
+- $\dfrac{A \to B }{(C \to A) \to  (C \to B)}$
+- $\dfrac{A \to B}{B \to C}{A \to C}$	
 
 
 **Упражнение.** Докажите следующие теоремы исчисления $cl_{\neg\to}$:
@@ -477,10 +467,10 @@ $$(\neg A \to \neg B) \to (B \to A)$$
 $$\Gamma, A_1, \dots, A_n \vdash B \iff \Gamma, A_1 \wedge \dots \wedge A_n \vdash B$$
 
 **Упражнение.** Докажите, что верны следующие утверждения:
-– $\dfrac{\Gamma \vdash A \hspace{2ex} \Gamma \vdash B}{\Gamma \vdash A \wedge B}$
-– $\dfrac{\Gamma, A \vdash B \hspace{2ex} \Gamma, A \vdash \neg B}{\Gamma \vdash \neg A}$
-– $\dfrac{\Gamma, A \vdash C \hspace{2ex} \Gamma, B \vdash C}{\Gamma, A \vee B \vdash C}$
-– $\dfrac{\Gamma, A \vdash B \hspace{2ex} \Gamma, \neg A \vdash B}{\Gamma \vdash B}$
+- $\dfrac{\Gamma \vdash A \hspace{2ex} \Gamma \vdash B}{\Gamma \vdash A \wedge B}$
+- $\dfrac{\Gamma, A \vdash B \hspace{2ex} \Gamma, A \vdash \neg B}{\Gamma \vdash \neg A}$
+- $\dfrac{\Gamma, A \vdash C \hspace{2ex} \Gamma, B \vdash C}{\Gamma, A \vee B \vdash C}$
+- $\dfrac{\Gamma, A \vdash B \hspace{2ex} \Gamma, \neg A \vdash B}{\Gamma \vdash B}$
 
 
 ### Теорема об эквивалентной замене
