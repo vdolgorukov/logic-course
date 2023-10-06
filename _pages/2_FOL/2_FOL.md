@@ -83,20 +83,19 @@ $$\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \
 $\Vert c \Vert_M^v = c_M \in D$ для $c \in Const$
 $\Vert x \Vert_M^v = v(x) \in D$ для $x \in Var$
 $\Vert f(t_1, \dots, t_n) \Vert_{M}^{v} = f_M(\Vert t_1 \Vert_M^v, \dots, \Vert t_n \Vert_M^v) \in D$ для  $f \in Fn$, такая, что  $arity(f)=n$, $t_1, \dots, t_n \in Trm$.
-$\llbracket$
 
-Часто мы будем писать $|t|^v$ вместо $|t|^v_M$, если из контекста понятно, о какой модели идет речь. Также будем писать $|t|^{x \mapsto a}$, указывая только ту часть означивания, которая важна для оценки терма.
+Часто мы будем писать $\Vert t \Vert^v$ вместо $\Vert t \Vert^v_M$, если из контекста понятно, о какой модели идет речь. Также будем писать $\Vert t \Vert^{x \mapsto a}$, указывая только ту часть означивания, которая важна для оценки терма.
 
 :blue_book: **Упражнение**. Пусть модель $M = (\mathbb{N}, I_M)$, где $I_M$ –  функция такая, что $I_M(f)$ – операция сложения в обычном арифметическом смысле,  $I_M(g)$ – операция умножения в обычном арифметическом смысле; $a_M = 0$, $b_M=1$ пусть $v$ – означивание такое, что $v: x \mapsto 2, y \mapsto 3$. Вычислите значение для следующих термов:
-* $\|f(a,b)\|^v_M$
-* $\|g(a,x)\|^v_M$
-* $\|f(x,x)\|^v_M$
-* $\|g(a,f(y,x))\|^v_M$
+* $\Vert f(a,b) \Vert^v_M$
+* $\Vert g(a,x) \Vert^v_M$
+* $\Vert f(x,x) \Vert^v_M$
+* $\Vert g(a,f(y,x)) \Vert^v_M$
 
 **Обозначение**. Пусть $v$ – означивание, обозначим  $v[x \mapsto d]$ новое означивание, которое  переменной $x$ сопоставляет объект $d \in D$, а в остальном совпадает с $v$.
 
 **Определение**. Пусть $M = (D, I)$ - модель классической логики предикатов первого порядка, $v$ – означивание. Дадим индуктивное определение истинности формулы в модели при означивании:
-* $M, v \models P(t_1, \dots, t_n)$ е.т.е. $\langle \|t_1\|_M^v, \dots, \|t_n\|_M^v \rangle \in P_M$
+* $M, v \models P(t_1, \dots, t_n)$ е.т.е. $\langle \Vert t_1 \Vert_M^v, \dots, \Vert t_n \Vert_M^v \rangle \in P_M$
 * $M, v \models \neg \Phi$ е.т.е. $M, v \not \models \Phi$
 * $M, v \models \Phi \wedge \Psi$ е.т.е. $M, v \models \Phi$ и $M, v \models  \Psi$
 * $M, v \models \Phi \vee \Psi$ е.т.е. $M, v \models \Phi$ или $M, v \models  \Psi$
@@ -105,10 +104,10 @@ $\llbracket$
 * $M, v \models \forall x \Phi$ е.т.е. для любого $d \in D$: $M, v[x \mapsto d] \models \Phi$
 
 **Пример**. Опишем условия истинности для конкретных формул:
-* $M, v \models P(a)$ ⇔  $\|a\|^v_M \in P_M $
-* $M, v \models P(x)$ ⇔ $\|x\|^v_M \in P_M$ ⇔ $v(x) \in P_M$
-* $M, v \models R(a,b)$ ⇔ $\langle \|a\|^v_M, \|b\|^v_M \rangle  \in R_M$
-* $M, v \models P(f(a))$  ⇔ $\|f(a)\|^v_M \in P_M \iff  f_M(\|a\|^v_M) \in P_M  $
+* $M, v \models P(a)$ ⇔  $\Vert a \Vert^v_M \in P_M $
+* $M, v \models P(x)$ ⇔ $\Vert x \Vert^v_M \in P_M$ ⇔ $v(x) \in P_M$
+* $M, v \models R(a,b)$ ⇔ $\langle  \Vert a \Vert^v_M,  \Vert b \Vert^v_M \rangle  \in R_M$
+* $M, v \models P(f(a))$  ⇔ $\Vert f(a) \Vert^v_M \in P_M \iff  f_M(\Vert a \Vert^v_M) \in P_M  $
 * $M, v \models \forall x P(x)$ ⇔ для любого $d \in D$: $M, v^x_d \models Px$ ⇔ для любого $d \in D: v^x_d (x) \in P_M$  
 ⇔ для любого $d \in D: d \in P_M $
 * $M, v \models \forall x \exists y R(x, y)$ ⇔ для любого $d \in D$ найдется $d' \in D: \langle d, d' \rangle \in R_M$
@@ -153,8 +152,8 @@ $\llbracket$
 ![Model](/logic-course/docs/assets/images/square.png)
 
 Проверим, что следующие утверждения являются корректными:
-* $M, v \models S(a) \Leftrightarrow  \|a\|^v_M \in S_M \Leftrightarrow  \square \in  \\{\blacksquare, \square \\}$
-* $M, v \models T(x) \Leftrightarrow  \|x\|^v_M \in T_M \Leftrightarrow  v(x) \in T_M \Leftrightarrow  \triangle \in  \\{ \triangle, \blacktriangle \\}$
+* $M, v \models S(a) \Leftrightarrow  \Vert a \Vert^v_M \in S_M \Leftrightarrow  \square \in  \\{\blacksquare, \square \\}$
+* $M, v \models T(x) \Leftrightarrow  \Vert x \Vert^v_M \in T_M \Leftrightarrow  v(x) \in T_M \Leftrightarrow  \triangle \in  \\{ \triangle, \blacktriangle \\}$
 
 :green_book: **Упражнение (c ответами)**. Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:
 <details><summary>  $M, v \models B(a)$ </summary> 
@@ -162,7 +161,7 @@ $\llbracket$
   
 $M, v \not \models B(a)$, поскольку 
   
-$$M, v \models B(a) \Leftrightarrow  \|a\|^v_M \in B_M \Leftrightarrow \square \in \\\{\blacksquare, \blacktriangle \\\}$$
+$$M, v \models B(a) \Leftrightarrow  \Vert a \Vert^v_M \in B_M \Leftrightarrow \square \in \\\{\blacksquare, \blacktriangle \\\}$$
  
   
 А последнее утверждение очевидно ложно. Действительно, белый квадрат (денотат $a$) не является черной фигурой ($B$).
