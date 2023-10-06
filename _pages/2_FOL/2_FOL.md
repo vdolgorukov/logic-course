@@ -225,3 +225,5 @@ $\dfrac{\varphi}{\Box \varphi}$
 
 
 $\xLeftrightarrow{abc}$
+
+$M, v \models P(t_1, \dots, t_n) \iff \langle \llbracket t_1 \rrbracket_M^v , \dots, \llbracket t_n \rrbracket_M^v \rangle \in P_M$
