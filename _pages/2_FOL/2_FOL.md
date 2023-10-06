@@ -218,11 +218,3 @@ $$M, v \models B(a) \Leftrightarrow  \Vert a \Vert^v_M \in B_M \Leftrightarrow \
 <details><summary>  $f(a))$  </summary> да  </details>
 <details><summary> $g(a,z)$ </summary>  да  </details>
 <details><summary> $f(x, z)$ </summary> нет  </details>
-
-
-$\dfrac{\varphi}{\Box \varphi}$
-
-
-$\xLeftrightarrow{abc}$
-
-$M, v \models P(t_1, \dots, t_n) \iff \langle \llbracket t_1 \rrbracket_M^v , \dots, \llbracket t_n \rrbracket_M^v \rangle \in P_M$
