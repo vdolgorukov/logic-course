@@ -5,7 +5,7 @@ layout: post
 ---
 
 
-$\[\[t\]\]_M^v$
+$\[\!\lbrack t \]\]_M^v$
 
 # Язык
 
