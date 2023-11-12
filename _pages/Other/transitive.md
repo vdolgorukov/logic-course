@@ -11,6 +11,7 @@ layout: post
 - $\varnothing$
 - $\\{\varnothing, \\{\varnothing\\}\\}$
 - $\\{\varnothing, \\{\varnothing\\}, \\{\\{\varnothing\\}\\}\\}$
+- $\\{\varnothing, \\{\varnothing\\}, \\{ \varnothing, \\{\varnothing\\} \\} \\}$
   
 **Упражнение**. Докажите, что следующие определния эквивалентны:
 - $\bigcup X \subseteq X$
