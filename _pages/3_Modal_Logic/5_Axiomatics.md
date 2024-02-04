@@ -92,7 +92,7 @@ $\vdash_{K} \Box (\varphi_1 \wedge \dots \wedge \varphi_n) \equiv (\Box \varphi_
 | $(5)$     | $\Diamond p \to \Box \Diamond p$ |
 
 
-![Modal Cube](/docs/assets/images/cube.png)
+![Modal Cube]({{ site.baseurl }}/docs/assets/images/cube.png)
 
 :blue_book: **Упражнение**. Докажите в исчислении $KT$ следующие теоремы:
 1. $\Box \Box p \to \Box p$

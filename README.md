@@ -10,14 +10,14 @@ permalink: /
 # Разделы 
 
 ## Классическая логика 
-- [Аксиоматическое построение классической логики высказываний](https://vdolgorukov.github.io/logic-course/pages/1_CPL/1_Axiomatics/)
-- [Язык и семантика классической логики предикатов первого порядка](https://vdolgorukov.github.io/logic-course/pages/2_FOL/2_FOL/)
-- [Аксиоматическое построение КЛП](https://vdolgorukov.github.io/logic-course/pages/2_FOL/3_Axiomatics_FOL/)
+- [Аксиоматическое построение классической логики высказываний]({{ site.baseurl }}/pages/1_CPL/1_Axiomatics/)
+- [Язык и семантика классической логики предикатов первого порядка]({{ site.baseurl }}/pages/2_FOL/2_FOL/)
+- [Аксиоматическое построение КЛП]({{ site.baseurl }}/pages/2_FOL/3_Axiomatics_FOL/)
 
 ## Неклассические логики (упражнения)
-- [Модальные исчисления упражнения](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/5_Axiomatics/)
-- [Семантика Крипке](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/)
-- [Шкалы Крипке](https://vdolgorukov.github.io/logic-course/pages/3_Modal_Logic/7_frames/)
+- [Модальные исчисления упражнения]({{ site.baseurl }}/pages/3_Modal_Logic/5_Axiomatics/)
+- [Семантика Крипке]({{ site.baseurl }}/pages/3_Modal_Logic/6_Kripke_Semantics/)
+- [Шкалы Крипке]({{ site.baseurl }}/pages/3_Modal_Logic/7_frames/)
 
 *Страница подготовлена по результатам проекта «Интерактивное учебное пособие по философской логике и формальной философии» при поддержке фонда «Гуманитарные исследования» ФГН НИУ «Высшая школа экономики» в 2022-2023 году*.
 
