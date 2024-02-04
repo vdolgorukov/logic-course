@@ -187,11 +187,19 @@ $A$, $A \to B$  $\Rightarrow$ $B$
 <-- **Пример.** Часто вывод удобно записывать не в столбик, а в виде дерева, в котором непосредственно ниже под двумя формулами записывается результат применения к ним правила modus ponens. Перепишем вывод $\vdash p \to p$ в виде дерева:
 
 \begin{prooftree}
-\infer0[$I_1$]{p \to ((q \to p) \to p)} 
-\infer0[$I_2$]{(p \to ((q \to p) \to p)) \to ((p \to (q \to p)) \to (p \to p))} 
-\infer2[$MP$]{(p \to (q \to p)) \to (p \to p))}
-\infer0[$I_1$]{p \to (q \to p)} 
-\infer2[$MP$]{p \to p}
+\AxiomC{}
+\RightLabel{$I_1$}
+\UnaryInfC{$p \to ((q \to p) \to p)$}
+\AxiomC{}
+\RightLabel{$I_2$}
+\UnaryInfC{$(p \to ((q \to p) \to p)) \to\atop\to ((p \to (q \to p)) \to (p \to p))$}
+\RightLabel{$MP$}
+\BinaryInfC{$(p \to (q \to p)) \to (p \to p))$}
+\AxiomC{}
+\RightLabel{$I_1$}
+\UnaryInfC{$p \to (q \to p)$}
+\RightLabel{$MP$}
+\BinaryInfC{$p \to p$}
 \end{prooftree}
 
 **Упражнение.** Запишите вывод из примера доказательства $p \to (q \to r), p \to q \vdash_{cl_{\to\neg}} p \to r$ в виде дерева. -->
