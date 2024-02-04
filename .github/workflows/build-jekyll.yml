@@ -16,7 +16,7 @@ jobs:
           node-version: 18
           cache: 'npm'
 
-      - run: npm i -D esbuild
+      - run: npm i -g esbuild
 
       - uses: purescript-contrib/setup-purescript@main
 
