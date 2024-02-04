@@ -3,7 +3,7 @@ remote_theme: sighingnow/jekyll-gitbook
 title: Логическая семантика
 longtitle: Материалы к курсу "Логическая семантика"
 author: Виталий Долгоруков
-email:  v.dolgorukov@gmail.com    
+email:  v.dolgorukov@gmail.com
 version:          1.0
 gitbook_version:  3.2.3
 
@@ -25,6 +25,7 @@ defaults:
     values:
       image: true
 
+basewebsite:  /logic-course
 permalink:   /:categories/:output_ext
 
 # markdown render engine.
