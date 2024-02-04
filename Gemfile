@@ -36,3 +36,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.7"
 
 gem "kramdown-math-katex", "~> 1.0"
+
+gem "mini_racer", "~> 0.6.3"
