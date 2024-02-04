@@ -11,8 +11,29 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: purescript-contrib/setup-purescript@main
+
+      - name: Cache PureScript dependencies
+        uses: actions/cache@v3
+        # This cache uses the .dhall files to know when it should reinstall
+        # and rebuild packages. It caches both the installed packages from
+        # the `.spago` directory and compilation artifacts from the `output`
+        # directory. When restored the compiler will rebuild any files that
+        # have changed. If you do not want to cache compiled output, remove
+        # the `output` path.
+        with:
+          key: ${{ runner.os }}-spago-${{ hashFiles('**/*.dhall') }}
+          path: |
+            .spago
+            output
+          restore-keys: |
+            ${{ runner.os }}-spago-
+
+      - run: spago bundle-app --to assets/modal-quiz.js --platform browser
+
       # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v3
+      - name: Cache Ruby dependencies
+        uses: actions/cache@v3
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
