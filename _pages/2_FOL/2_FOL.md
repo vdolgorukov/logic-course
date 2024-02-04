@@ -149,7 +149,7 @@ $\Vert f(t_1, \dots, t_n) \Vert_{M}^{v} = f_M(\Vert t_1 \Vert_M^v, \dots, \Vert 
 * $b_M = \blacktriangle$ 
 и означивание $v: x \mapsto \triangle$.
 
-![Model](/logic-course/docs/assets/images/square.png)
+![Model](/docs/assets/images/square.png)
 
 Проверим, что следующие утверждения являются корректными:
 * $M, v \models S(a) \Leftrightarrow  \Vert a \Vert^v_M \in S_M \Leftrightarrow  \square \in  \\{\blacksquare, \square \\}$

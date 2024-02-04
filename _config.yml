@@ -19,6 +19,11 @@ toc:
   h_max: 6
   ordered_list: true
 
+defaults:
+  - scope:
+      path: "docs/assets/images"
+    values:
+      image: true
 
 permalink:   /:categories/:output_ext
 

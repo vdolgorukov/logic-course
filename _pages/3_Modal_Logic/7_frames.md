@@ -45,7 +45,7 @@ $$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
 
 :green_book: **Упражнение 4 (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
-![Model](/logic-course/docs/assets/images/Frames1-1.png)
+![Model](/docs/assets/images/Frames1-1.png)
 
 
 
