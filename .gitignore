@@ -3,3 +3,5 @@ _site
 Gemfile.lock
 .spago
 output
+node_modules
+package-lock.json
