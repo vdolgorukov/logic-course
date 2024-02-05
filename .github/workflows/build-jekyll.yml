@@ -11,13 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'
-
-      - run: npm i -g esbuild
-
       - uses: purescript-contrib/setup-purescript@main
 
       - name: Cache PureScript dependencies
@@ -62,4 +55,4 @@ jobs:
           bundler_ver: ''            # Default is compatible bundler version (~>2.4.0)
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          pre_build_commands: 'pacman -S --noconfirm esbuild'     # Installing additional dependencies (Arch Linux)
