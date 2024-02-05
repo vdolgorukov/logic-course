@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-
         {%- include head.html -%}
 
         {% if page.previous %}
@@ -59,11 +58,14 @@
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
             </script>
+
+            {% if page.modal_quizzes %}
+                <script src="{% link assets/modal-quiz.js %}"></script>
+            {% endif %}
         </div>
 
         {%- include footer.html -%}
 
- 
     </body>
 </html>
 
