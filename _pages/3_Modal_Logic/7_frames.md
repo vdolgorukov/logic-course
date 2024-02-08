@@ -41,7 +41,7 @@ layout: post
 - $F \models \varphi$, но $\not \models \varphi$
 
 :blue_book: **Упражнение 3**. Приведите пример модели $M$, в которой ровно 4 мира, такой, что 
-$$M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$$
+– $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$
 
 :green_book: **Упражнение 4 (с ответами)**. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?
 
