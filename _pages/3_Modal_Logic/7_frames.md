@@ -174,4 +174,11 @@ $(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p)$ ⇔ $\forall x \f
 :blue_book: **Упражнение 16**. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \neg \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что 
 $$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$$ 
 
+:blue_book: **Упражнение 17**. Докажите, что существует следующее соответствие между формулой общезначимой в шкале и свойством отношения достижимости:
+
+- $\Box p \to \Box^- p$ - симметричность
+- $\Diamond p \to \Box^- \Diamond p$ - транзитивность
+- $\Diamond p \to \Box^- \Box p$ - евклидовость
+- $\Box \Box^- p \to \Box^- \Box p$ - свойство Чёрча-Россера (конфлюэнтности)
+  
 
