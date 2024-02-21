@@ -160,25 +160,35 @@ $(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \for
 </p>
 
 :blue_book: **Упражнение 12**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz))$$
+<p style="text-align:center"> 
+$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q) \Leftrightarrow \forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz))$
+</p>
 
 :blue_book: **Упражнение 13**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
-$$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) \Leftrightarrow \forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2) \to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$$
+<p style="text-align:center"> 
+$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q) \Leftrightarrow \forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2) \to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$
+</p>
 
 :blue_book: **Упражнение 14**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+<p style="text-align:center"> 
 $(W, R) \models (p \wedge \Diamond \Box p) \to \Box p \Leftrightarrow$  $\forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)$
+</p>
 
 :blue_book: **Упражнение 15**. Пусть $(W,R)$ – шкала Крипке, докажите, что 
+<p style="text-align:center"> 
 $(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p)$ ⇔ $\forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$
+</p>
 
 :blue_book: **Упражнение 16**. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \neg \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что 
-$$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$$ 
+<p style="text-align:center"> 
+$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$
+</p>
 
 :blue_book: **Упражнение 17**. Докажите, что существует следующее соответствие между формулой общезначимой в шкале и свойством отношения достижимости:
 
-- $\Box p \to \Box^- p$ - симметричность
-- $\Diamond p \to \Box^- \Diamond p$ - транзитивность
-- $\Diamond p \to \Box^- \Box p$ - евклидовость
-- $\Box \Box^- p \to \Box^- \Box p$ - свойство Чёрча-Россера (конфлюэнтность)
+- $\Box p \to \Box^- p$ — симметричность
+- $\Diamond p \to \Box^- \Diamond p$ — транзитивность
+- $\Diamond p \to \Box^- \Box p$ — евклидовость
+- $\Box \Box^- p \to \Box^- \Box p$ — свойство Чёрча-Россера (конфлюэнтность)
   
 
