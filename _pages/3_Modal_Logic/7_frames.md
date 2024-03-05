@@ -188,7 +188,7 @@ $(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$
 
 - $\Box p \to \Box^- p$ — симметричность
 - $\Diamond p \to \Box^- \Diamond p$ — транзитивность
-- $\Diamond p \to \Box^- \Box p$ — евклидовость
+- $\Box p \to \Box^- \Box p$ — евклидовость
 - $\Box \Box^- p \to \Box^- \Box p$ — свойство Чёрча-Россера (конфлюэнтность)
   
 
