@@ -1,8 +1,6 @@
----
 title: Транзитивные множества
 category: Jekyll
 layout: post
----
 
 
 **Определение**. Множесто X назявается **транзитивным**, если для любых $Z$, $Y$: $Z \in Y \in X \Rightarrow Z \in X$
