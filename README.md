@@ -21,5 +21,5 @@ permalink: /
 
 *Страница подготовлена по результатам проекта «Интерактивное учебное пособие по философской логике и формальной философии» при поддержке фонда «Гуманитарные исследования» ФГН НИУ «Высшая школа экономики» в 2022-2023 году*.
 
-– [https://docs.google.com/forms/d/e/1FAIpQLSfC9kJbjSTCCXOK3jkmPVuYoj7G7Tg6SB7AJ0jMzY_gzfKA4g/viewform?usp=sf_link](1)
-– [https://docs.google.com/forms/d/e/1FAIpQLSfC9kJbjSTCCXOK3jkmPVuYoj7G7Tg6SB7AJ0jMzY_gzfKA4g/viewform?usp=sf_link](2)
+– [1](https://docs.google.com/forms/d/e/1FAIpQLSfC9kJbjSTCCXOK3jkmPVuYoj7G7Tg6SB7AJ0jMzY_gzfKA4g/viewform?usp=sf_link)
+– [2](https://docs.google.com/forms/d/e/1FAIpQLSfC9kJbjSTCCXOK3jkmPVuYoj7G7Tg6SB7AJ0jMzY_gzfKA4g/viewform?usp=sf_link)
