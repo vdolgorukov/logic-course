@@ -1,0 +1,843 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Упражнения · Логическая семантика</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content=""><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Виталий Долгоруков"><link rel="stylesheet" href="/logic-course/assets/gitbook/style.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/logic-course/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/logic-course/" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/logic-course/pages/1_CPL/1_Axiomatics/" />
+        
+
+        
+            <link rel="next" href="/logic-course/pages/2_FOL/2_FOL/" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/logic-course/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/logic-course">
+            
+                <a href="/logic-course/" onclick="pageScrollToTop(this)">
+                    Логическая семантика
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/1_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/1_CPL/1_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение классической логики высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/logic-course/pages/1_CPL/2_Exercises/">
+                            
+                                <a href="/logic-course/pages/1_CPL/2_Exercises/" onclick="pageScrollToTop(this)">
+                                    Упражнения
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#классическая-логика-упражнения" onclick="mobilePageScrollToAnchor(this)" >Классическая логика: упражнения</a><ul><li><a href="#таблицы-истинности-для-клв" onclick="mobilePageScrollToAnchor(this)" >Таблицы истинности для КЛВ</a></li><li><a href="#логика-предикатов" onclick="mobilePageScrollToAnchor(this)" >Логика предикатов</a></li><li><a href="#дополнительные-задачи" onclick="mobilePageScrollToAnchor(this)" >Дополнительные задачи</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/2_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/2_FOL/" onclick="pageScrollToTop(this)">
+                                    Язык и семантика классической логики предикатов первого порядка
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/3_Axiomatics_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение КЛП
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/5_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Модальная логика
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" onclick="pageScrollToTop(this)">
+                                    Семантика Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/7_frames/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/7_frames/" onclick="pageScrollToTop(this)">
+                                    Шкалы Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/8_temporal_logic/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" onclick="pageScrollToTop(this)">
+                                    Темпоральные логики
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/4_Int/5_Int/">
+                            
+                                <a href="/logic-course/pages/4_Int/5_Int/" onclick="pageScrollToTop(this)">
+                                    Интуиционистское исчисление высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Упражнения</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/1_CPL/2_Exercises">Упражнения</h1>
+                    
+
+                    <h1 id="классическая-логика-упражнения">Классическая логика: упражнения</h1>
+
+<h2 id="таблицы-истинности-для-клв">Таблицы истинности для КЛВ</h2>
+
+<p><strong>Упражнение 1.</strong> Браун, Джонс и Смит обвиняются в совершении преступления. Они дают следующие показания</p>
+
+<p>Браун: «‎Джонс – виновен, а Смит – невиновен»</p>
+
+<p>Джонс: «Если Браун виновен, то виновен и Смит»</p>
+
+<p>Смит: «Я невиновен, но хотя бы один из них двоих виновен»</p>
+
+<p>При помощи таблицы истинности ответьте на следующие вопросы:</p>
+<ul>
+  <li>Совместимы ли показания всех троих подозреваемых?</li>
+  <li>Показание одного из обвиняемых следуют из показаний другого. О ком идет речь?</li>
+  <li>Если все трое невиновны, то кто из них солгал?</li>
+  <li>Если все трое сказали правду, то кто виновен, а кто — нет?</li>
+  <li>Если невиновный говорит истину, а виновный лжет, то кто невиновен, а кто виновен?</li>
+</ul>
+
+<p><strong>Упражнение 2.</strong> Задача про принцессу и тигра (Смаллиан)</p>
+
+<p>На каждую из дверей трёх комнат прибита табличка. Если надпись на табличке истинная, то в комнате принцесса, а если ложная - тигр. Определите кто находится в каждой комнате.</p>
+
+<p><strong>Упражнение 3.</strong> (Клини) Запишите каждое из суждений на языке логики и определите имеет ли в нём место логическое следование:</p>
+
+<ul>
+  <li>Eсли он принадлежит нашей компании [K], то он храбр и на него можно положиться [Х $\wedge$ П]. Он не принадлежит к нашей компании. Значит, он не храбр или же на него нельзя положиться.</li>
+  <li>В бюджете возникает дефицит, если не повысят пошлины. Если в бюджете имеется дефицит, то государственные расходы на общественные нужды сократятся.  Значит, если повысят пошлины, то государственные расходы на общественные нужды не сократятся.</li>
+  <li>Если он автор этого слуха, то он глуп или беспринципен. Он не глуп и не лишен принципов, значит, не он автор этого слуха.</li>
+  <li>Если подозреваемый совершил эту кражу, то либо она была тщательно подготовлена, либо он имел соучастника. Если бы кража была подготовлена тщательно, то, если бы был соучастник, украдено было бы гораздо больше. Значит, подозреваемый невиновен.</li>
+  <li>Если наступит мир, то возникнет депрессия, разве что страна проведет программу перевооружения либо осуществит грандиозную программу внутренних капиталовложений в области образования, охраны окружающей среды, борьбы с бедностью и т. п. Невозможно договориться о целях такой грандиозной программы внутренних капиталовложений. Значит, если наступит мир и не будет депрессии, то непременно будет осуществляться программа перевооружения.</li>
+  <li>Намеченная атака удастся, только если захватить противника врасплох или же если позиции его плохо защищены. Захватить его врасплох можно только, если он беспечен. Он не будет беспечен, если его позиции плохо защищены. Значит, атака не удастся.</li>
+  <li>Если мы не будем продолжать политику сохранения цен, то мы потеряем голоса фермеров. Если же мы будем продолжать эту политику, то продолжится перепроизводство, разве что мы прибегнем к контролю над производством. Без голосов фермеров нас не переизберут. Значит, если нас переизберут и мы не прибегнем к контролю над производством, то будет продолжаться перепроизводство.</li>
+</ul>
+
+<p><strong>Упражнение 4.</strong> Существовал клуб с такими правилами. Упростите правила клуба:</p>
+<ul>
+  <li>Члены финансового комитета должны избираться среди членов общей дирекции.</li>
+  <li>Нельзя быть одновременно членом общей дирекции и членом библиотечного комитета, не будучи членом финансового комитета.</li>
+  <li>Ни один член библиотечного совета не может быть членом финансового комитета.</li>
+</ul>
+
+<p><strong>Упражнение 5.</strong> Проверьте общезначимость формулы с помощью таблиц истинности.</p>
+<ul>
+  <li>$\neg (p \vee q) \leftrightarrow (\neg p \wedge \neg q)$</li>
+  <li>$\neg (p \wedge \neg q) \leftrightarrow (\neg p \vee  q)$</li>
+  <li>$(p \vee (q \wedge r)) \leftrightarrow ((p \wedge q) \vee (p \wedge r))$</li>
+  <li>$((p \rightarrow q) \rightarrow p) \rightarrow p$</li>
+  <li>$(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \wedge q) \rightarrow r)$</li>
+  <li>$(p \wedge (q \wedge r)) \leftrightarrow ((p \wedge q)\wedge (p \wedge r))$</li>
+  <li>$(p \rightarrow (q \rightarrow r)) \rightarrow ((p \rightarrow q ) \rightarrow (p \rightarrow r))$</li>
+  <li>$p \rightarrow (q \rightarrow (p \land q))$</li>
+  <li>$(p\wedge q) \leftrightarrow \neg(p \rightarrow \neg q)$</li>
+  <li>$(p\vee q) \leftrightarrow \neg p \rightarrow q$</li>
+  <li>$(\neg p \wedge \neg q) \leftrightarrow  (p \downarrow q)$</li>
+  <li>$((p \mid q)\mid (p \mid q)) \leftrightarrow (p\wedge q)$</li>
+  <li>$(p \mid p) \mid (q \mid q) \leftrightarrow (p \lor q)$</li>
+</ul>
+
+<p><strong>Упражнение 6.</strong> В каких отношениях (попарно) находятся следующие высказывания:</p>
+<ul>
+  <li>$p$, $p\to q$, $\neg p \to q$</li>
+  <li>$p \to q$, $q \to p$, $p \wedge q$</li>
+  <li>$p\wedge q$, $p \vee q$, $p \veebar q$</li>
+  <li>$p \mid q$, $p \downarrow q$, $p \veebar q$</li>
+  <li>$p$, $p \wedge (p \vee q)$, $p \mid q$</li>
+  <li>$q \to p$, $p \to q$, $\neg p \leftrightarrow \neg q$</li>
+</ul>
+
+<p><strong>Упражнение 7.</strong> Заметим, что некоторые пропозициональные связки можно выразить через комбинацию других. Например, импликацию можно выразить через дизъюнкцию и отрицание:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>=</mo><mi mathvariant="normal">¬</mi><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \to q = \neg p \vee q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.75em;vertical-align:-0.1944em;"></span><span class="mord">¬</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span></span></span></span></span>
+
+<p>или через конъюнкцию и отрицание:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\neg(p \wedge \neg q)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mopen">(</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mclose">)</span></span></span></span></span>
+
+<ul>
+  <li>Выразите $\wedge, \vee, \veebar, \leftrightarrow, \mid, \downarrow $, используя только $\neg$ и $\to$.</li>
+  <li>Выразите $\vee, \veebar, \to, \leftrightarrow, \mid, \downarrow$, используя только $\neg$ и $\wedge$.</li>
+  <li>Выразите $\wedge,\veebar, \to, \leftrightarrow, \mid, \downarrow $, используя только $\neg$ и $\vee$.</li>
+  <li>Выразите $\neg, \wedge, \vee, \veebar, \to, \leftrightarrow, \downarrow$,  используя только $\mid$.</li>
+  <li>Выразите $\neg, \wedge, \vee, \veebar, \to, \leftrightarrow,\mid$,  используя только $\downarrow$.</li>
+</ul>
+
+<p><strong>Упражнение 8(*).</strong> Пропозициональные связки можно понимать как булевы функции, то есть, функции, которые определяются на множестве ${0,1}$.</p>
+
+<p>Отрицание будет примером одноместной функции</p>
+
+<p>$f: {0,1} \mapsto {0,1}$,</p>
+
+<p>конъюнкция, дизъюнкция и т.д. примерами двухместной функции</p>
+
+<p>$f^{2}: {0,1} \times {0,1} \mapsto {0,1}$</p>
+
+<p>Опишите все возможные булевы функции от двух переменных. Сколько их всего? Какие из них соответствуют известным связками, а какие – нет? Сколько возможно булевых функций от 3-х переменных? А от n переменных?</p>
+
+<p><strong>Упражнение 1.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$p$,  $p \to q \vdash q$</li>
+  <li>$p \wedge q \vdash q$</li>
+  <li>$p \wedge q \vdash q \wedge p$</li>
+  <li>$p$, $p \to q$, $q \to r \vdash r$</li>
+</ul>
+
+<p><strong>Упражнение 2.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$\vdash (p \wedge q) \to q$</li>
+  <li>$\vdash  (p \wedge q) \to  (q \wedge p)$</li>
+  <li>$\vdash  (p \wedge (q \wedge r)) \to ((p \wedge q) \wedge r) $</li>
+  <li>$\vdash  ((p \wedge q) \wedge (r \wedge s)) \to ((p \wedge r) \wedge (q \wedge s))$</li>
+</ul>
+
+<p><strong>Упражнение 3.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$\vdash p \to ((p \to q) \to  q)$</li>
+  <li>$\vdash (p \to (q \to r)) \to  ((p \to q) \to  (p \to r))$</li>
+  <li>$\vdash (q \to r) \to  ((p \to q) \to  (p \to r))$</li>
+  <li>$\vdash (p \to q) \to ((q \to r) \to (p \to r))$</li>
+  <li>$\vdash p \to (q \to p)$</li>
+</ul>
+
+<p><strong>Упражнение 4.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$\vdash (p \wedge q) \to (p \to q)$</li>
+  <li>$p, q, (p \wedge q) \to r \vdash r$</li>
+  <li>$\vdash (p \to (q \to r)) \to ((p \wedge q)\to r)$</li>
+  <li>$\vdash ((p \wedge q)\to r) \to  (p \to (q \to r))$</li>
+  <li>$\vdash (p \to q) \to ((p \wedge r) \to (q \wedge r))$</li>
+  <li>$\vdash (p \to (q \wedge r)) \to ((p \to q) \wedge (p \to r))$</li>
+  <li>$\vdash ((p \to q) \wedge (p \to r)) \to (p \to (q \wedge r))$</li>
+  <li>$\vdash (p \to ((q \wedge r) \to s)) \to (q \to ((p \wedge r) \to s ))$</li>
+  <li>$(p \wedge q) \to ((r \wedge s) \to t)\dashv \vdash (p \wedge r) \to (q \to (s \to t))$ [^просвязки]</li>
+  <li>$(p \wedge q) \to ((r \wedge s) \to t) \dashv \vdash p\to ((q \wedge s) \to (r \to t)$</li>
+</ul>
+
+<p><strong>Упражнение 5.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$p \to q, \neg q \vdash \neg p$</li>
+  <li>$\vdash (p \to q) \to ((p \to \neg q ) \to \neg p)$</li>
+  <li>$p \to q \vdash \neg q \to \neg p$</li>
+  <li>$\neg p \to \neg q \vdash q \to p$</li>
+  <li>$\vdash \neg p \to (p \to q)$</li>
+  <li>$\vdash \neg (p \to q) \to p$</li>
+  <li>$\vdash \neg (p \to q) \to \neg q$</li>
+  <li>$p \to (\neg q \to \neg (p \to q))$</li>
+  <li>$\vdash (p \to q) \to (\neg p \vee q)$</li>
+  <li>$\vdash (\neg p \vee q) \to (p \to q)$</li>
+</ul>
+
+<p><strong>Упражнение 6.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$\neg (p \vee q )\vdash \neg p \wedge \neg q$</li>
+  <li>$\neg p \wedge \neg q \vdash \neg (p \vee q)$</li>
+  <li>$\neg (p \wedge q) \vdash \neg p \vee \neg q$</li>
+  <li>$\neg p \vee \neg q \vdash \neg (p \wedge q)$</li>
+</ul>
+
+<p><strong>Упражнение 7.</strong> Постройте вывод в натуральном исчислении для КЛВ:</p>
+<ul>
+  <li>$p \vee q, p \to r, q \to r \vdash r$</li>
+  <li>$p \vee q, \neg q \vee r \vdash p \vee r$</li>
+  <li>$p \vee q \vdash q \vee p$</li>
+  <li>$p \vee (q \vee r) \vdash (p \vee q) \vee r$</li>
+</ul>
+
+<h2 id="логика-предикатов">Логика предикатов</h2>
+
+<p><strong>Упражнение 1.</strong> Переведите на язык логики предикатов следующие высказывания:</p>
+<ul>
+  <li>Аня умная, а Боря - красивый.</li>
+  <li>Если Боря красивый, то и Аня красивая.</li>
+  <li>Если Боря умный, то все умные.</li>
+  <li>Кое-кто и умен, и красив.</li>
+  <li>Все красивые люди – умные.</li>
+</ul>
+
+<p><strong>Упражнение 2.</strong> Переведите на язык логики предикатов следующие высказывания:</p>
+<ul>
+  <li>Аня любит Борю, а он ее нет.</li>
+  <li>Боря любит себя.</li>
+  <li>Аня любит только кого-то одного: Борю или Серёжу.</li>
+  <li>Серёжа никого не любит.</li>
+  <li>Боря любит только себя.</li>
+  <li>Если Серёжа и Аня любят друг друга, то Боря не любит Аню. А если Серёжа любит Аню, а она его – нет, то Боря любит Аню.</li>
+  <li>Некоторые любят всех.</li>
+  <li>Все любят всех.</li>
+  <li>Все любят кого-то.</li>
+  <li>Некоторых никто не любит.</li>
+  <li>Все друзья Бори любят Аню.</li>
+  <li>Боря любит себя и Анину подругу.</li>
+  <li>Некоторые Анины подруги любят Борю.</li>
+  <li>Некоторые друзья Бори любят каких-то Аниных подруг.</li>
+  <li>Всех подруг Ани любят какие-то друзья Бори.</li>
+</ul>
+
+<p><strong>Упражнение 3.</strong> Переведите на язык логики предикатов следующие высказывания:</p>
+<ul>
+  <li>Аня любит только Борю.</li>
+  <li>У Бори не более двух друзей.</li>
+  <li>У Ани, как минимум, две подруги.</li>
+  <li>Боря любит только Аню и себя.</li>
+  <li>У Бори есть друг, который любит ровно двух подруг Ани.</li>
+</ul>
+
+<p><strong>Упражнение 4.</strong> Используя свойства $\triangle$ («быть мужчиной»‎) и $\triangledown$  («быть женщиной»‎), а также отношения  $P(x, y)$ (« $x$ является родителем $y$»‎) и $M(x,y)$ (« $x$ и $y$ состоят в браке»‎)  выразите следующие отношения):</p>
+<ul>
+  <li>дочь</li>
+  <li>мать</li>
+  <li>сын</li>
+  <li>отец</li>
+  <li>бабушка</li>
+  <li>дедушка</li>
+  <li>прабабушка</li>
+  <li>прадедушка</li>
+  <li>брат</li>
+  <li>сестра</li>
+  <li>сиблинг</li>
+  <li>единокровный брат</li>
+  <li>единоутробная сестра</li>
+  <li>кузина</li>
+  <li>дядя</li>
+  <li>племянник</li>
+  <li>теща</li>
+  <li>тесть</li>
+  <li>зять</li>
+  <li>свекровь</li>
+  <li>невестка</li>
+  <li>золовка</li>
+  <li>шурин</li>
+  <li>деверь</li>
+  <li>свояк</li>
+  <li>свояченица</li>
+  <li>кузина</li>
+  <li>двоюродный дед</li>
+  <li>троюродная бабка</li>
+  <li>внучатый двоюродный племянник</li>
+</ul>
+
+<p><strong>Упражнение 5.</strong> (Е.Дашков) “Перед вами план некоторого города:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">1</th>
+      <th style="text-align: center">2</th>
+      <th style="text-align: center">3</th>
+      <th style="text-align: center">4</th>
+      <th style="text-align: center">5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">B S</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">H</td>
+      <td style="text-align: center">S</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">S</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">S</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">S B</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">H</td>
+      <td style="text-align: center">B</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">H R</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>С севера на юг идут проспекты, пересекающие улицы, которые идут с запада на восток. Те и другие обозначены номерами. Буквы на перекрестах обозначают находящиеся там заведения. Например, утверждение $B(i, j)$ значит, что на пересечении $i$-го проспекта с $j$-ой улицей находится банк. Аналогично обозначены гостиницы ($H$), рестораны ($R$) и универсамы ($S$). Проверьте следующие утверждения на истинность (в отношении данного города) и переведите их с естественного языка на формальный (или наоборот)”:</p>
+
+<ul>
+  <li>На каждой улице, где есть банк, имеется гостиница.</li>
+  <li>Найдется проспект с банком, пересекающийся с улицей, где нет ни гостиниц, ни ресторанов.</li>
+  <li>Для каждой улицы верно, что там есть универсам или пересечение с проспектом, ведущим к банку.</li>
+  <li>Найдется такой ресторан, что на одном с ним проспекте нет банков.</li>
+  <li>$\exists n \forall m  (S(n, m) \to  \neg \exists k R(k, m))$</li>
+  <li>$\forall n \exists m B(n, m) \vee  \exists n \exists m \forall k (\neg H(n, m) \wedge (S(n, k) \vee  S(k, m)))$.</li>
+  <li>$\exists m \forall n \forall k ((B(n, m) \wedge B(k, m))  \to  n = k)$.</li>
+  <li>$\forall m \forall u \forall v (\exists x \exists y (B(u, m) \wedge R(v, m) \wedge H(x, m) \wedge S(y, m))  \to  (\neg B(m, m) \wedge B(m, m)))$.</li>
+</ul>
+
+<p><strong>Упражнение 6.</strong>  Методом аналитических таблиц проверьте общезначимость следующих формул:</p>
+<ul>
+  <li>$\forall x Sx \to Sa$</li>
+  <li>$Sa \to \exists x Sx$</li>
+  <li>$\forall x (Sx \wedge Px) \leftrightarrow  (\forall x Sx \wedge \forall x Px)$</li>
+  <li>$\exists x (Sx \vee  Px) \leftrightarrow  (\exists x Sx \vee \exists x Px)$</li>
+  <li>$(\forall x (Sx \to  Px) \wedge Sa) \to Pa$</li>
+  <li>$\forall x (Sx \to Px) \to (\exists x Sx \to \exists x Px)$</li>
+  <li>$(\forall x (Sx \to Px) \wedge \exists x Sx) \to \exists x (Sx \wedge Px )$</li>
+  <li>$(\forall x (Sx \to Px) \wedge \forall x (Px \to Qx)) \to \forall x (Sx \to Qx)$</li>
+  <li>$\forall x (Sx \to Px) \leftrightarrow \forall x (\neg Px \to \neg Sx)$</li>
+</ul>
+
+<p><strong>Упражнение 7.</strong>  Методом аналитических таблиц проверьте общезначимость следующих формул:</p>
+<ul>
+  <li>$\exists y \forall x (xRy) \to \forall x \exists y (xRy)$</li>
+  <li>$\forall x (xRx) \to \forall x \exists y (xRy)$</li>
+  <li>$\forall x (xRx) \to \exists y (xRy \wedge yRx)$</li>
+  <li>$\forall (xRy \to \neg yRx) \leftrightarrow (\forall x (\neg xRx) \wedge \forall x \forall y ((xRy \wedge yRx) \to x=y) )$</li>
+</ul>
+
+<h2 id="дополнительные-задачи">Дополнительные задачи</h2>
+
+<p><strong>Упражнение 1(*).</strong> Докажите, что законы идемпотентности</p>
+<ul>
+  <li>$x\wedge x =x$</li>
+  <li>$x\vee x = x$</li>
+</ul>
+
+<p>можно вывести из законов поглощения</p>
+
+<ul>
+  <li>$x=(x\wedge(x \vee y))$</li>
+  <li>$x=x \vee (x \wedge y)$.</li>
+</ul>
+
+<p><strong>Упражнение 2(*).</strong> Используя метод математической индукции, докажите, что</p>
+<ul>
+  <li>$\neg \bigwedge \limits_{i=1}^{n} \varphi_i \equiv \bigvee \limits_{i=1}^{n} \neg  \varphi_i$</li>
+  <li>$\neg \bigvee \limits_{i=1}^{n} \varphi_i \equiv \bigwedge \limits_{i=1}^{n} \neg  \varphi_i$</li>
+  <li>$\varphi \wedge (\bigvee \limits_{i=1}^n \psi_i) \equiv \bigvee \limits_{i=1}^n (\varphi \wedge  \psi_i)$</li>
+  <li>$\varphi \vee (\bigwedge \limits_{i=1}^n \psi_i) \equiv \bigwedge \limits_{i=1}^n (\varphi \vee  \psi_i)$</li>
+  <li>$(\bigwedge \limits_{i=1}^{n} \varphi_i) \vee (\bigwedge \limits_{j=1}^{m} \psi_j) \equiv \bigwedge \limits_{i=1}^{n} \bigwedge \limits_{j=1}^{m} (\varphi_i \vee \psi_j)$</li>
+  <li>$(\bigvee \limits_{i=1}^{n} \varphi_i) \wedge (\bigvee \limits_{j=1}^{m} \psi_j) \equiv \bigvee \limits_{i=1}^{n} \bigvee \limits_{j=1}^{m} (\varphi_i \wedge \psi_j)$</li>
+</ul>
+
+<p><strong>Упражнение 3(*).</strong> Докажите в натуральном исчислении для логики высказываний следующие теоремы КЛВ:</p>
+<ul>
+  <li>$\vdash ((p \to q) \to p) \to p$</li>
+  <li>$\vdash (p \wedge (q \vee r)) \to  ((p \wedge q) \vee (p \wedge r))$</li>
+  <li>$\vdash [p \vee (q \wedge r)] \to [(p \vee q) \wedge (p \vee r) ]$</li>
+  <li>$\vdash [(p \vee q) \wedge (p \vee r) ] \to [p \vee (q \wedge r)]$</li>
+  <li>$\vdash [(p \vee q) \wedge (r \vee s)] \to  [((p \wedge r) \vee (p \wedge s))  \vee  ((q \wedge r) \vee (q \wedge s))]$</li>
+  <li>$\vdash  [((p \wedge r) \vee (p \wedge s))  \vee  ((q \wedge r) \vee (q \wedge s))] \to  [(p \vee q) \wedge (r \vee s)]$</li>
+</ul>
+
+<p><strong>Упражнение 4(*).</strong> Докажите, что правило дизъюнктивный силлогизм можно заменить на разбор случаев.</p>
+
+<p><strong>Упражнение 5(*).</strong> Добавим в натуральное исчисление для классической логики высказываний следующие правила вывода для $\leftrightarrow$:</p>
+
+<font size="5"> $\leftrightarrow_{\text{и}} \frac{A \leftrightarrow B}{A \to B}$ 
+	
+<font size="5"> $\leftrightarrow_{\text{и}} \frac{A \leftrightarrow B}{B \to A}$
+
+<font size="5"> $\leftrightarrow_{\text{в}} \frac{A \to B, B \to A}{A \leftrightarrow B}$ 
+
+
+Найдите доказательства для следующих теорем:
+* $\vdash [p \leftrightarrow (q \leftrightarrow r)] \to [(p \leftrightarrow q) \leftrightarrow r]$
+* $\vdash [(p \leftrightarrow q) \leftrightarrow r]  \to [p \leftrightarrow (q \leftrightarrow r)]$
+
+
+**Упражнение 6(\*).** Докажите в аксиоматическом исчислении для классической логики высказываний следующие теоремы, пользуясь метатеоремой дедукции (и без использования метатеоремы дедукции): 
+* $\vdash ((p \to q)\to p) \to ((p\to q) \to q)$
+* $\vdash p \to ( (p\to q) \to q)$
+* $\vdash (q \to r) \to ((p \to q) \to (p \to r))$
+* $\vdash (p \to (q \to r)) \to (q \to (p \to r))$	
+* $\vdash  (p \to q) \to ((q \to r) \to (p \to r))$
+
+
+**Упражнение 7(\*).**  Методом аналитических таблиц докажите общезначимость следующих формул:
+* $[\forall x \forall y \forall z \forall t ((xRy \wedge yRz) \to (xRt \vee tRz)) \wedge \forall x \neg xRx] \to  \forall x \forall y \forall z ((xRy \wedge yRz) \to xRz)$
+* $[\forall x \forall y \forall z \forall t ((xRy \wedge yRz) \to (xRt \vee tRz)) \wedge \forall x \neg xRx] \to  \forall x \forall y (xRy \to \neg yRx)$
+</font></font></font>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/logic-course/pages/1_CPL/1_Axiomatics/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Аксиоматическое построение классической логики высказываний">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/logic-course/pages/2_FOL/2_FOL/" class="navigation navigation-next navigation-unique" aria-label="Next page: Язык и семантика классической логики предикатов первого порядка">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Язык и семантика классической логики предикатов первого порядка",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/2_FOL/2_FOL.md",
+            "ref": "_pages/2_FOL/2_FOL.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Логическая семантика",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/1_CPL/2_Exercises.md",
+        "mtime": "2025-02-22 14:19:35 +0000",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-02-22 14:19:35 +0000"
+    },
+    "basePath": "/logic-course",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+
+            
+        </div><script src="/logic-course/assets/gitbook/gitbook.js"></script>
+<script src="/logic-course/assets/gitbook/theme.js"></script>
+
+<script src="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/logic-course/assets/gitbook/custom.js"></script>
+<script src="/logic-course/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
+
+

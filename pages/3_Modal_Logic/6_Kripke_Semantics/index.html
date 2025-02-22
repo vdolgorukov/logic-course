@@ -1,0 +1,532 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Семантика Крипке · Логическая семантика</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content=""><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Виталий Долгоруков"><link rel="stylesheet" href="/logic-course/assets/gitbook/style.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/logic-course/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/logic-course/" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" />
+        
+
+        
+            <link rel="next" href="/logic-course/pages/3_Modal_Logic/7_frames/" />
+        
+    </head>
+    <body>
+        <div class="book">
+<div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search">
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/logic-course/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/logic-course">
+            
+                <a href="/logic-course/" onclick="pageScrollToTop(this)">
+                    Логическая семантика
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider">
+
+            
+                
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            </li>
+<li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/1_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/1_CPL/1_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение классической логики высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/2_Exercises/">
+                            
+                                <a href="/logic-course/pages/1_CPL/2_Exercises/" onclick="pageScrollToTop(this)">
+                                    Упражнения
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/2_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/2_FOL/" onclick="pageScrollToTop(this)">
+                                    Язык и семантика классической логики предикатов первого порядка
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/3_Axiomatics_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение КЛП
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/5_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Модальная логика
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" onclick="pageScrollToTop(this)">
+                                    Семантика Крипке
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" onclick="mobilePageScrollToAnchor(this)">Упражнения</a></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/7_frames/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/7_frames/" onclick="pageScrollToTop(this)">
+                                    Шкалы Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/8_temporal_logic/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" onclick="pageScrollToTop(this)">
+                                    Темпоральные логики
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/4_Int/5_Int/">
+                            
+                                <a href="/logic-course/pages/4_Int/5_Int/" onclick="pageScrollToTop(this)">
+                                    Интуиционистское исчисление высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider">
+                        
+                    
+                
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </li>
+</ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href=".">Семантика Крипке</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner">
+<div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/3_Modal_Logic/6_Kripke_Semantics">Семантика Крипке</h1>
+                    
+
+                    <p><strong>Определение</strong>. <em>Моделью Крипке</em> будем называть следуюущую структуру $M = (W, R, V)$, где</p>
+
+<ul>
+  <li>$W \not = \varnothing$ – множеcтво возможных миров</li>
+  <li>$R \subseteq W \times W$ – отношение достижимости</li>
+  <li>$V: Prop \to \mathcal{P}(W)$ – функция оценки</li>
+</ul>
+
+<p><strong>Определение</strong>. Условия истинности формулы в модели Крипке. Пусть $\varphi$ -  модальная формула, $M, w$ – отмеченная модель Крипке. Определим истинность формулы в отмеченной модели (обозначение: $M, w \models \varphi$):</p>
+
+<ol>
+  <li>$M, w \models p$ $\iff$ $w \in V(p)$</li>
+  <li>$M, w \models \neg \varphi$ $\iff$ $M, w \not \models \varphi$</li>
+  <li>$M, w \models \varphi \wedge \psi$ $\iff$ $M, w \models \varphi \text{ и } M, w \models \psi$</li>
+  <li>$M, w \models \varphi \vee \psi$ $\iff$ $M, w \models \varphi \text{ или } M, w \models \psi$</li>
+  <li>$M, w \models \varphi \to \psi$ $\iff$ $(M, w \models \varphi \Rightarrow M, w \models \psi)$ <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</li>
+  <li>$M, w \models \Box \varphi$ $\iff$ $\forall w’ (wRw’ \Rightarrow M, w’ \models \varphi)$</li>
+  <li>$M, w \models \Diamond \varphi$ $\iff$ $\exists w’ (wRw’ \text{ и } M, w’ \models \varphi)$</li>
+</ol>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение</strong>. Докажите, что можно взять в качестве базовых только условия 1, 2, 3, 6, определив остальные связки как синтаксические сокращения.</p>
+
+<h2 id="упражнения">Упражнения</h2>
+
+<p><img class="emoji" title=":green_book:" alt=":green_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d7.png" height="20" width="20"> <strong>Упражнение</strong>. Какие формулы истинны в отмеченной модели $M, w_1$ на <a href="#M">рис ниже</a>?</p>
+<details><summary> 1. $p$ </summary> $$M, w_1 \models p$$ </details>
+<details><summary> 2. $q$ </summary>  $$M, w_1 \not \models q$$  </details>
+<details><summary> 3. $p \to q$ </summary>  $$M, w_1 \not \models p \to q$$  </details>
+<details><summary> 4. $q \to p$ </summary>  $$M, w_1 \models q \to p$$  </details>
+<details><summary> 5. $\Diamond p$ </summary> $$M, w_1 \models \Diamond p$$  </details>
+<details><summary> 6. $\Diamond q$ </summary> $$M, w_1 \models \Diamond q$$  </details>
+<details><summary> 7. $\Box p$ </summary> $$M, w_1 \not \models \Box p$$  </details>
+<details><summary> 8. $\Box q$ </summary> $$M, w_1 \models \Box q$$  </details>
+<details><summary> 9. $\Box (p \to q)$ </summary> $$M, w_1 \models  \Box (p \to q)$$  </details>
+<details><summary> 10. $\Box (q \to p)$ </summary> $$M, w_1 \not \models  \Box (q \to p)$$  </details>
+
+<figure class="sign">
+   
+<img src="/logic-course/docs/assets/images/Kripke%20model.png" alt="" width="300" height=""> 
+ 
+<figcaption> Модель $M, w_1$ </figcaption>
+
+</figure>
+
+<p><a name="M"></a></p>
+
+<h1 id="литература-и-дополнительные-материалы">Литература и дополнительные материалы:</h1>
+
+<p><strong>Литература</strong></p>
+<ul>
+  <li><a href="https://plato.stanford.edu/entries/logic-modal/">https://plato.stanford.edu/entries/logic-modal/</a></li>
+  <li><a href="https://plato.stanford.edu/entries/logic-modal-origins/">https://plato.stanford.edu/entries/logic-modal-origins/</a></li>
+</ul>
+
+<p><strong>Видео</strong></p>
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLz0n_SjOttTfP_liEHPNCzvESZsh5eirP">“3 Months of Modal Logics”/ канал “Carneades.org”</a></li>
+</ul>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/videoseries?list=PLz0n_SjOttTfP_liEHPNCzvESZsh5eirP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=_kZLnqsIuMo&amp;list=PLwSlKSRwxX0qXTZKnIT7l4_YAIWpJcZJ9">“Modal Logic”/ канал “Attic Philosophy”</a></li>
+</ul>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/_kZLnqsIuMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=CKYvEcin318">Алексей Семенов. Лекция 5. Полнота модальной логики</a></li>
+</ul>
+
+<p><strong>Курсы</strong></p>
+<ul>
+  <li><a href="https://www.mathnet.ru/php/conference.phtml?option_lang=rus&amp;eventID=31&amp;confid=2080">Курс “Неклассические логики” 2022 (Т.Л. Яворская, МИАН)</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Здесь $\Rightarrow$ используется как сокращение для “если…, то…” <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</section>
+            </div>
+<div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title">
+<span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Модальная логика">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/logic-course/pages/3_Modal_Logic/7_frames/" class="navigation navigation-next navigation-unique" aria-label="Next page: Шкалы Крипке">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Шкалы Крипке",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/3_Modal_Logic/7_frames.md",
+            "ref": "_pages/3_Modal_Logic/7_frames.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Логическая семантика",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/3_Modal_Logic/6_Kripke_Semantics.md",
+        "mtime": "2025-02-22 14:19:35 +0000",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-02-22 14:19:35 +0000"
+    },
+    "basePath": "/logic-course",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+
+            
+        </div><script src="/logic-course/assets/gitbook/gitbook.js"></script>
+<script src="/logic-course/assets/gitbook/theme.js"></script>
+
+<script src="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/logic-course/assets/gitbook/custom.js"></script>
+<script src="/logic-course/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
+
+

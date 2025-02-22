@@ -1,0 +1,1281 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Аксиоматическое построение классической логики высказываний · Логическая семантика</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content=""><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Виталий Долгоруков"><link rel="stylesheet" href="/logic-course/assets/gitbook/style.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/logic-course/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/logic-course/" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/logic-course/" />
+        
+
+        
+            <link rel="next" href="/logic-course/pages/1_CPL/2_Exercises/" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/logic-course/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/logic-course">
+            
+                <a href="/logic-course/" onclick="pageScrollToTop(this)">
+                    Логическая семантика
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/logic-course/pages/1_CPL/1_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/1_CPL/1_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение классической логики высказываний
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#пропозициональные-языки" onclick="mobilePageScrollToAnchor(this)" >Пропозициональные языки</a><ul><li><a href="#множество-всех-формул-fm-в-традиционном-наборе-связок-описание-синтаксиса-в-форме-бэкусанаура-бнф" onclick="mobilePageScrollToAnchor(this)" >Множество всех формул $Fm$ в традиционном наборе связок, описание синтаксиса в форме Бэкуса—Наура (БНФ)</a></li></ul></li><li><a href="#пропозициональные-языки-1" onclick="mobilePageScrollToAnchor(this)" >Пропозициональные языки</a><ul><li><a href="#множество-всех-формул-fm-в-традиционном-наборе-связок-описание-синтаксиса-в-форме-бэкуса--наура-бнф" onclick="mobilePageScrollToAnchor(this)" >Множество всех формул $Fm$ в традиционном наборе связок, описание синтаксиса в форме Бэкуса — Наура (БНФ)</a></li><li><a href="#позитивный-фрагмент-fm_" onclick="mobilePageScrollToAnchor(this)" >Позитивный фрагмент $Fm_+$</a></li><li><a href="#импликативно-негативный-фрагмент-fm_toneg" onclick="mobilePageScrollToAnchor(this)" >Импликативно-негативный фрагмент $Fm_{\to\neg}$</a></li><li><a href="#импликативный-фрагмент-fm_to" onclick="mobilePageScrollToAnchor(this)" >Импликативный фрагмент $Fm_{\to}$</a></li></ul></li><li><a href="#исчисление-для-импликативно-негативного-фрагмента-клв-свойства-вывода-теорема-о-дедукции" onclick="mobilePageScrollToAnchor(this)" >Исчисление для импликативно-негативного фрагмента КЛВ, свойства вывода, теорема о дедукции</a><ul><li><a href="#исчисление-cl_negto" onclick="mobilePageScrollToAnchor(this)" >Исчисление $cl_{\neg\to}$</a></li><li><a href="#свойства-вывода" onclick="mobilePageScrollToAnchor(this)" >Свойства вывода</a></li><li><a href="#теорема-о-дедукции" onclick="mobilePageScrollToAnchor(this)" >Теорема о дедукции</a></li><li><a href="#другие-варианты-исчислений-для-импликативно-негативного-фрагмента" onclick="mobilePageScrollToAnchor(this)" >Другие варианты исчислений для импликативно-негативного фрагмента</a></li></ul></li><li><a href="#исчисление-для-фрагмента-с-традиционным-набором-связок" onclick="mobilePageScrollToAnchor(this)" >Исчисление для фрагмента с традиционным набором связок</a><ul><li><a href="#исчисление-cl" onclick="mobilePageScrollToAnchor(this)" >Исчисление $cl$</a></li><li><a href="#теорема-об-эквивалентной-замене" onclick="mobilePageScrollToAnchor(this)" >Теорема об эквивалентной замене</a></li><li><a href="#другие-варианты-исчисления-для-традиционного-набора-связок" onclick="mobilePageScrollToAnchor(this)" >Другие варианты исчисления для традиционного набора связок</a></li></ul></li><li><a href="#позитивный-и-импликативный-фрагмент" onclick="mobilePageScrollToAnchor(this)" >Позитивный и импликативный фрагмент</a><ul><li><a href="#позитивный-фрагмент" onclick="mobilePageScrollToAnchor(this)" >Позитивный фрагмент</a></li><li><a href="#позитивный-фрагмент-с-константой-bot" onclick="mobilePageScrollToAnchor(this)" >Позитивный фрагмент с константой $\bot$</a></li><li><a href="#импликативный-фрагмент" onclick="mobilePageScrollToAnchor(this)" >Импликативный фрагмент</a></li></ul></li><li><a href="#сравнение-логических-систем" onclick="mobilePageScrollToAnchor(this)" >Сравнение логических систем</a></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/2_Exercises/">
+                            
+                                <a href="/logic-course/pages/1_CPL/2_Exercises/" onclick="pageScrollToTop(this)">
+                                    Упражнения
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/2_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/2_FOL/" onclick="pageScrollToTop(this)">
+                                    Язык и семантика классической логики предикатов первого порядка
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/3_Axiomatics_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение КЛП
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/5_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Модальная логика
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" onclick="pageScrollToTop(this)">
+                                    Семантика Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/7_frames/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/7_frames/" onclick="pageScrollToTop(this)">
+                                    Шкалы Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/8_temporal_logic/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" onclick="pageScrollToTop(this)">
+                                    Темпоральные логики
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/4_Int/5_Int/">
+                            
+                                <a href="/logic-course/pages/4_Int/5_Int/" onclick="pageScrollToTop(this)">
+                                    Интуиционистское исчисление высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Аксиоматическое построение классической логики высказываний</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/1_CPL/1_Axiomatics">Аксиоматическое построение классической логики высказываний</h1>
+                    
+
+                    <p>Мы рассмотрим несколько вариантов гильбертовских (аксиоматических) исчислений для классической логики высказываний:</p>
+<ul>
+  <li>$cl$ - исчисление для языка с традиционным набором связок<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>$cl_{\to\neg}$ - исчисление для ипликативно-негативного фрагмента</li>
+  <li>$cl_+$ - исчисление для позитивного фрагмента (все традиционные связки кроме отрицания)</li>
+  <li>$cl_\to$ - исчисление для импликативного фрагмента. 
+А также несколько «‎экзотических»‎ исчислений, состоящих из единственной аксиомной схемы.</li>
+</ul>
+
+<h2 id="пропозициональные-языки">Пропозициональные языки</h2>
+
+<p><em>Обозначение</em>. Пусть $Prop = \{p_1, p_2, p_3, \dots \}$ обозначает счетное множество пропозициональных переменных. Для удобства мы будем писать $p$ вместо $p_1$, $q$ вместо $p_2$, $r$ вместо $p_3$ и т.д.</p>
+
+<h3 id="множество-всех-формул-fm-в-традиционном-наборе-связок-описание-синтаксиса-в-форме-бэкусанаура-бнф">Множество всех формул $Fm$ в традиционном наборе связок, описание синтаксиса в форме Бэкуса—Наура (БНФ)</h3>
+
+<p><em>Определение</em>. Язык $Fm$ Пусть $p \in Prop$, тогда язык $Fm$ определяется следующей грамматикой:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mi mathvariant="normal">¬</mi><mi>φ</mi><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>→</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∧</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∨</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi::= p \mid \neg \varphi \mid (\varphi \to \varphi) \mid (\varphi \wedge \varphi) \mid (\varphi \vee \varphi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span></span></span></span></span>
+
+<p>Мы будем называть язык $Fm$ множеством правильно построенных (пропозициональных) формул или просто множеством (пропозициональных) формул.</p>
+
+<p>Такой способ описания синтаксиса называется БНФ (<a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0_%D0%91%D1%8D%D0%BA%D1%83%D1%81%D0%B0_%E2%80%94_%D0%9D%D0%B0%D1%83%D1%80%D0%B0">форма Бэкуса — Наура</a>).</p>
+
+<p>Как следует читать такие определения? Такая запись означает, что формула $\varphi$ порождается («::=»‎) серией правил, которые отделены друг от друга разделителем («|»‎). Если убрать разделитель, то БНФ можно переписать как следующую серию правил (что конечно менее лаконично):</p>
+<ul>
+  <li>$\varphi::= p$</li>
+  <li>$\varphi::= \neg \varphi$</li>
+  <li>$\varphi::= (\varphi \to \varphi)$</li>
+  <li>$\varphi::= (\varphi \wedge \varphi)$</li>
+  <li>$\varphi::= (\varphi \vee \varphi) $</li>
+</ul>
+
+<p><em>Пример</em>. Докажем, что $p \to (q \to r), p \to q \vdash_{!cl_{!\to\neg}} p \to r$. 
+Рассмотрим следуюущую последовательность:</p>
+<ol>
+  <li>$p \to (q \to r)$ – гипотеза</li>
+  <li>$p \to q$ – гипотеза</li>
+  <li>$(p \to (q \to r)) \to ((p \to q) \to (p \to r))$ – аксиома $I_2$</li>
+  <li>$(p \to q) \to (p \to r)$ – MP 1,3</li>
+  <li>$p \to r$ – MP 2, 4</li>
+</ol>
+
+<!---
+Мы рассмотрим несколько вариантов гильбертовских (аксиоматических) исчислений для классической логики высказываний: $cl$ $\textendash$ исчисление для языка с традиционным набором связок[^просвязки], $cl_{\to\neg}$ $\textendash$ исчисление для ипликативно-негативного фрагмента, $cl_+$ $\textendash$ исчисление для позитивного фрагмента (все традиционные связки кроме отрицания), $cl_\to$ $\textendash$ исчисление для импликативного фрагмента. А также несколько «экзотических» исчислений, состоящих из единственной аксиомной схемы.
+-->
+
+<h2 id="пропозициональные-языки-1">Пропозициональные языки</h2>
+
+<p><strong>Обозначение.</strong> Пусть $Var = {p_1, p_2, p_3, \dots }$ обозначает счетное множество пропозициональных переменных. Для удобства мы будем писать $p$ вместо $p_1$, $q$ вместо $p_2$, $r$ вместо $p_3$ и т.д.</p>
+
+<h3 id="множество-всех-формул-fm-в-традиционном-наборе-связок-описание-синтаксиса-в-форме-бэкуса--наура-бнф">Множество всех формул $Fm$ в традиционном наборе связок, описание синтаксиса в форме Бэкуса — Наура (БНФ)</h3>
+
+<p><strong>Определение.</strong> Пусть $p \in Var$, тогда язык $Fm$ определяется следующей грамматикой:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mi mathvariant="normal">¬</mi><mi>φ</mi><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>→</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∧</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∨</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi::= p \mid \neg \varphi \mid (\varphi \to \varphi) \mid (\varphi \wedge \varphi) \mid (\varphi \vee \varphi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span></span></span></span></span>
+
+<p>Мы будем называть язык $Fm$ множеством правильно построенных (пропозициональных) формул или просто множеством (пропозициональных) формул.</p>
+
+<p>Такой способ описания синтаксиса называется БНФ (форма Бэкуса — Наура). Как следует читать такие определения? Такая запись означает, что формула $\varphi$ порождается ($«::=»$) серией правил, которые отделены друг от друга разделителем ($«\mid »$). Если убрать разделитель, то БНФ можно переписать как следующую серию правил (что конечно менее лаконично):</p>
+<ul>
+  <li>$\varphi::= p$</li>
+  <li>$\varphi::= \neg \varphi$</li>
+  <li>$\varphi::= (\varphi \to \varphi)$</li>
+  <li>$\varphi::= (\varphi \wedge \varphi)$</li>
+  <li>$\varphi::= (\varphi \vee \varphi) $</li>
+</ul>
+
+<p>Первая строчка означает, что пропозициональная переменная является формулой нашего языка. Вторая строчка означает, что если к формуле добавить отрицание, то мы тоже получим формулу. Третья строчка означает, что если мы соединим импликацией две формулы, то результат тоже будет формулой. Последние две строчки дают аналогичное утверждение про конъюнкцию и дизъюнкцию. Заметим, что здесь $\varphi \to \varphi$ означает, что мы соединяем импликацией две <em>возможно разные</em> формулы, что возможно приводит к непониманию. Поэтому иногда в БНФ записывают в другом силе, явно используя две разных переменных:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo separator="true">,</mo><mi>ψ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mi mathvariant="normal">¬</mi><mi>φ</mi><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>→</mo><mi>ψ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∧</mo><mi>ψ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∨</mo><mi>ψ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi, \psi::= p \mid \neg \varphi \mid (\varphi \to \psi) \mid (\varphi \wedge \psi) \mid (\varphi \vee \psi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mclose">)</span></span></span></span></span>
+
+<p>или используя переменные с разными индексами:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mi mathvariant="normal">¬</mi><mi>φ</mi><mo>∣</mo><mo stretchy="false">(</mo><msub><mi>φ</mi><mn>1</mn></msub><mo>→</mo><msub><mi>φ</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><msub><mi>φ</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><msub><mi>φ</mi><mn>1</mn></msub><mo>∨</mo><msub><mi>φ</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi::= p \mid \neg \varphi \mid (\varphi_1 \to \varphi_2) \mid (\varphi_1 \wedge \varphi_2) \mid (\varphi_1 \vee \varphi_2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span>
+
+<p>Все эти варианты БНФ описывают один и тот же язык и отличаются друг от друга только стилистически.</p>
+
+<p>Итак, БНФ позволяет в краткой форме описать, что такое правильно построенная формула (п.п.ф.). Сравним БНФ с эквивалентным, но более традиционным описанием п.п.ф. ниже.</p>
+
+<p><strong>Определение.</strong> Определим множество правильно построенных формул (п.п.ф.):</p>
+
+<ol>
+  <li>любая пропозициональная переменная является п.п.ф.</li>
+  <li>если $\varphi$ п.п.ф., то $\neg \varphi$ также является п.п.ф.</li>
+  <li>если $\varphi$ и $\psi$ – п.п.ф, то $(\varphi \to \psi)$, $(\varphi \wedge \psi)$, $(\varphi \vee \psi)$ также являются п.п.ф.</li>
+  <li>ничто другое не является п.п.ф.[^провнешниескобки]</li>
+</ol>
+
+<p>БНФ – более короткий и удобный способ описания синтаксиса, чем традиционное описание посредством индуктивного определения п.п.ф. В дальнейшем мы будем пользоваться только описанием синтаксиса в стиле БНФ.</p>
+
+<h3 id="позитивный-фрагмент-fm_">Позитивный фрагмент $Fm_+$</h3>
+
+<p><strong>Определение.</strong> Пусть $p \in Var$, тогда язык $Fm_+$ определяется следующей грамматикой:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>→</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∧</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>∨</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi::= p \mid (\varphi \to \varphi) \mid (\varphi \wedge \varphi) \mid (\varphi \vee \varphi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span></span></span></span></span>
+
+<h3 id="импликативно-негативный-фрагмент-fm_toneg">Импликативно-негативный фрагмент $Fm_{\to\neg}$</h3>
+
+<p><strong>Определение.</strong> Пусть $p \in Var$, тогда язык $Fm_{\to\neg}$ определяется следующей грамматикой:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mi mathvariant="normal">¬</mi><mi>φ</mi><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>→</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi::= p \mid \neg \varphi \mid (\varphi \to \varphi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span></span></span></span></span>
+
+<h3 id="импликативный-фрагмент-fm_to">Импликативный фрагмент $Fm_{\to}$</h3>
+
+<p><strong>Определение.</strong> Пусть $p \in Var$, тогда язык $Fm_{\to}$ определяется следующей грамматикой:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>p</mi><mo>∣</mo><mo stretchy="false">(</mo><mi>φ</mi><mo>→</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi::= p \mid (\varphi \to \varphi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mclose">)</span></span></span></span></span>
+
+<p><strong>Упражнение.</strong> Для каждого языка $L \in { Fm, Fm_{+}, Fm_{\to\neg}, Fm_{\to} }$ найдите формулу $\varphi \in L$ такую, что $\varphi$ – тавтология.</p>
+
+<p><strong>Вопрос.</strong> Почему не рассматривается исчисление, состоящее только из формул с конъюнкцией и дизъюнкцией?</p>
+
+<h2 id="исчисление-для-импликативно-негативного-фрагмента-клв-свойства-вывода-теорема-о-дедукции">Исчисление для импликативно-негативного фрагмента КЛВ, свойства вывода, теорема о дедукции</h2>
+
+<h3 id="исчисление-cl_negto">Исчисление $cl_{\neg\to}$</h3>
+
+<p><strong>Определение.</strong> Исчисление $cl_{\neg\to}$</p>
+
+<p>Аксиомные схемы:</p>
+
+<p>($I_1$) $A \to (B \to A)$</p>
+
+<p>($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$</p>
+
+<p>($N_1$) $(A \to B) \to ((A \to \neg B) \to \neg A)$</p>
+
+<p>($N_2$) $\neg \neg A \to A$</p>
+
+<p>Правило вывода:
+$A$, $A \to B$  $\Rightarrow$ $B$</p>
+
+<p><strong>Вопрос.</strong> В чем интуитивный смысл каждой аксиомной схемы исчисления $cl_{\neg\to}$?</p>
+
+<p>Что такое аксиомная схема? Аксиомная схема описывает структуру формулы, которая считается аксиомой. Для примера возьмем аксиомную схему ($I_1$). Подразумевается, что собственно аксиомами исчисления будут все формулы вида $A \to (B \to A)$. Например, такие:</p>
+
+<ul>
+  <li>$p \to (q \to p)$</li>
+  <li>$(q \to r) \to ((\neg p \to r) \to (q \to r))$</li>
+  <li>$\neg \neg \neg p \to (\neg p \to \neg \neg \neg p )$</li>
+</ul>
+
+<p>Таким образом, в исчислении $cl_{\to\neg}$ только четыре аксиомные схемы, но самих аксиом – бесконечно много.</p>
+
+<p><strong>Определение.</strong> Выводом формулы $\varphi$ из множества гипотез $\Gamma$ в исчислении $S$ будем называть конечную последовательность формул $\varphi_1, \dots, \varphi_n$ такую, что</p>
+
+<ol>
+  <li>для каждой формулы $\varphi_i$ ($1 \leq i \leq n$) верно одно из трех:
+    <ul>
+      <li>$\varphi_i \in \Gamma$ или</li>
+      <li>$\varphi_i$ является аксиомой исчисления $S$</li>
+      <li>$\varphi_i$ получена из предыдущих формул по одному из правил вывода исчисления $S$[^проMP]</li>
+    </ul>
+  </li>
+  <li>$\varphi_n = \varphi$</li>
+</ol>
+
+<p><strong>Обозначение.</strong> Пусть $\Gamma \vdash_S \varphi$ означает, что найдется такая последовательность формул, которая является выводом формулы $\varphi$ из множества гипотез $\Gamma$ в исчислении $S$. Будем говорить, что формула $\varphi$ выводима из множества гипотез $\Gamma$ (в исчислении $S$).</p>
+
+<p>Если из контекста понятно о каком исчислении идет речь, то будем писать $\Gamma \vdash \varphi$ вместо $\Gamma \vdash_S \varphi$.</p>
+
+<p><strong>Обозначение.</strong> Условимся писать $\Gamma, \varphi \vdash_S \psi$ вместо $\Gamma \cup { \varphi } \vdash_S \psi $.</p>
+
+<p><strong>Пример.</strong> Докажем, что $p \to (q \to r), p \to q \vdash_{cl_{\to\neg}} p \to r$. Рассмотрим следующую последовательность:</p>
+
+<ol>
+  <li>$p \to (q \to r)$ – гипотеза</li>
+  <li>$p \to q$ – гипотеза</li>
+  <li>$(p \to (q \to r)) \to ((p \to q) \to (p \to r))$ – аксиома $I_2$</li>
+  <li>$(p \to q) \to (p \to r)$ – MP 1,3</li>
+  <li>$p \to r$ – MP 2, 4</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Постройте следующие выводы:</p>
+
+<ol>
+  <li>$p \to q, q \to r, p \vdash_{cl_{\to\neg}} ! r$</li>
+  <li>$p \to q, p \to \neg q \vdash_{cl_{\to\neg}} ! \neg p$</li>
+</ol>
+
+<p><strong>Определение.</strong> Теоремой исчисления $S$ будем называть формулу $\varphi$ такую, что она выводится в этом исчислении из пустого множества гипотез, то есть, $\varnothing \vdash_S \varphi$.</p>
+
+<p><strong>Обозначение.</strong> Условимся писать $\vdash_S \varphi$ вместо $\varnothing \vdash_S \varphi$. Или просто $\vdash \varphi$, если из контекста ясно, о каком исчислении идет речь.</p>
+
+<p><strong>Пример.</strong> $\vdash_{cl_{\to\neg}}p \to p$</p>
+
+<ol>
+  <li>$p \to ((q \to p) \to p)$ – аксиома $I_1$</li>
+  <li>$(p \to ((q \to p) \to p)) \to ((p \to (q \to p)) \to (p \to p))$ – аксиома $I_2$</li>
+  <li>$(p \to (q \to p)) \to (p \to p))$ – MP 1,2</li>
+  <li>$p \to (q \to p)$ – аксиома $I_1$</li>
+  <li>$p \to p$ – MP 3, 4</li>
+</ol>
+
+<p>&lt;– <strong>Пример.</strong> Часто вывод удобно записывать не в столбик, а в виде дерева, в котором непосредственно ниже под двумя формулами записывается результат применения к ним правила modus ponens. Перепишем вывод $\vdash p \to p$ в виде дерева:</p>
+
+<p>\begin{prooftree}
+\AxiomC{}
+\RightLabel{$I_1$}
+\UnaryInfC{$p \to ((q \to p) \to p)$}
+\AxiomC{}
+\RightLabel{$I_2$}
+\UnaryInfC{$(p \to ((q \to p) \to p)) \to\atop\to ((p \to (q \to p)) \to (p \to p))$}
+\RightLabel{$MP$}
+\BinaryInfC{$(p \to (q \to p)) \to (p \to p))$}
+\AxiomC{}
+\RightLabel{$I_1$}
+\UnaryInfC{$p \to (q \to p)$}
+\RightLabel{$MP$}
+\BinaryInfC{$p \to p$}
+\end{prooftree}</p>
+
+<p><strong>Упражнение.</strong> Запишите вывод из примера доказательства $p \to (q \to r), p \to q \vdash_{cl_{\to\neg}} p \to r$ в виде дерева. –&gt;</p>
+
+<h3 id="свойства-вывода">Свойства вывода</h3>
+
+<p><strong>Утверждение.</strong> Отношение выводимости из множества гипотез $\Gamma \vdash \varphi$ обладает следующими свойствами:</p>
+
+<ol>
+  <li>компактность: если $\Gamma \vdash \varphi$, то найдется конечное $\Gamma’ \subseteq \Gamma$ т.ч. $\Gamma’ \vdash \varphi $</li>
+  <li>монотонность: если $\Gamma \vdash \varphi$ и $\Gamma \subseteq \Delta$, то $\Delta \vdash \varphi$</li>
+  <li>транзитивность: если для всех $\varphi \in \Delta$: $\Gamma \vdash \varphi$ и $\Delta \vdash \psi$, то $\Gamma \vdash \psi$</li>
+</ol>
+
+<p>Используя следующее обозначение $\boxed{\Gamma \vdash \Delta:= \forall \varphi \in \Delta: \Gamma \vdash \varphi}$, можно переписать формулировку свойства транзитивности в следующем виде: $\Gamma \vdash \Delta$ и $\Delta \vdash \psi \Rightarrow \Gamma \vdash \psi$.</p>
+
+<p><strong>Доказательство.</strong> Упражнение.</p>
+
+<p><strong>Вопрос.</strong> Следствием какого свойства является следующее утверждение: если $\vdash \varphi$, то $\Gamma \vdash \varphi$?</p>
+
+<p><strong>Упражнение.</strong> Постройте следующие выводы:</p>
+<ul>
+  <li>$p \vdash q \to p $</li>
+  <li>$p \to (q \to r) \vdash (p \to q) \to (p \to r)$</li>
+</ul>
+
+<h3 id="теорема-о-дедукции">Теорема о дедукции</h3>
+
+<p>Теорема о дедукции[^метатеорема] позволяет сильно упростить процедуру поиска вывода. Можно сказать, что поиск доказательства без использования теоремы о дедукции и с теоремой о дедукции это две разные задачи, первая из которых является гораздо более сложной.</p>
+
+<p>Мы докажем теорему о дедукции не только для исчисления $cl_{\to\neg}$, но и для более широкого класса исчислений. Заметим, что в доказательстве нам не понадобятся аксиомные схемы $N_1$ и $N_2$.</p>
+
+<p><strong>Определение.</strong> Будем называть исчисление $S$ «дружественным к дедукции», если</p>
+
+<ol>
+  <li>$S$ содержит аксиомные схемы $I_1$ и $I_2$</li>
+  <li>единственное правило вывода в исчислении $S$ – modus ponens.</li>
+</ol>
+
+<p><strong>Утверждение.</strong> Пусть $S$ – «дружественное к дедукции» исчисление. Если $\Gamma \vdash_S \varphi \to \psi$, $\Gamma \vdash_S \varphi \to (\psi \to \chi)$, то $\Gamma \vdash_S \varphi \to \chi$.</p>
+
+<p><strong>Доказательство.</strong> Упражнение.</p>
+
+<p><strong>Теорема.</strong> О дедукции</p>
+
+<p>Пусть $L$ – пропозициональный язык, в котором есть импликация, $S$ – дружественное к дедукции исчисление в языке $L$, $\Gamma \subseteq L$, $\varphi, \psi \in L$, тогда</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><mi>φ</mi><msub><mo>⊢</mo><mi>S</mi></msub><mi>ψ</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi mathvariant="normal">Γ</mi><msub><mo>⊢</mo><mi>S</mi></msub><mi>φ</mi><mo>→</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\Gamma, \varphi \vdash_S \psi \iff \Gamma \vdash_S \varphi \to \psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟺</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span></span></span></span></span>
+
+<p><strong>Доказательство.</strong></p>
+
+<p>($\Leftarrow$) Упражнение.</p>
+
+<p>($\Rightarrow$) Будем доказывать это утверждение возвратной индукцией по длине вывода (см.: замечание о принципе возвратной индукции). Нам дано, что $\Gamma, \varphi \vdash_S \psi$. Значит, найдется последовательность формул $\psi_1, \dots, \psi_n$ (где $\psi_n = \psi$), которая является выводом формулы $\psi$ из множества гипотез $\Gamma \cup {\varphi}$. Допишем слева к каждой из формул в этой последовательности формулу $\varphi$ и импликацию.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">1.</th>
+      <th style="text-align: center">$\psi_1$</th>
+      <th style="text-align: center">1.</th>
+      <th style="text-align: center">$\varphi \to \psi_1$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">2.</td>
+      <td style="text-align: center">$\psi_2$</td>
+      <td style="text-align: center">2.</td>
+      <td style="text-align: center">$\varphi \to \psi_2$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">…</td>
+      <td style="text-align: center">…</td>
+      <td style="text-align: center">…</td>
+      <td style="text-align: center">…</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">n-1.</td>
+      <td style="text-align: center">$\psi_{n-1}$</td>
+      <td style="text-align: center">n-1.</td>
+      <td style="text-align: center">$\varphi \to \psi_{n-1}$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">n.</td>
+      <td style="text-align: center">$\psi_n$</td>
+      <td style="text-align: center">n.</td>
+      <td style="text-align: center">$\varphi \to \psi_n$ ($\psi_n=\psi$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Заметим, что мы еще не получили новый вывод, а только заготовку для него. Теперь докажем, что можно достроить нашу заготовку до полноценного вывода По определению вывода из гипотез для каждой формулы $\psi_i$ ($1 \leq i \leq n$) должно выполнятся одно из следующих условий:</p>
+
+<p>сл. 1. $\psi_i \in \Gamma \cup {\varphi}$,</p>
+
+<p>сл. 2. $\psi_i$ – аксиома,</p>
+
+<p>сл. 3. $\psi_i$ – получена из предыдущих формул по modus ponens</p>
+
+<p>Для каждого случая укажем какие строчки нужно добавить, чтобы получить вывод $\Gamma \vdash_S \varphi \to \psi_i$.</p>
+
+<ol>
+  <li>
+    <p>$\psi_i \in \Gamma \cup {\varphi}$. Рассмотрим два подслучая сл. 1a: $\psi_i \in \Gamma$ и сл. 1b: $\psi_i \in { \varphi } $, то есть, $\psi_i = \varphi$.</p>
+
+    <p>1a. Продолжим вывод следующим образом:</p>
+    <ul>
+      <li>$\psi_i$ – гипотеза</li>
+      <li>$\psi_i \to (\varphi \to \psi_i )$ – аксиома $I_1$</li>
+      <li>$\varphi \to \psi_i$ – $MP$</li>
+    </ul>
+
+    <p>1b. $\psi_i = \varphi$. Получается, что нам нужно доказать, что $\Gamma \vdash_S \varphi \to \varphi$. Заметим, что $\varphi \to \varphi$ теорема любого 	 дружественного к дедукции исчисления, поскольку для ее доказательства нужны только аксиомы $I_1$, $I_2$ и modus ponens (см. пример доказательства 			$\vdash_{cl_{\to\neg}}p \to p$).</p>
+  </li>
+  <li>$\psi_i$ – аксиома. Аналогично сл.~1a.</li>
+  <li>$\psi_i$ получена из предыдущих по правилу вывода modus ponens, то есть, найдутся формулы $\psi_j$ и $\psi_k = \psi_j \to \psi_i$ ($j, k &lt; i$). По предположению индукции верно, что $\Gamma \vdash_S \varphi \to \psi_j$ и $\Gamma \vdash_S \varphi \to (\psi_j \to \psi_i)$. Тогда, по утверждению о «дружественном к дедукции» исчислении, верно, что $\Gamma \vdash_S \varphi \to \psi_i$.</li>
+</ol>
+
+<p>Заметим, что в каждом из случаем мы использовали только гипотезы из $\Gamma$ и не использовали $\varphi$.
+Таким образом, мы получили вывод $\Gamma \vdash_S \varphi \to \psi$.</p>
+
+<p><strong>Пример.</strong> Посмотрим как работает теорема о дедукции на конкретном примере.</p>
+
+<p>Докажем, что вывод $p, p \to q \vdash q$</p>
+
+<ol>
+  <li>$p$ – гипотеза</li>
+  <li>$p \to q$ – гипотеза</li>
+  <li>$q$ – $MP$ 1,2</li>
+</ol>
+
+<p>можно преобразовать в вывод $p \vdash ( p \to q) \to q$.</p>
+
+<p>Допишем к каждой строчке слева формулу $p \to q$. Получим заготовку для вывода:</p>
+
+<ol>
+  <li>$(p \to q)$ $\to p$</li>
+  <li>$(p \to q) \to (p \to q)$</li>
+  <li>$(p \to q) \to q$</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>$\Gamma, \varphi \vdash \psi$</th>
+      <th>$\Gamma \vdash \varphi \to \psi$ \</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$p, p \to q \vdash q$</td>
+      <td>$p \vdash ( p \to q) \to q$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>1. $p$ - гип.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>2. $p \to ((p \to q) \to p)$ – акс. $I_1$</td>
+    </tr>
+    <tr>
+      <td>1. $p$ - гип.</td>
+      <td>3. $(p \to q) \to p$ – $MP$ 1,2</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>4. $(p \to q) \to ((q \to (p \to q)) \to (p \to q))$ – акс. $I_1$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>5. $((p \to q) \to ((q \to (p \to q)) \to (p \to q))) \to$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$(((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – акс. $I_2$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>6. $((p \to q) \to (q \to (p \to q))) \to ((p \to q) \to (p \to q)))$ – $MP$ 4,5</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>7. $(p \to q) \to (q \to (p \to q))$ – акс. $I_1$</td>
+    </tr>
+    <tr>
+      <td>2. $p \to q$ - гип.</td>
+      <td>8. $(p \to q) \to (p \to q)$ – $MP$ 6,7</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>9. $((p \to q) \to (p \to q)) \to ( (p \to q) \to p ) \to ((p \to q) \to q))$ – акс. $I_2$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>10. $( (p \to q) \to p ) \to ((p \to q) \to q)$ – $MP$ 4,5</td>
+    </tr>
+    <tr>
+      <td>3. q - MP 1,2</td>
+      <td>11. $(p \to q) \to q)$ – $MP$ 2,6</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Заметим, что здесь шаги 4-8 являются доказательством теоремы $(p \to q) \to (p \to q)$. Доказательство получается из доказательства $p \to p$ (см. пример доказательства $\vdash_{cl_{\to\neg}}p \to p$) путем замены $p$ на $p \to q$.</p>
+
+<p><strong>Замечание.</strong> Принцип возвратной дедукции</p>
+
+<p>В доказательстве теоремы о дедукции мы опирались на принцип возвратной индукции (strong induction):</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><munder><mrow><mi mathvariant="normal">∀</mi><mi>n</mi><mo stretchy="false">(</mo><mover><mover><mrow><mi mathvariant="normal">∀</mi><mi>k</mi><mo>&lt;</mo><mi>n</mi><mtext> </mtext><mi>P</mi><mi>k</mi></mrow><mo stretchy="true">⏞</mo></mover><mtext>предпол. инд.</mtext></mover><mo>⇒</mo><mi>P</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><mo stretchy="true">⏟</mo></munder><mtext>шаг индукции</mtext></munder><mo>⇒</mo><mi mathvariant="normal">∀</mi><mi>n</mi><mi>P</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">\underbrace{\forall n  (\overbrace{\forall k &lt; n\: Pk}^{\text{предпол. инд.}} \Rightarrow Pn)}_{\text{шаг индукции}} \Rightarrow \forall n P n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.5154em;vertical-align:-1.5355em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.9799em;"><span style="top:-2.5805em;"><span class="pstrut" style="height:3.9799em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cyrillic_fallback mtight">шаг</span><span class="mord mtight"> </span><span class="mord cyrillic_fallback mtight">индукции</span></span></span></span></span><span style="top:-3.9799em;"><span class="pstrut" style="height:3.9799em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.9799em;"><span class="svg-align" style="top:-3.0819em;"><span class="pstrut" style="height:3.9799em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
+ 35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688
+ 0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7
+-331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z'/></svg></span><span class="brace-center" style="height:0.548em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'><path d='M199572 214
+c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
+ 53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3
+ 11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0
+-5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z'/></svg></span><span class="brace-right" style="height:0.548em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'><path d='M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
+ 28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
+-174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z'/></svg></span></span></span><span style="top:-3.9799em;"><span class="pstrut" style="height:3.9799em;"></span><span class="mord"><span class="mord">∀</span><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mover"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.9799em;"><span style="top:-3.3424em;"><span class="pstrut" style="height:3.3424em;"></span><span class="mord mover"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3424em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∀</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span><span class="svg-align" style="top:-3.7944em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M6 548l-6-6v-35l6-11c56-104 135.3-181.3 238-232 57.3-28.7 117
+-45 179-50h399577v120H403c-43.3 7-81 15-113 26-100.7 33-179.7 91-237 174-2.7
+ 5-6 9-10 13-.7 1-7.3 1-20 1H6z'/></svg></span><span class="brace-center" style="height:0.548em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'><path d='M200428 334
+c-100.7-8.3-195.3-44-280-108-55.3-42-101.7-93-139-153l-9-14c-2.7 4-5.7 8.7-9 14
+-53.3 86.7-123.7 153-211 199-66.7 36-137.3 56.3-212 62H0V214h199568c178.3-11.7
+ 311.7-78.3 403-201 6-8 9.7-12 11-12 .7-.7 6.7-1 18-1s17.3.3 18 1c1.3 0 5 4 11
+ 12 44.7 59.3 101.3 106.3 170 141s145.3 54.3 229 60h199572v120z'/></svg></span><span class="brace-right" style="height:0.548em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'><path d='M400000 542l
+-6 6h-17c-12.7 0-19.3-.3-20-1-4-4-7.3-8.3-10-13-35.3-51.3-80.8-93.8-136.5-127.5
+s-117.2-55.8-184.5-66.5c-.7 0-2-.3-4-1-18.7-2.7-76-4.3-172-5H0V214h399571l6 1
+c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0391em;"><span></span></span></span></span></span></span><span style="top:-5.021em;"><span class="pstrut" style="height:3.3424em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cyrillic_fallback mtight">предпол</span><span class="mord mtight">. </span><span class="mord cyrillic_fallback mtight">инд</span><span class="mord mtight">.</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0391em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.898em;"><span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5355em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">n</span></span></span></span></span>
+
+<p>То есть, если для произвольного натурального $n$ удасться доказать, что выполнение условия для всех предыдущих чисел, влечет выполнение условия и для данного числа, то условие верно для всех натуральных чисел.</p>
+
+<p>Свойство $Pn$ является свойством некоторого натурального числа. Но в формулировке теоремы о дедукции натуральные числа не упоминаются. Как быть? Можно определить следующее свойство натурального числа:</p>
+
+<p>$Pn:=$ «вывод формулы $\psi$ из $\Gamma \cup { \varphi }$ <em>длины n</em> можно преобразовать в вывод формулы $\varphi \to \psi$ из $\Gamma$».</p>
+
+<p>Таким образом, мы хотим доказать, что для произвольного вывода длины $n$ работает теорема о дедукции ($Pn$), исходя из предположения, что она работает для всех выводов меньшей длины ($\forall k &lt; n: Pk$).</p>
+
+<p><strong>Вопрос*.</strong> Чем принцип возвратной индукции отличается от принципа математической индукции?</p>
+
+<p><strong>Упражнение.</strong> Докажите следующее утверждение: если $\Gamma, \varphi \vdash \psi$ и $\Gamma \vdash \varphi$, то $\Gamma \vdash \psi$.</p>
+
+<p><strong>Упражнение.</strong> Докажите следующее утверждение: если $\vdash \varphi$ и $\Gamma \not \vdash \psi$, то $\Gamma, \varphi \not \vdash \psi$.</p>
+
+<p><strong>Упражнение.</strong> Докажите следующее утверждение. Пусть $S$ – дружественное к дедукции исчисление, $L$ – язык этого исчисления, $\Gamma \subseteq L$, $\varphi_1, \dots, \varphi_{n-1}, \varphi_n, \psi \in L$ тогда</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><msub><mi>φ</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>φ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><msub><mi>φ</mi><mi>n</mi></msub><msub><mo>⊢</mo><mi>S</mi></msub><mi>ψ</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi mathvariant="normal">Γ</mi><msub><mo>⊢</mo><mi>S</mi></msub><msub><mi>φ</mi><mn>1</mn></msub><mo>→</mo><mo stretchy="false">(</mo><mo>…</mo><mo stretchy="false">(</mo><msub><mi>φ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>→</mo><mo stretchy="false">(</mo><msub><mi>φ</mi><mi>n</mi></msub><mo>→</mo><mi>ψ</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>…</mo><mtext> </mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Gamma, \varphi_1, \dots, \varphi_{n-1}, \varphi_{n} \vdash_S \psi \iff \Gamma \vdash_S \varphi_1 \to ( \dots (\varphi_{n-1} \to (\varphi_{n} \to \psi)) \dots )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9028em;vertical-align:-0.2083em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟺</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span></span></span></span></span>
+
+<p><strong>Упражнение.</strong> Докажите следующие теоремы исчисления $cl_{\neg\to}$:</p>
+
+<ol>
+  <li>$((p \to q) \to r) \to  (q \to r)$</li>
+  <li>$(q \to r) \to ((p \to q) \to (p \to r))$</li>
+  <li>$(p \to (q \to r)) \to (q \to (p \to r))$</li>
+  <li>$(p \to q) \to ((q \to r) \to (p \to r))$</li>
+  <li>$p \to ((p \to q) \to q)$</li>
+  <li>$(p \to (p \to q)) \to (p \to q)$</li>
+</ol>
+
+<p>Если прямо не оговорено обратное, то разрешается пользоваться метатеоремой о дедукции.</p>
+
+<p><strong>Упражнение*.</strong> Докажите теоремы из предыдущего упражнения без использования метатеоремы о дедукции.</p>
+
+<p><strong>Определение.</strong> Правило вывода
+$\frac{A_1, \dots, A_n}{B}$
+является производным в исчислении $S$, если $A_1, \dots, A_n \vdash_S B$</p>
+
+<p><strong>Упражнение.</strong> Докажите, что в исчислении $cl_{\neg\to}$ следующие правила вывода являются производными:</p>
+
+<ul>
+  <li>$\dfrac{A}{B \to A}$</li>
+  <li>$\dfrac{A \to (B \to C)}{(A \to B)  \to (A \to  C)}$</li>
+  <li>$\dfrac{(A \to B) \to C)}{B \to C}$</li>
+  <li>$\dfrac{A \to (B \to C)}{B \to (A \to C)}$</li>
+  <li>$\dfrac{A \to B }{(C \to A) \to  (C \to B)}$</li>
+  <li>$\dfrac{A \to B}{B \to C}{A \to C}$</li>
+</ul>
+
+<p><strong>Упражнение.</strong> Докажите следующие теоремы исчисления $cl_{\neg\to}$:</p>
+
+<ol>
+  <li>$p \to (\neg p \to \neg q)$</li>
+  <li>$(p \to \neg p) \to \neg p$</li>
+  <li>$p \to \neg \neg p$</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Докажите следующие теоремы исчисления $cl_{\neg\to}$:</p>
+
+<ol>
+  <li>$(p \to \neg q) \to (q \to \neg p)$</li>
+  <li>$(p \to q) \to (\neg q \to \neg p)$</li>
+  <li>$(\neg p \to \neg q) \to (q \to p)$</li>
+  <li>$(\neg p \to q) \to (\neg q \to p)$</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Докажите следующие теоремы исчисления $cl_{\neg\to}$:</p>
+
+<ol>
+  <li>$\neg (p \to q) \to p$</li>
+  <li>$\neg (p \to q) \to \neg q$</li>
+  <li>$p \to (\neg q \to \neg (p \to q))$</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Докажите теорему исчисления $cl_{\neg\to}$[^подсказка]:</p>
+
+<ol>
+  <li>$((p \to q) \to p) \to p$</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Докажите теорему исчисления $cl_{\neg\to}$:</p>
+
+<ol>
+  <li>$(q \to p) \to ((\neg q \to p) \to p)$</li>
+</ol>
+
+<h3 id="другие-варианты-исчислений-для-импликативно-негативного-фрагмента">Другие варианты исчислений для импликативно-негативного фрагмента</h3>
+
+<p><strong>Определение.</strong> Дедуктивная эквивалентность</p>
+
+<p>Будем называть исчисления $X$ и $Y$ дедуктивно эквивалентными, если множества их теорем совпадают.</p>
+
+<p><strong>Упражнение**.</strong> Докажите, что если в исчислении $cl_{\neg\to}$ аксиому $N1$ заменить на</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>→</mo><mi mathvariant="normal">¬</mi><mi>B</mi><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mi>B</mi><mo>→</mo><mi mathvariant="normal">¬</mi><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(A \to \neg B) \to (B \to \neg A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span></span>
+
+<p>то получится дедуктивно-эквивалентное исчисление.</p>
+
+<p><strong>Упражнение**.</strong> Докажите, что если в исчислении $cl_{\neg\to}$ аксиомы $N1$ и $N_2$ заменить на</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>A</mi><mo>→</mo><mi mathvariant="normal">¬</mi><mi>B</mi><mo stretchy="false">)</mo><mo>→</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\neg A \to B) \to ((\neg A \to \neg B) \to A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">¬</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord">¬</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span></span>
+
+<p>то получится дедуктивно-эквивалентное исчисление.</p>
+
+<p><strong>Упражнение**.</strong> Докажите, что если в исчислении $cl_{\neg\to}$ аксиомы $N1$ и $N_2$ заменить на</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>A</mi><mo>→</mo><mi mathvariant="normal">¬</mi><mi>B</mi><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\neg A \to \neg B) \to (B \to A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">¬</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span></span>
+
+<p>то получится дедуктивно-эквивалентное исчисление.</p>
+
+<h2 id="исчисление-для-фрагмента-с-традиционным-набором-связок">Исчисление для фрагмента с традиционным набором связок</h2>
+
+<h3 id="исчисление-cl">Исчисление $cl$</h3>
+
+<p><strong>Определение.</strong> Исчисление $cl$</p>
+
+<p>Аксиомные схемы:</p>
+
+<p>($I_1$) $A \to (B \to A)$</p>
+
+<p>($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$</p>
+
+<p>($C_1$) $(A \wedge B) \to A$</p>
+
+<p>($C_2$) $(A \wedge B) \to B$</p>
+
+<p>($C_3$) $A \to (B \to (A \wedge B))$</p>
+
+<p>($D_1$) $A \to (A \vee B)$</p>
+
+<p>($D_2$) $A \to (B \vee A)$</p>
+
+<p>($D_3$) $(A \to C) \to ((B \to C) \to ((A \vee B) \to C))$</p>
+
+<p>($N_1$) $(A \to B) \to ((A \to \neg B) \to \neg A)$</p>
+
+<p>($N_2$) $\neg \neg A \to A$</p>
+
+<p>Правило вывода: modus ponens</p>
+
+<p><strong>Вопрос*.</strong> В чем интуитивный смысл каждой аксиомы исчисления $cl$?</p>
+
+<p><strong>Вопрос.</strong> Справедлива ли для исчисления $cl$ теорема о дедукции?</p>
+
+<p><strong>Упражнение.</strong> Докажите следующие теоремы исчисления $cl$:</p>
+
+<ol>
+  <li>$(p \wedge q) \to (q \wedge p)$</li>
+  <li>$(p \vee q) \to (q \vee p)$</li>
+  <li>$(p \wedge (q \wedge r)) \to ((p \wedge q) \wedge r)$</li>
+  <li>$(p \vee (q \vee r)) \to ((p \vee q) \vee r)$</li>
+  <li>$((p \wedge q) \to r) \to (p \to (q \to r))$</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Докажите следующие теоремы исчисления $cl$:</p>
+
+<ol>
+  <li>$(p \to q) \to (\neg p \vee q)$</li>
+  <li>$\neg (p \vee q) \to (\neg p \wedge \neg q)$</li>
+</ol>
+
+<p><strong>Упражнение.</strong> Докажите, что</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo>⊢</mo><mi>B</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∧</mo><mo>⋯</mo><mo>∧</mo><msub><mi>A</mi><mi>n</mi></msub><mo>⊢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\Gamma, A_1, \dots, A_n \vdash B \iff \Gamma, A_1 \wedge \dots \wedge A_n \vdash B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7073em;vertical-align:-0.024em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟺</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></span>
+
+<p><strong>Упражнение.</strong> Докажите, что верны следующие утверждения:</p>
+<ul>
+  <li>$\dfrac{\Gamma \vdash A \hspace{2ex} \Gamma \vdash B}{\Gamma \vdash A \wedge B}$</li>
+  <li>$\dfrac{\Gamma, A \vdash B \hspace{2ex} \Gamma, A \vdash \neg B}{\Gamma \vdash \neg A}$</li>
+  <li>$\dfrac{\Gamma, A \vdash C \hspace{2ex} \Gamma, B \vdash C}{\Gamma, A \vee B \vdash C}$</li>
+  <li>$\dfrac{\Gamma, A \vdash B \hspace{2ex} \Gamma, \neg A \vdash B}{\Gamma \vdash B}$</li>
+</ul>
+
+<h3 id="теорема-об-эквивалентной-замене">Теорема об эквивалентной замене</h3>
+
+<p>Мотивация: допустим мы доказали теорему $\neg (\neg p \vee \neg q) \to (\neg \neg p \wedge \neg \neg q)$, а нам хочется доказать похожую теорему без двойного отрицания $\neg (\neg p \vee \neg q) \to (p \wedge q)$. Мы можем доказать, что $p \leftrightarrow \neg \neg p$. Можем ли мы заменить $p$ на $\neg \neg p$ внутри другой формулы?</p>
+
+<p><strong>Обозначение.</strong> Условимся писать $\Gamma \vdash \varphi \leftrightarrow \psi$, если $\Gamma \vdash \varphi \to \psi$ и $\Gamma \vdash \psi \to \varphi$.</p>
+
+<p><strong>Вопрос.</strong> Мы вводим $\leftrightarrow$ как синтаксическое сокращение. Но $\leftrightarrow$ можно рассматривать и как связку наряду с другими. Какие аксиомы и правила вывода про $\leftrightarrow$ следовало бы добавить к исчислению $cl$?</p>
+
+<p>Нам понадобятся понятия подформулы и подмодели. Подформулой будем называть часть формулы, которая сама является формулой. Дадим более строгое определение.</p>
+
+<p><strong>Определение.</strong> Пусть $Sub(\varphi)$ обозначает множество подформул формулы $\varphi$. Определим $Sub(\varphi)$ индуктивно:</p>
+
+<ul>
+  <li>$Sub(p): = {p}$</li>
+  <li>$Sub(\neg \varphi) := Sub(\varphi) \cup { \neg \varphi }$</li>
+  <li>$Sub(\varphi \wedge \psi) := Sub(\varphi) \cup Sub(\psi) \cup {\varphi \wedge \psi }$</li>
+  <li>$Sub(\varphi \vee \psi) := Sub(\varphi) \cup Sub(\psi) \cup {\varphi \vee \psi }$</li>
+  <li>$Sub(\varphi \to \psi) := Sub(\varphi) \cup Sub(\psi) \cup {\varphi \to \psi }$</li>
+</ul>
+
+<p><strong>Пример.</strong> $Sub(p \wedge \neg (q \vee r))= { p \wedge \neg (q \vee r), p, \neg (q \vee r), q \vee r, q, r }$</p>
+
+<p><strong>Определение.</strong> Пусть $\varphi, \psi \in Fm$, $p \in Var$. Через $\varphi[\psi / p]$ будем обозначать результат замены $p$ на $\psi$ в формуле $\varphi$[^другиеобозначения]. Дадим индуктивное определение подстановки:</p>
+<ul>
+  <li>$p[\psi / p] := \psi$</li>
+  <li>$q [\psi / p] := q$, если $q \not = p$</li>
+  <li>$(\neg \varphi_1) [\psi / p] := \neg (\varphi_1 [\psi / p])$</li>
+  <li>$(\varphi_1 \wedge \varphi_2)[\psi / p]:= (\varphi_1[\psi / p] \wedge \varphi_2[\psi / p])$</li>
+  <li>$(\varphi_1 \vee \varphi_2)[\psi / p]:= (\varphi_1[\psi / p] \vee \varphi_2[\psi / p])$</li>
+  <li>$(\varphi_1 \vee \varphi_2)[\psi / p]:= (\varphi_1[\psi / p] \to \varphi_2[\psi / p])$</li>
+</ul>
+
+<p><strong>Пример.</strong> Пусть $\varphi:= p \wedge (q \to (p \vee r))$, тогда</p>
+<ul>
+  <li>$\varphi[s/p]= s \wedge (q \to (s \vee r))$</li>
+  <li>$\varphi[s \to t / p]= (s \to t) \wedge (q \to ((s \to t) \vee r))$</li>
+</ul>
+
+<p><strong>Утверждение.</strong> Пусть $\varphi, \psi, \varphi’, \psi’ \in Fm$, тогда</p>
+
+<ol>
+  <li>Если $\vdash \varphi \leftrightarrow \psi$, то $\vdash \neg \varphi \leftrightarrow \neg \psi$</li>
+  <li>
+    <p>Если $\vdash \varphi \leftrightarrow \varphi’$ и $\vdash \psi \leftrightarrow \psi’$, то</p>
+
+    <p>2a. $\vdash (\varphi \wedge \psi) \leftrightarrow (\varphi’ \wedge \psi’)$</p>
+
+    <p>2b. $\vdash (\varphi \vee \psi) \leftrightarrow (\varphi’ \vee \psi’)$</p>
+
+    <p>2c. $\vdash (\varphi \to \psi) \leftrightarrow (\varphi’ \to \psi’)$</p>
+  </li>
+</ol>
+
+<p><strong>Доказательство.</strong> Упражнение.</p>
+
+<p><strong>Теорема.</strong> Об эквивалентной замене.</p>
+
+<p>Пусть $\varphi, \psi, \psi’ \in Fm$, $p \in Var$, тогда</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mo>⊢</mo><mi>ψ</mi><mo>↔</mo><msup><mi>ψ</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><mrow><mo>⊢</mo><mi>φ</mi><mo stretchy="false">[</mo><mi>ψ</mi><mi mathvariant="normal">/</mi><mi>p</mi><mo stretchy="false">]</mo><mo>↔</mo><mi>φ</mi><mo stretchy="false">[</mo><msup><mi>ψ</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi mathvariant="normal">/</mi><mi>p</mi><mo stretchy="false">]</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\vdash \psi \leftrightarrow \psi&#x27;}{\vdash \varphi[\psi/p] \leftrightarrow \varphi[\psi&#x27;/p]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.3649em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4289em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">φ</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mord">/</span><span class="mord mathnormal">p</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">φ</span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6779em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord">/</span><span class="mord mathnormal">p</span><span class="mclose">]</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+
+<p><strong>Доказательство.</strong> Допустим $\vdash \psi \leftrightarrow \psi’$. Докажем индукцией по построению $\varphi$, что $\vdash \varphi[\psi/p] \leftrightarrow \varphi[\psi’/p]$.</p>
+
+<p>Нам нужно рассмотреть следующие случаи $\varphi = q$[^обозначение], $\varphi = \neg \varphi_1$, $\varphi = \varphi_1 \wedge \varphi_2$, $\varphi = \varphi_1 \vee \varphi_2$, $\varphi = \varphi_1 \to \varphi_2$</p>
+
+<p><em>База индукции.</em> Пусть $\varphi=q$. Возможно два случая: (1) $q=p$ или (2) $q \not = p$.</p>
+
+<ol>
+  <li>
+    <p>Нам нужно доказать, что $\vdash p[\psi/p] \leftrightarrow p[\psi’/p]$. Заметим, что это утверждение, в силу определения подстановки, эквивалентно следующему $\vdash \psi \leftrightarrow \psi’$ (верно по допущению).</p>
+  </li>
+  <li>
+    <p>Нам нужно доказать, что $\vdash q [\psi/p] \leftrightarrow q [\psi’/p]$. 
+Заметим, что это утверждение, в силу определения подстановки, эквивалентно следующему
+$\vdash q \leftrightarrow q$ (см.: пример с доказательством $\vdash_{cl_{\to\neg}}p \to p$)</p>
+  </li>
+</ol>
+
+<p><em>Шаг индукции.</em></p>
+
+<p>Предположение индукции: $\vdash \varphi_1[\psi/p] \leftrightarrow \varphi_1[\psi’/p]$ и $\vdash \varphi_2[\psi/p] \leftrightarrow \varphi_2[\psi’/p]$.</p>
+
+<p>Сл. 1. $\varphi= \neg \varphi_1$. По предположению индукции $\vdash \varphi_1[\psi/p] \leftrightarrow \varphi_1[\psi’/p]$. По предшествующему этому доказательству утверждению отсюда получаем $\vdash \neg \varphi_1[\psi/p] \leftrightarrow \neg \varphi_1[\psi’/p]$</p>
+
+<p>Сл.2. $\varphi= \varphi_1 \wedge \varphi_2$.</p>
+
+<p>&lt;– <img src="/logic-course/docs/assets/images/дерево.png" alt="деревосдоказательством" /> –&gt;</p>
+
+<p>Сл.3. $\varphi= \varphi_1 \vee \varphi_2$. Аналогично сл.2. Упражнение.</p>
+
+<p>Сл. 4. $\varphi= \varphi_1 \to \varphi_2$. Аналогично сл.2. Упражнение.</p>
+
+<p><strong>Утверждение.</strong> Следующее правило вывода является производным в исчислении $cl$:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>φ</mi><mo stretchy="false">[</mo><mi>ψ</mi><mi mathvariant="normal">/</mi><mi>p</mi><mo stretchy="false">]</mo><mspace width="1.293em"/><mo>⊢</mo><mi>ψ</mi><mo>↔</mo><msup><mi>ψ</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>φ</mi><mo stretchy="false">[</mo><msup><mi>ψ</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi mathvariant="normal">/</mi><mi>p</mi><mo stretchy="false">]</mo></mrow></mfrac><mspace width="0.431em"/><mi>R</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">\frac{\Gamma \vdash \varphi[\psi/p] \hspace{3ex} \vdash \psi \leftrightarrow \psi&#x27;}{\Gamma \vdash \varphi[\psi&#x27;/p]} \hspace{1ex} RE</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.3649em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4289em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">φ</span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6779em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord">/</span><span class="mord mathnormal">p</span><span class="mclose">]</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">φ</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mord">/</span><span class="mord mathnormal">p</span><span class="mclose">]</span><span class="mspace" style="margin-right:1.293em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.431em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">RE</span></span></span></span></span>
+
+<p><strong>Доказательство.</strong> Упражнение.</p>
+
+<h3 id="другие-варианты-исчисления-для-традиционного-набора-связок">Другие варианты исчисления для традиционного набора связок</h3>
+
+<p><strong>Упражнение.</strong> Докажите следующую теорему:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mo>⊢</mo><mrow><mi>c</mi><mi>l</mi></mrow></msub><mi>p</mi><mo>∨</mo><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\vdash_{cl} p \vee (p \to q)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.75em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mclose">)</span></span></span></span></span>
+
+<p><strong>Упражнение*.</strong> Докажите, что если аксиомную схему $N2$ заменить на одну из следующих:</p>
+
+<ul>
+  <li>$A \vee \neg A$</li>
+  <li>$((A \to B) \to A) \to A$,</li>
+</ul>
+
+<p>то получится исчисление, которое дедуктивно эквивалентно $cl$.</p>
+
+<h2 id="позитивный-и-импликативный-фрагмент">Позитивный и импликативный фрагмент</h2>
+
+<h3 id="позитивный-фрагмент">Позитивный фрагмент</h3>
+
+<p>Заметим, что некоторые тавтологии не содержат отрицание. Например, $(p \wedge q) \vee (q \wedge p)$ или $(p \to q) \vee (q \to p)$. Достаточно ли будет взять только аксиомы без отрицания из исчисления $cl$? Оказывается, что нет. Нужно будет добавить еще одну аксиомную схему, связывающую импликацию и дизъюнкцию.</p>
+
+<p><strong>Определение.</strong> Исчисление $cl_+$ получается заменой аксиомных схем $N_1$ и $N_2$ на следующую:</p>
+
+<p>($D4$) $A \vee (A \to B)$</p>
+
+<p>Правило вывода: modus ponens</p>
+
+<p><strong>Вопрос.</strong> В чем интуитивный смысл формулы $A \vee (A \to B)$?</p>
+
+<p><strong>Вопрос.</strong> Справедлива ли для исчисления $cl_\to$ теорема о дедукции?</p>
+
+<p><strong>Упражнение.</strong> Докажите следующую теорему:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mo>⊢</mo><mrow><mi>c</mi><msub><mi>l</mi><mo>+</mo></msub></mrow></msub><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo><mo>→</mo><mi>p</mi><mo stretchy="false">)</mo><mo>→</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\vdash_{cl_+} ((p \to q) \to p) \to p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9862em;vertical-align:-0.2918em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2737em;"><span style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mbin mtight">+</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2025em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2918em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></span>
+
+<p><strong>Упражнение*.</strong> Известно, что отрицание можно выразить через $\to$ и $\bot$. Что нужно добавить к позитивному исчислению, чтобы получилось полное и корректное исчисление в языке $\wedge, \vee, \to, \bot$?</p>
+
+<h3 id="позитивный-фрагмент-с-константой-bot">Позитивный фрагмент с константой $\bot$</h3>
+
+<p><strong>Определение.</strong> Исчисление $cl_{+\bot}$ получается добавление к исчислению $cl_+$ следующей аксиомной схемы:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">⊥</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\bot \to A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">⊥</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span>
+
+<p><strong>Упражнение.</strong> Докажите в исчислении $cl_{+\bot}$ следующие теоремы:</p>
+
+<ol>
+  <li>$A \vee (A \to \bot)$</li>
+  <li>$((A \to \bot) \to \bot) \to A$</li>
+</ol>
+
+<h3 id="импликативный-фрагмент">Импликативный фрагмент</h3>
+
+<p>Заметим, что некоторые тавтологии состоят включают в себя только импликацию. Например $p \to p$ или $p \to ((p \to q) \to q)$. Достаточно ли будет аксиомных схем $I_1$ и $I_2$, чтоб вывести все такие тавтологии? Оказывается, что нет. Но, если добавить в исчисление закон Пирса, то такой набор аксиом оказывается достаточным.</p>
+
+<p><strong>Определение.</strong> Исчисление $cl_\to$
+Аксиомные схемы:</p>
+
+<p>($I_1$) $A \to (B \to A)$</p>
+
+<p>($I_2$) $(A \to (B \to C)) \to ((A \to B) \to (A \to C))$</p>
+
+<p>($I_3$) $((A \to B) \to A) \to A$ (закон Пирса)</p>
+
+<p>Правило вывода: modus ponens</p>
+
+<p><strong>Вопрос.</strong> Справедлива ли для исчисления $cl_\to$ теорема о дедукции?</p>
+
+<p><strong>Вопрос*.</strong> В чем интуитивный смысл закона Пирса?</p>
+
+<p><strong>Упражнение.</strong> Докажите следующую теорему:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mo>⊢</mo><mrow><mi>c</mi><msub><mi>l</mi><mo>→</mo></msub></mrow></msub><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\vdash_{cl_\to} ((p \to q) \to r) \to ( (p \to r) \to r)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9445em;vertical-align:-0.2501em;"></span><span class="mrel"><span class="mrel">⊢</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1191em;"><span style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mrel mtight">→</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span></span>
+
+<p><strong>Вопрос*.</strong> Можно ли в каком-либо из рассмотренных нами исчислений заменить правило modus ponens на аксиомную схему $A \to ((A\to B) \to B)$. Разве эта аксиомная схема не выражает ту же идею, что и modus ponens?</p>
+
+<h2 id="сравнение-логических-систем">Сравнение логических систем</h2>
+
+<p><strong>Определение.</strong> Правилом подстановки будем называть следующее правило вывода:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>A</mi><mrow><mi>A</mi><mo stretchy="false">[</mo><mi>B</mi><mi mathvariant="normal">/</mi><mi>p</mi><mo stretchy="false">]</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{A}{A[B/p]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.2963em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">/</span><span class="mord mathnormal">p</span><span class="mclose">]</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+
+<p><strong>Определение.</strong> Логикой будем называть множество формул, замкнутых по правилу modus ponens и по подстановке.</p>
+
+<p><strong>Утверждение.</strong> Множество теорем является логикой.</p>
+
+<p><strong>Определение.</strong> Консервативное расширение</p>
+
+<p>Пусть $\mathcal{L}_1$ и $\mathcal{L}_2$ – пропозициональные языки такие, что $\mathcal{L}_1 \subseteq \mathcal{L}_2$, а $L_1 \subset \mathcal{L}_1$ и $L_2 \subset \mathcal{L}_2$ – логики. Если $L_1 = L_2 \cap \mathcal{L}_1$, то будем называть $L_2$ консервативным расширением $L_1$, а $L_1$ $\mathcal{L}_1$-фрагментом логики $L_2$.</p>
+
+<p><strong>Утверждение.</strong> Пусть $cl:={  \varphi \in Fm \mid \vdash_{cl} \varphi }$, 
+$cl_{\to\neg}:={  \varphi \in Fm_{\to\neg} \mid \vdash_{cl_{\to\neg}} \varphi }$</p>
+
+<ol>
+  <li>Логика $cl$ является консервативным расширением логики 
+ $cl_{\to\neg}$.</li>
+  <li>Логика $cl_{\to\neg}$ является $Fm_{\to\neg}$–фрагментом логики $cl$.</li>
+</ol>
+
+<p><strong>Определение.</strong> Пусть $*: \mathcal{L}_1 \to \mathcal{L}_2$, $\bigstar :  \mathcal{L}_2 \to \mathcal{L}_1$, $L_1$ – логика в языке $\mathcal{L}_1$, $L_2$ – логика в языке $\mathcal{L}_2$, будем говорить, что логики $L_1$ и $L_2$ дефинициально эквивалентны, если</p>
+
+<ol>
+  <li>$\varphi \in L_1 \Leftrightarrow (\varphi)^* \in L_2 $</li>
+  <li>$\varphi \in L_2 \Leftrightarrow (\varphi)^\bigstar \in L_2 $</li>
+  <li>$\varphi \leftrightarrow ((\varphi)^{*})^{\bigstar} \in L_1$</li>
+  <li>$\varphi \leftrightarrow ((\varphi)^{\bigstar})^{*} \in L_2$</li>
+</ol>
+
+<p><strong>Утверждение.</strong> Логики $cl$ и $cl_{+\bot}$ дефинициально эквивалентны.</p>
+
+<p><strong>Определение.</strong> Исчисление $cl_{\to\bot}$ получается заменой аксиомных схем, содержащих отрицание, на следуюущую аксиомную схему:
+$((A \to \bot) \to \bot) \to A$</p>
+
+<p><strong>Утверждение.</strong> Логики $cl_{\to\bot}$ и $cl_{\to\neg}$ дефинициально эквивалентны.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Традиционно рассматривают следующий набор связок: $\wedge, \vee, \to, \neg$. Данный набор не является ни минимальным (например, можно оставить только $\wedge$ и $\neg$), ни максимальным (можно добавить $\mid$, $\downarrow$, $\veebar$, $\leftrightarrow$). Удобно поступить следующим образом: ввести новые связки как синтаксическое сокращение. Например, $\varphi \leftrightarrow \psi := (\varphi \to \psi) \wedge (\psi \to \varphi)$. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/logic-course/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Логическая семантика">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/logic-course/pages/1_CPL/2_Exercises/" class="navigation navigation-next navigation-unique" aria-label="Next page: Упражнения">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Упражнения",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/1_CPL/2_Exercises.md",
+            "ref": "_pages/1_CPL/2_Exercises.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Логическая семантика",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/1_CPL/1_Axiomatics.md",
+        "mtime": "2025-02-22 14:19:35 +0000",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-02-22 14:19:35 +0000"
+    },
+    "basePath": "/logic-course",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+
+            
+                <script src="/logic-course/assets/modal-quiz.js"></script>
+            
+        </div><script src="/logic-course/assets/gitbook/gitbook.js"></script>
+<script src="/logic-course/assets/gitbook/theme.js"></script>
+
+<script src="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/logic-course/assets/gitbook/custom.js"></script>
+<script src="/logic-course/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
+
+

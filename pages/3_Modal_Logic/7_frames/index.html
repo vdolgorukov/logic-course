@@ -1,0 +1,645 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Шкалы Крипке · Логическая семантика</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content=""><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Виталий Долгоруков"><link rel="stylesheet" href="/logic-course/assets/gitbook/style.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/logic-course/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/logic-course/" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" />
+        
+
+        
+            <link rel="next" href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" />
+        
+    </head>
+    <body>
+        <div class="book">
+<div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search">
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/logic-course/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/logic-course">
+            
+                <a href="/logic-course/" onclick="pageScrollToTop(this)">
+                    Логическая семантика
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider">
+
+            
+                
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            </li>
+<li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/1_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/1_CPL/1_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение классической логики высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/2_Exercises/">
+                            
+                                <a href="/logic-course/pages/1_CPL/2_Exercises/" onclick="pageScrollToTop(this)">
+                                    Упражнения
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/2_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/2_FOL/" onclick="pageScrollToTop(this)">
+                                    Язык и семантика классической логики предикатов первого порядка
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/3_Axiomatics_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение КЛП
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/5_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Модальная логика
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" onclick="pageScrollToTop(this)">
+                                    Семантика Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/logic-course/pages/3_Modal_Logic/7_frames/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/7_frames/" onclick="pageScrollToTop(this)">
+                                    Шкалы Крипке
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#%D1%88%D0%BA%D0%B0%D0%BB%D1%8B-%D0%BA%D1%80%D0%B8%D0%BF%D0%BA%D0%B5" onclick="mobilePageScrollToAnchor(this)">Шкалы Крипке</a></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/8_temporal_logic/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" onclick="pageScrollToTop(this)">
+                                    Темпоральные логики
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/4_Int/5_Int/">
+                            
+                                <a href="/logic-course/pages/4_Int/5_Int/" onclick="pageScrollToTop(this)">
+                                    Интуиционистское исчисление высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider">
+                        
+                    
+                
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </li>
+</ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href=".">Шкалы Крипке</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner">
+<div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/3_Modal_Logic/7_frames">Шкалы Крипке</h1>
+                    
+
+                    <h2 id="шкалы-крипке">Шкалы Крипке</h2>
+
+<p><strong>Определение 1</strong>. Пусть $M = (W, R, V)$ – модель Крипке, <em>шкалой Крипке</em> будем называть  пару $(W, R)$.
+То есть, шкала это модель Крипке без оценки. Если $F = (W, R)$ – шкала, то модель можно записать вот так $M = (F, V)$.</p>
+
+<p><strong>Определение 2</strong>. Дана модель $M = (F, V)$, будем говорить, что $M$ – <em>модель над шкалой</em> $F$.</p>
+
+<p><strong>Определение 3</strong>. Будем говорить, что формула $\varphi$ <em>общезначима в шкале</em> $F$ (обозначение: $F \models \varphi$), если для любой модели $M$ над $F$: $M \models \varphi$. То есть, при любой оценке $V$ верно, что $(F, V) \models \varphi$.</p>
+
+<p>Сравним определения истинности в отмеченном модели, истинности в модели и общезначимости в шкале. Пусть дана модель $M = (W, R, V)$. Истинность в отмеченной модели можно записать так:</p>
+<ul>
+  <li>$M, x \models \varphi$</li>
+  <li>$(F, V), x \models \varphi$</li>
+  <li>$(W, R, V), x \models \varphi$</li>
+</ul>
+
+<p>Истинность в модели можно записать так:</p>
+<ul>
+  <li>$M \models \varphi$</li>
+  <li>$\forall x \in W$: $M, x \models \varphi$</li>
+  <li>$\forall x \in W$: $(F, V), x \models \varphi$</li>
+  <li>$\forall x \in W$: $(W, R, V), x \models \varphi$</li>
+</ul>
+
+<p>Общезначимость в шкале можно записать так:</p>
+<ul>
+  <li>$F \models \varphi$</li>
+  <li>$\forall M$ над $F$: $M \models \varphi$</li>
+  <li>$\forall M$ над $F$ $\forall x \in W$: $M, x \models \varphi$</li>
+  <li>$\forall V$: $(W, R, V) \models \varphi$</li>
+  <li>$\forall V$ $\forall x \in W$: $(W, R, V), x \models \varphi$</li>
+</ul>
+
+<p><strong>Определение 4</strong>. Будем говорить, что формула является <em>общезначимой</em>, если она общезначима в любой модели, то есть, $\forall M: M \models \varphi$.</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 1</strong>. Докажите, что определение общезначимости можно эквивалентным образом переписать так: формула $\varphi$ общезначима, если для произвольной шкалы $F$ верно, что $F \models \varphi$</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 2</strong>. Приведите пример отмеченной модели $M = (F, V)$ и формулы $\varphi$ такой, что</p>
+<ul>
+  <li>$M, x \models \varphi$, но  $M \not \models \varphi$</li>
+  <li>$M \models \varphi$, но $F \not \models \varphi$</li>
+  <li>$F \models \varphi$, но $\not \models \varphi$</li>
+</ul>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 3</strong>. Приведите пример модели $M$, в которой ровно 4 мира, такой, что 
+– $M \models \Diamond \Box p \wedge  \Diamond \Box \neg p$</p>
+
+<p><img class="emoji" title=":green_book:" alt=":green_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d7.png" height="20" width="20"> <strong>Упражнение 4 (с ответами)</strong>. Укажите в каких шкалах (на рис. ниже) общезначимы следующие формулы?</p>
+
+<p><img src="/logic-course/docs/assets/images/Frames1-1.png" alt="Model"></p>
+
+<details><summary>  1. $\Box \bot$  </summary>
+
+	$$F_1$$
+	
+Формула говорит, что мир тупиковый. 
+</details>
+
+<details><summary>  2. $\Box \bot \vee \Diamond \Box \bot$  </summary>
+	
+$$F_1, F_3, F_5$$ 
+
+Формула говорит, что мир тупиковый или в шаге от тупикового. 
+</details>
+
+<details><summary> 3. $\Box p \to p$  </summary>
+
+$$F_2, F_6, F_9$$
+
+Формула гвоорит, что все стрелки рефлексивные.
+</details>
+
+<details><summary> 4. $\Diamond \Box p \to p$ </summary>
+
+$$F_1, F_2, F_7, F_8, F_9$$
+
+Формула говорит, что все стрелки симметричные. 
+</details>
+
+<details><summary> 5. $\Box p \to \Diamond p$ </summary>
+
+$$F_2, F_4, F_6, F_7, F_8, F_9$$
+
+Формула говорит, что из каждого миру исходит стрелка (не бывает тупиковых миров).
+</details>
+
+<details><summary> 6. $\Diamond p \to \Box p$ </summary>
+
+$$F_1, F_2, F_3, F_4, F_7$$
+
+Формула говорит, что если стрелка есть, то ровно одна.
+</details>
+
+<details><summary> 7. $\Diamond p \leftrightarrow \Box p$ </summary>
+
+$$F_2, F_4, F_7$$
+
+ Формула говорит, что из каждого мира исходит ровно одна стрелка.
+</details>
+
+<details><summary> 8. $p \leftrightarrow \Box \Box p$ </summary>
+
+$$F_2, F_7$$
+
+Формула говорит, что любые два шага приводят в исходный мир.
+</details>
+
+<p><strong>Утверждение 1</strong>. Пусть, $(W,R)$ – шкала Крипке, тогда
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>W</mi><mo separator="true">,</mo><mi>R</mi><mo stretchy="false">)</mo><mo>⊨</mo><mi mathvariant="normal">□</mi><mi>p</mi><mo>→</mo><mi>p</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi mathvariant="normal">∀</mi><mi>x</mi><mo>∈</mo><mi>W</mi><mo stretchy="false">(</mo><mi>x</mi><mi>R</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(W,R) \models \Box p \to p \iff \forall x \in W (xRx)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊨</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8694em;vertical-align:-0.1944em;"></span><span class="mord amsrm">□</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7194em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟺</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></p>
+
+<p><em>Доказательство</em>.</p>
+
+<p>($\Rightarrow$) Докажем по контрапозиции. Допустим, что найдется мир $x \in W$ такой, что $\neg (xRx)$. Наша задача подобрать оценку $V(p)$ такую, что   $(W,R,V), x \not \models \Box p \to p$. То есть, $(W,R,V), x \models \Box p$  и $(W,R,V), x \not \models  p$. Заметим, что подойдет следующая оценка $V(p)= W \setminus \{x\}$.</p>
+
+<p>($\Leftarrow$) Дана шкала $(W,R)$ такая, что $R$ - рефлексивно. Возьмем произвольную модель $M$ над шкалой $(W, R)$ и произвольный мир $x \in W$. Допустим, что $M, x \models \Box p$. Докажем, что $M, x \models p$. Поскольку шкала $(W,R)$ - рефлексивна, то $xRx$. Значит, используя допущение, получаем, что $M, x \models p$, что и требовалось доказать.</p>
+
+<p>То же самое рассуждение удобно более подробно записать в виде натурального вывода в стиле Фитча:</p>
+
+<details><summary> Смотреть Fitch-style доказательство </summary>
+
+<img src="/logic-course/docs/assets/images/proof.png" alt="Proof">
+
+</details>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 5</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> $(W,R) \models \Box p \to \Box \Box p$ $\iff$ $\forall x \forall y \forall z ((xRy \wedge yRz) \Rightarrow xRz)$ 
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 6</strong>.  Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models p \to \Box \Diamond p$ $\iff$ $\forall x \forall y (xRy \to yRx)$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 7</strong>.  Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models \Box p \to \Diamond p$ $\iff$ $\forall x \exists y \; xRy$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 8</strong>.  Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models \Box \Box p \to \Box p$ $\iff$ $\forall x \forall y ( xRy \to \exists z (xRz  \wedge zRy))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 9</strong>.  Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models \Diamond \Box p \to \Box \Diamond p$ $\iff$ $\forall x \forall y \forall z ((xRy \wedge xRz) \to \exists w (yRw \wedge zRw))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 10</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models p \to \Box(\Diamond p \to p) \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=y \vee y=z))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 11</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models (p \wedge \Box p) \to \Box \Box p \Leftrightarrow \forall x \forall y \forall z ((xRy \wedge yRz) \to (x=z \vee xRz))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 12</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models (\Diamond p \wedge \Diamond q) \to \Diamond (\Diamond p \wedge \Diamond q)$ $\Leftrightarrow$ $\forall x \forall y \forall z( (xRy \wedge xRz) \to \exists w (xRw \wedge wRy \wedge wRz))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 13</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models \Diamond (\Diamond p \wedge \Box q) \to \Box (\Diamond p \vee \Box q)$ $\Leftrightarrow$ $\forall x \forall y_1 \forall y_2 ( (xRy_1 \wedge xRy_2) \to ( \forall z( y_1Rz \to y_2Rz) \vee \forall z( y_2Rz \to y_1Rz) ))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 14</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models (p \wedge \Diamond \Box p) \to \Box p \Leftrightarrow$  $\forall x \forall y \forall z( (xRy \wedge x \not =y \wedge xRz) \to zRy)$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 15</strong>. Пусть $(W,R)$ – шкала Крипке, докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models \Box (\Box p \to q) \vee \Box  (\Box q \to p)$ ⇔ $\forall x \forall y \forall z ( (xRy \wedge xRz) \to (yRz \vee zRy))$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 16</strong>. Пусть $(W,R)$ – шкала Крипке, $Alt_n := \neg \bigwedge \limits_{i=0}^n  \Diamond (p_i \wedge \bigwedge \limits_{i \not = j} \neg p_j)$ докажите, что</p>
+<p style="text-align:center"> 
+$(W, R) \models Alt_n \Leftrightarrow  \forall x \in W: |R(x)| \leq n$
+</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение 17</strong>. Докажите, что существует следующее соответствие между формулой общезначимой в шкале и свойством отношения достижимости:</p>
+
+<ul>
+  <li>$\Box p \to \Box^- p$ — симметричность</li>
+  <li>$\Diamond p \to \Box^- \Diamond p$ — транзитивность</li>
+  <li>$\Box p \to \Box^- \Box p$ — евклидовость</li>
+  <li>$\Box \Box^- p \to \Box^- \Box p$ — свойство Чёрча-Россера (конфлюэнтность)</li>
+</ul>
+
+</section>
+            </div>
+<div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title">
+<span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Семантика Крипке">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" class="navigation navigation-next navigation-unique" aria-label="Next page: Темпоральные логики">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Темпоральные логики",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/3_Modal_Logic/8_temporal_logic.md",
+            "ref": "_pages/3_Modal_Logic/8_temporal_logic.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Логическая семантика",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/3_Modal_Logic/7_frames.md",
+        "mtime": "2025-02-22 14:19:35 +0000",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-02-22 14:19:35 +0000"
+    },
+    "basePath": "/logic-course",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+
+            
+        </div><script src="/logic-course/assets/gitbook/gitbook.js"></script>
+<script src="/logic-course/assets/gitbook/theme.js"></script>
+
+<script src="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/logic-course/assets/gitbook/custom.js"></script>
+<script src="/logic-course/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
+
+

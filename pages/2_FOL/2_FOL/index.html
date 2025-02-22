@@ -1,0 +1,731 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Язык и семантика классической логики предикатов первого порядка · Логическая семантика</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content=""><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Виталий Долгоруков"><link rel="stylesheet" href="/logic-course/assets/gitbook/style.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/logic-course/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/logic-course/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/logic-course/" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/logic-course/pages/1_CPL/2_Exercises/" />
+        
+
+        
+            <link rel="next" href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" />
+        
+    </head>
+    <body>
+        <div class="book">
+<div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search">
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/logic-course/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/logic-course">
+            
+                <a href="/logic-course/" onclick="pageScrollToTop(this)">
+                    Логическая семантика
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider">
+
+            
+                
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            </li>
+<li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/1_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/1_CPL/1_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение классической логики высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/1_CPL/2_Exercises/">
+                            
+                                <a href="/logic-course/pages/1_CPL/2_Exercises/" onclick="pageScrollToTop(this)">
+                                    Упражнения
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/logic-course/pages/2_FOL/2_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/2_FOL/" onclick="pageScrollToTop(this)">
+                                    Язык и семантика классической логики предикатов первого порядка
+                                </a>
+                                
+                                    
+                                        <ul>
+<li><a href="#%D1%8F%D0%B7%D1%8B%D0%BA" onclick="mobilePageScrollToAnchor(this)">Язык</a></li>
+<li><a href="#%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D1%81%D1%82%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0" onclick="mobilePageScrollToAnchor(this)">Формализация естественного языка</a></li>
+<li><a href="#%D1%81%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%BA%D0%B0" onclick="mobilePageScrollToAnchor(this)">Семантика</a></li>
+</ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/2_FOL/3_Axiomatics_FOL/">
+                            
+                                <a href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" onclick="pageScrollToTop(this)">
+                                    Аксиоматическое построение КЛП
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/5_Axiomatics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/5_Axiomatics/" onclick="pageScrollToTop(this)">
+                                    Модальная логика
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/6_Kripke_Semantics/" onclick="pageScrollToTop(this)">
+                                    Семантика Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/7_frames/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/7_frames/" onclick="pageScrollToTop(this)">
+                                    Шкалы Крипке
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/3_Modal_Logic/8_temporal_logic/">
+                            
+                                <a href="/logic-course/pages/3_Modal_Logic/8_temporal_logic/" onclick="pageScrollToTop(this)">
+                                    Темпоральные логики
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/logic-course/pages/4_Int/5_Int/">
+                            
+                                <a href="/logic-course/pages/4_Int/5_Int/" onclick="pageScrollToTop(this)">
+                                    Интуиционистское исчисление высказываний
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider">
+                        
+                    
+                
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </li>
+</ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href=".">Язык и семантика классической логики предикатов первого порядка</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner">
+<div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/2_FOL/2_FOL">Язык и семантика классической логики предикатов первого порядка</h1>
+                    
+
+                    <h1 id="язык">Язык</h1>
+
+<p>Договоримся использовать в качестве индивидных констант буквы из начала алфавита $Const = \{ a, b, c, d, a_1, a_2, \dots \}$, в качестве индивидных переменных буквы из конца алфавита $Var =\{x, y, z, x_1, y_1, \dots \}$, в качестве функциональных констант буквы из середины алфавита. $Func = \{f, g, h, f_1, g_1, \dots \}$.</p>
+
+<p><strong>Определение</strong>. <em>Терм</em></p>
+<ul>
+  <li>Индивидная константа является термом.</li>
+  <li>Индивидная переменная является термом.</li>
+  <li>Если $t_1, \dots, t_n$ – термы, а  $f$ – $n$-местная индивидная функция, то $f(t_1, \dots, t_n)$ – тоже терм.</li>
+</ul>
+
+<p>Это определение можно кратко записать при помощи следующей грамматики:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>t</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>c</mi><mo>∣</mo><mi>x</mi><mo>∣</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">t:: = c \mid  x \mid f(t_1, \dots, t_n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span>
+
+<p>где $c \in Cnst$, $x \in Var$.</p>
+
+<p><strong>Пример</strong>. Следующие выражения являются термами:</p>
+<ul>
+  <li>$a$</li>
+  <li>$x$</li>
+  <li>$f(a)$</li>
+  <li>$g(a,b)$</li>
+  <li>$g(f(a), g(x, f(f(x))))$</li>
+</ul>
+
+<p><strong>Пример</strong>. Рассмотрим следующий пример:</p>
+<ul>
+  <li>0 - “число ноль”</li>
+  <li>1 - “число один”</li>
+  <li>2 – “число два”</li>
+  <li>+(1,2)  – “сумма единицы и двойки” (конечно удобно договориться и вместо “$+(1,2)$” писать “$1 + 2$”)</li>
+  <li>+(1,+(2,3)) – “сумма единицы и суммы двойки и тройки”</li>
+  <li>x+1 – ”число, которое на единицу больше данного “</li>
+</ul>
+
+<p>Интуитивно термы удобно воспринимать как (сложные) имена.</p>
+
+<p><strong>Пример</strong>. Рассмотрим следующее соответствие между термами и выражениями в естественном языка:</p>
+<ul>
+  <li>$a$ – “Анна”</li>
+  <li>$b$ – “Борис”</li>
+  <li>$f(a)$ – “отец Анны”</li>
+  <li>$f(f(a))$ – “дедушка Анны по отцовской линии”</li>
+  <li>$x$ – “он”</li>
+  <li>$f(x)$ – “его отец”</li>
+  <li>$g(a, b)$ – “старший среди Анны и Бориса”</li>
+  <li>$g(x, b)$ – “старший среди него и  Бориса”</li>
+  <li>$f(f(g(f(a), f(b))))$ – “дедушка по отцовской линии самого старшего среди отца Анны и отца Бориса”</li>
+</ul>
+
+<p><strong>Определение</strong>.</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo>:</mo><mo>:</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo>∣</mo><mi mathvariant="normal">¬</mi><mi mathvariant="normal">Φ</mi><mo>∣</mo><mo stretchy="false">(</mo><mi mathvariant="normal">Φ</mi><mo>∧</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi mathvariant="normal">Φ</mi><mo>∨</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mo stretchy="false">(</mo><mi mathvariant="normal">Φ</mi><mo>→</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">)</mo><mo>∣</mo><mi mathvariant="normal">∃</mi><mi>x</mi><mi mathvariant="normal">Φ</mi><mo>∣</mo><mi mathvariant="normal">∀</mi><mi>x</mi><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi::= P(t_1, \dots, t_n) \mid \neg \Phi \mid (\Phi \wedge \Phi) \mid (\Phi \vee  \Phi ) \mid (\Phi \to \Phi ) \mid \exists x \Phi \mid \forall x \Phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬Φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∃</span><span class="mord mathnormal">x</span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mord">Φ</span></span></span></span></span>
+
+<h1 id="формализация-естественного-языка">Формализация естественного языка</h1>
+
+<p><img class="emoji" title=":green_book:" alt=":green_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d7.png" height="20" width="20"> <strong>Упражнение</strong>. Запишите следующие высказывания на языке логике предикатов, используя следующие обозначания:</p>
+<ul>
+  <li>$a$ – “Аня”</li>
+  <li>$b$ – “Боря”</li>
+  <li>$c$ – “Сережа”</li>
+  <li>$P(x)$ – “x - умный”</li>
+  <li>$Q(x)$ – “x – красивый”</li>
+</ul>
+<details><summary> 1. Боря – красивый, но не умный </summary> $$Qb \wedge \neg Pb$$ </details>
+<details><summary> 2. Боря – умный, Сережа – красивый, а Аня и умная, и красивая  </summary> $$Pb \wedge Qc \wedge Pa \wedge Qa$$ </details>
+<details><summary> 3. Если Боря красивый, то Аня - умная. </summary> $$Qb \to Pa$$ </details>
+<details><summary> 4. Eсли Сережа красивый, то все красивые. </summary> $$Qc \to \forall x Qx$$ </details>
+<details><summary> 5. Никто не красив и умен одновременно. </summary> $$\neg \exists x (Qx \wedge Px)$$ </details>
+
+<h1 id="семантика">Семантика</h1>
+
+<p><strong>Определение</strong>. Моделью называется пара $M = (D, I_M)$, где $D \not = \varnothing$ – носитель интерпретации (домен, универсум), $I_M$ – функция интерпретации, областью определения которой является множество $Cnst \cup Fn \cup Pr$ и такая, что</p>
+<ul>
+  <li>$I_M(c) \in D$ для $c \in Cnst$</li>
+  <li>$I_M(f) \in \{ f \mid f: D^n \to D\}$ для $f\in Fn$ от $n$ аргументов</li>
+  <li>$I_M(P) \subseteq D^n$ для $P\in Pr$  от $n$ аргументов</li>
+</ul>
+
+<p><strong>Обозначение</strong>. Будем писать $c_M$ вместо $I_M(c)$, $f_M$ вместо $I_M(f)$ и  $P_M$ вместо $I_M(P)$.</p>
+
+<p>С каждой моделью мы будем свзывать означивание, функцию, которая приписывает объекты переменным.</p>
+
+<p><strong>Определение</strong>. <em>Означиванием</em> будем называть функцию $v: Var \to D$.</p>
+
+<p><strong>Определение</strong>. <em>Значение терма (денотат)</em> (обозначение: $\Vert t \Vert_M^v$). Пусть $M = (D, I)$ - модель классической логики предикатов первого порядка, $v$ – означивание. Определим по индукции значение терма в модели $M$ при означивании $v$: 
+$\Vert c \Vert_M^v = c_M \in D$ для $c \in Const$
+$\Vert x \Vert_M^v = v(x) \in D$ для $x \in Var$
+$\Vert f(t_1, \dots, t_n) \Vert_{M}^{v} = f_M(\Vert t_1 \Vert_M^v, \dots, \Vert t_n \Vert_M^v) \in D$ для  $f \in Fn$, такая, что  $arity(f)=n$, $t_1, \dots, t_n \in Trm$.</p>
+
+<p>Часто мы будем писать $\Vert t \Vert^v$ вместо $\Vert t \Vert^v_M$, если из контекста понятно, о какой модели идет речь. Также будем писать $\Vert t \Vert^{x \mapsto a}$, указывая только ту часть означивания, которая важна для оценки терма.</p>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение</strong>. Пусть модель $M = (\mathbb{N}, I_M)$, где $I_M$ –  функция такая, что $I_M(f)$ – операция сложения в обычном арифметическом смысле,  $I_M(g)$ – операция умножения в обычном арифметическом смысле; $a_M = 0$, $b_M=1$ пусть $v$ – означивание такое, что $v: x \mapsto 2, y \mapsto 3$. Вычислите значение для следующих термов:</p>
+<ul>
+  <li>$\Vert f(a,b) \Vert^v_M$</li>
+  <li>$\Vert g(a,x) \Vert^v_M$</li>
+  <li>$\Vert f(x,x) \Vert^v_M$</li>
+  <li>$\Vert g(a,f(y,x)) \Vert^v_M$</li>
+</ul>
+
+<p><strong>Обозначение</strong>. Пусть $v$ – означивание, обозначим  $v[x \mapsto d]$ новое означивание, которое  переменной $x$ сопоставляет объект $d \in D$, а в остальном совпадает с $v$.</p>
+
+<p><strong>Определение</strong>. Пусть $M = (D, I)$ - модель классической логики предикатов первого порядка, $v$ – означивание. Дадим индуктивное определение истинности формулы в модели при означивании:</p>
+<ul>
+  <li>$M, v \models P(t_1, \dots, t_n)$ е.т.е. $\langle \Vert t_1 \Vert_M^v, \dots, \Vert t_n \Vert_M^v \rangle \in P_M$</li>
+  <li>$M, v \models \neg \Phi$ е.т.е. $M, v \not \models \Phi$</li>
+  <li>$M, v \models \Phi \wedge \Psi$ е.т.е. $M, v \models \Phi$ и $M, v \models  \Psi$</li>
+  <li>$M, v \models \Phi \vee \Psi$ е.т.е. $M, v \models \Phi$ или $M, v \models  \Psi$</li>
+  <li>$M, v \models \Phi \to \Psi$ е.т.е. если $M, v \models \Phi$, то $M, v \models  \Psi$</li>
+  <li>$M, v \models \exists x \Phi$ е.т.е. найдется $d \in D$: $M, v[x \mapsto d] \models \Phi$</li>
+  <li>$M, v \models \forall x \Phi$ е.т.е. для любого $d \in D$: $M, v[x \mapsto d] \models \Phi$</li>
+</ul>
+
+<p><strong>Пример</strong>. Опишем условия истинности для конкретных формул:</p>
+<ul>
+  <li>$M, v \models P(a)$ ⇔  $\Vert a \Vert^v_M \in P_M $</li>
+  <li>$M, v \models P(x)$ ⇔ $\Vert x \Vert^v_M \in P_M$ ⇔ $v(x) \in P_M$</li>
+  <li>$M, v \models R(a,b)$ ⇔ $\langle  \Vert a \Vert^v_M,  \Vert b \Vert^v_M \rangle  \in R_M$</li>
+  <li>$M, v \models P(f(a))$  ⇔ $\Vert f(a) \Vert^v_M \in P_M \iff  f_M(\Vert a \Vert^v_M) \in P_M  $</li>
+  <li>$M, v \models \forall x P(x)$ ⇔ для любого $d \in D$: $M, v^x_d \models Px$ ⇔ для любого $d \in D: v^x_d (x) \in P_M$<br>
+⇔ для любого $d \in D: d \in P_M $</li>
+  <li>$M, v \models \forall x \exists y R(x, y)$ ⇔ для любого $d \in D$ найдется $d’ \in D: \langle d, d’ \rangle \in R_M$</li>
+</ul>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение</strong>. Опишите условия истинности для следующих выражений:</p>
+<ul>
+  <li>$R(x, f(a, y) )$</li>
+  <li>$\exists x P(f(x))$</li>
+</ul>
+
+<p><strong>Пример</strong>. Том и Джерри.  Рассмотрим модель $M = (D, I_M)$, где $D = \{$ <img class="emoji" title=":cat:" alt=":cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" height="20" width="20"> , <img class="emoji" title=":mouse:" alt=":mouse:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png" height="20" width="20"> $\}$, $I_M$ устроена так:</p>
+<ul>
+  <li>$t_M =$ <img class="emoji" title=":cat:" alt=":cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" height="20" width="20">
+</li>
+  <li>$j_M =$ <img class="emoji" title=":mouse:" alt=":mouse:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png" height="20" width="20">
+</li>
+  <li>$C_M = \{$ <img class="emoji" title=":cat:" alt=":cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" height="20" width="20">  $\}$</li>
+  <li>$M_M = \{$ <img class="emoji" title=":mouse:" alt=":mouse:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png" height="20" width="20"> $\}$</li>
+  <li>$A_M = \{$ <img class="emoji" title=":cat:" alt=":cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" height="20" width="20">, <img class="emoji" title=":mouse:" alt=":mouse:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png" height="20" width="20"> $\}$</li>
+  <li>$H_M$ = $\varnothing$</li>
+</ul>
+
+<p>означивание устроено так: $v: x \mapsto$ <img class="emoji" title=":cat:" alt=":cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" height="20" width="20"></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Естественных язык</th>
+      <th>Логика предикатов</th>
+      <th>Верно ли в модели  M при означивании v</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Том – кот</td>
+      <td>$Ct$</td>
+      <td>Да</td>
+    </tr>
+    <tr>
+      <td>Джерри - мышь</td>
+      <td>$Mj$</td>
+      <td>Да</td>
+    </tr>
+    <tr>
+      <td>Это кот</td>
+      <td>$Сx$</td>
+      <td>Да</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Пример</strong>. Ахиллес и Черепаха. Рассмотрим модель $M = (D, I_M)$, где $D = \{$ <img class="emoji" title=":turtle:" alt=":turtle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f422.png" height="20" width="20">, <img class="emoji" title=":runner:" alt=":runner:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png" height="20" width="20"> $\}$, $I_M$ устроена так:</p>
+<ul>
+  <li>$a_M =$ <img class="emoji" title=":runner:" alt=":runner:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png" height="20" width="20">
+</li>
+  <li>$T_M = \{$ <img class="emoji" title=":turtle:" alt=":turtle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f422.png" height="20" width="20"> $\}$</li>
+  <li>$R_M = \{ \langle$ <img class="emoji" title=":runner:" alt=":runner:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png" height="20" width="20"> , <img class="emoji" title=":turtle:" alt=":turtle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f422.png" height="20" width="20"> $\rangle \}$</li>
+</ul>
+
+<p><strong>Пример</strong>. $D = \{$ <img class="emoji" title=":black_circle:" alt=":black_circle:" src="https://github.githubassets.com/images/icons/emoji/unicode/26ab.png" height="20" width="20"> , <img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f534.png" height="20" width="20"> , <img class="emoji" title=":black_medium_square:" alt=":black_medium_square:" src="https://github.githubassets.com/images/icons/emoji/unicode/25fc.png" height="20" width="20"> $\}$</p>
+
+<p><strong>Пример</strong>. Рассмотрим модель (см. рис. ниже) $M = (D, I_M)$, где</p>
+<ul>
+  <li>$D = \{\square, \blacksquare, \triangle,\blacktriangle \}$</li>
+  <li>$B_M = \{\blacksquare, \blacktriangle \}$</li>
+  <li>$S_M = \{\blacksquare, \square \}$</li>
+  <li>$T_M = \{ \triangle, \blacktriangle  \}$</li>
+  <li>$a_M = \square$</li>
+  <li>$b_M = \blacktriangle$ 
+и означивание $v: x \mapsto \triangle$.</li>
+</ul>
+
+<p><img src="/logic-course/docs/assets/images/square.png" alt="Model"></p>
+
+<p>Проверим, что следующие утверждения являются корректными:</p>
+<ul>
+  <li>$M, v \models S(a) \Leftrightarrow  \Vert a \Vert^v_M \in S_M \Leftrightarrow  \square \in  \{\blacksquare, \square \}$</li>
+  <li>$M, v \models T(x) \Leftrightarrow  \Vert x \Vert^v_M \in T_M \Leftrightarrow  v(x) \in T_M \Leftrightarrow  \triangle \in  \{ \triangle, \blacktriangle \}$</li>
+</ul>
+
+<p><img class="emoji" title=":green_book:" alt=":green_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d7.png" height="20" width="20"> <strong>Упражнение (c ответами)</strong>. Рассмотрим модель $M$ и означивание $v$ из примера выше. Оцените корректность следующих утверждений:</p>
+<details><summary>  $M, v \models B(a)$ </summary> 
+ 
+  
+$M, v \not \models B(a)$, поскольку 
+  
+$$M, v \models B(a) \Leftrightarrow  \Vert a \Vert^v_M \in B_M \Leftrightarrow \square \in \\\{\blacksquare, \blacktriangle \\\}$$
+ 
+  
+А последнее утверждение очевидно ложно. Действительно, белый квадрат (денотат $a$) не является черной фигурой ($B$).
+
+</details>
+
+<details><summary>  $M, v \models B(b)$ </summary>  ... </details>
+
+<details><summary>  $M, v \models B(x)$  </summary> ...  </details>
+
+<details><summary>  $M, v \models \exists x P(x)$  </summary>  ...  </details>
+
+<p><img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> <strong>Упражнение</strong>. 
+Пусть фигуры из универсума $D$ расположены как на рисунке ниже:</p>
+
+<ol>
+  <li>Пусть двухместный предикат $H(1,2)$ означает что объект 1 расположен выше объекта 2, двухместный предикат $L(1,2)$ означает что объект 1 расположен левее объекта 2 а функциональная константа $f$ означает функцию, которая возвращает ближайший объект по часовой стрелке.</li>
+</ol>
+
+<ul>
+  <li>Чему равно $H_M$?</li>
+  <li>Чему равно $L_M$?</li>
+  <li>Чему равно $f_M$?</li>
+</ul>
+
+<ol>
+  <li>Оцените корректность следующих утверждений
+    <ul>
+      <li>$M, v \models H(a, b)$</li>
+      <li>$M, v \models H(a, f(b))$</li>
+      <li>$M, v \models \forall x (B(x) \to \exists y H(y,x))$</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Определение</strong>. <em>Подстановка в терм</em>.  Пусть $s, t$ – термы, тогда $t[s/x]$ – новый терм, который получается заменой всех вхождений переменной $x$ в терме $t$ на терм $s$. Определим $t[s/x]$ индуктивно:</p>
+<ul>
+  <li>$c[s/x] = c$ для $c\in Cnst$</li>
+  <li>$y[s/x] = y$ для $y \in Vr$ т.ч. $x \not = y$</li>
+  <li>$x[s/x] =s $</li>
+  <li>$f(t_1, \dots, t_n)[s/x] = f(t_1[s/x], \dots, t_n[s/x])$, где $f$ – $n$-местная предметная функция, $t_1, \dots, t_n$ – термы</li>
+</ul>
+
+<p><strong>Пример</strong>. $f(x)[a/x]=f(a)$, $h(f(x), a)[b/x] = h(f(b), a)$, $h(g(x), x)[f(b)/x] = h(g(f(b)), f(b))$</p>
+
+<p><strong>Определение</strong>. <em>Подстановка в формулу</em>. $\Phi[t/x]$ обозначает формулу, которая получается в результате замены в формуле $\Phi$ всех свободных вхождений переменной $x$ на терм $t$. Терм $t$ должен быть свободен для подстановки в $\Phi$. 
+Определим $\Phi[t/x]$ индуктивно:</p>
+<ul>
+  <li>$P(t_1, \dots, t_n)[t/x]= P(t_1[t/x], \dots, t_n[t/x])$</li>
+  <li>$(\neg \Psi)[t/x] = \neg (\Psi[t/x])$</li>
+  <li>$(\Psi \wedge \Theta)[t/x] = \Psi[t/x] \wedge \Theta[t/x]$</li>
+  <li>$(\forall y \Psi)[t/x] = \forall y (\Psi[t/x])$, если $x \not = y$</li>
+  <li>$(\forall x \Psi)[t/x] = \forall x \Psi $</li>
+  <li>$(\exists y \Psi)[t/x] = \forall y (\Psi[t/x])$, если $x \not = y$</li>
+  <li>$(\exists x \Psi)[t/x] = \exists  x \Psi $</li>
+</ul>
+
+<p><strong>Определение</strong>. Будем говорить, что терм $t$ <em>свободен для подстановки</em> вместо переменной $x$ в формуле $\Phi$, если после подстановки ни одна переменная из терма не окажется связанной, т.е. $Var(t) \subseteq FV(\Phi[t/x])$</p>
+
+<p><strong>Пример</strong> Терм $f(y)$ не является свободным для подстановки вместо переменной $x$ в формулу $\exists y R(x, y)$.</p>
+
+<p><strong>Контрольный вопрос</strong> Какие термы являются свободными для подстановки вместо переменной $y$ в формуле $\forall x R(f(x),y)$:</p>
+<details><summary>  $f(g(x,a))$  </summary>  нет </details>
+<details><summary>  $f(a))$  </summary> да  </details>
+<details><summary> $g(a,z)$ </summary>  да  </details>
+<details><summary> $f(x, z)$ </summary> нет  </details>
+</section>
+            </div>
+<div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title">
+<span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/logic-course/pages/1_CPL/2_Exercises/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Упражнения">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/logic-course/pages/2_FOL/3_Axiomatics_FOL/" class="navigation navigation-next navigation-unique" aria-label="Next page: Аксиоматическое построение КЛП">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Аксиоматическое построение КЛП",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/2_FOL/3_Axiomatics_FOL.md",
+            "ref": "_pages/2_FOL/3_Axiomatics_FOL.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Логическая семантика",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/2_FOL/2_FOL.md",
+        "mtime": "2025-02-22 14:19:35 +0000",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-02-22 14:19:35 +0000"
+    },
+    "basePath": "/logic-course",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+
+            
+        </div><script src="/logic-course/assets/gitbook/gitbook.js"></script>
+<script src="/logic-course/assets/gitbook/theme.js"></script>
+
+<script src="/logic-course/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/logic-course/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/logic-course/assets/gitbook/custom.js"></script>
+<script src="/logic-course/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
+
+
