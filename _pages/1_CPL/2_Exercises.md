@@ -326,3 +326,6 @@ $f^{2}: \{0,1\} \times \{0,1\} \mapsto \{0,1\}$
 **Упражнение 7(\*).**  Методом аналитических таблиц докажите общезначимость следующих формул:
 * $[\forall x \forall y \forall z \forall t ((xRy \wedge yRz) \to (xRt \vee tRz)) \wedge \forall x \neg xRx] \to  \forall x \forall y \forall z ((xRy \wedge yRz) \to xRz)$
 * $[\forall x \forall y \forall z \forall t ((xRy \wedge yRz) \to (xRt \vee tRz)) \wedge \forall x \neg xRx] \to  \forall x \forall y (xRy \to \neg yRx)$
+
+
+{% include quiz.html file='example-quiz' %}
