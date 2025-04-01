@@ -20,6 +20,3 @@ permalink: /
 - [Шкалы Крипке]({{ site.baseurl }}/pages/3_Modal_Logic/7_frames/)
 
 *Страница подготовлена по результатам проекта «Интерактивное учебное пособие по философской логике и формальной философии» при поддержке фонда «Гуманитарные исследования» ФГН НИУ «Высшая школа экономики» в 2022-2023 году*.
-
-– [1](https://docs.google.com/forms/d/e/1FAIpQLSceyH6SCPoIQca5kLfzpobMT_aO7Vrep9tRwJqFcvjgLNMagw/viewform?usp=header)
-– [2](https://docs.google.com/forms/d/e/1FAIpQLSduuL6ylwYCBsjV4doP2o1g5vSO4NZR1OK4m3xJguz6P4grvg/viewform?usp=header)
